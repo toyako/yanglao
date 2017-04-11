@@ -1,0 +1,450 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  color: #676767; }
+
+p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+header {
+  margin-bottom: 20px; }
+  header .top_le a {
+    color: #545454; }
+  header .top_le i {
+    color: darkorange; }
+  header .top_le .logo {
+    margin-top: -30px;
+    margin-left: 20px; }
+    header .top_le .logo p {
+      margin: 0px;
+      font-size: 18px;
+      color: #fa9967; }
+    header .top_le .logo :nth-child(1) {
+      font-size: 40px;
+      color: #f76820; }
+  header .top_ri ul li {
+    float: left;
+    margin-right: 15px;
+    text-align: center;
+    vertical-align: middle; }
+    header .top_ri ul li i.icon-shopping {
+      color: #e18594;
+      font-size: 20px; }
+    header .top_ri ul li a {
+      color: #545454; }
+  header .top_ri ul :nth-child(1) {
+    margin-top: -5px; }
+  header #search {
+    margin-top: 30px; }
+    header #search .search_inp input {
+      border: 2px solid #E75558;
+      width: 70%;
+      padding-left: 5px;
+      height: 30px; }
+    header #search .search_inp > a {
+      background: #E75558;
+      color: #FFFFFF;
+      height: 30px;
+      width: 10%;
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      margin-left: -5px;
+      margin-top: -2px;
+      line-height: 30px; }
+    header #search ul li a {
+      color: #ababab;
+      margin-right: 10px; }
+    header #search ul :nth-child(1) {
+      margin-top: 0px; }
+  header #assortment {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 10px; }
+    header #assortment > p {
+      border-bottom: 2px solid #ee914b;
+      padding-left: 0;
+      margin: 0;
+      position: relative;
+      top: 25px; }
+    header #assortment .container {
+      height: 502px; }
+      header #assortment .container > ul {
+        margin-bottom: 25px; }
+        header #assortment .container > ul > li {
+          float: left;
+          text-align: center;
+          vertical-align: middle;
+          width: 8%;
+          height: 25px;
+          line-height: 25px; }
+          header #assortment .container > ul > li a {
+            color: #000000; }
+          header #assortment .container > ul > li ul {
+            display: none;
+            background: #f6b37f;
+            position: absolute;
+            width: 136px;
+            margin-top: -2px;
+            padding-bottom: 2px; }
+            header #assortment .container > ul > li ul li p {
+              margin: 10px 0 2px;
+              color: #000000; }
+            header #assortment .container > ul > li ul li a {
+              color: #FFFFFF; }
+            header #assortment .container > ul > li ul :hover a,
+            header #assortment .container > ul > li ul :nth-child(2) {
+              color: #ff5e7a; }
+              header #assortment .container > ul > li ul :hover a a,
+              header #assortment .container > ul > li ul :nth-child(2) a {
+                color: #FF5E7A; }
+              header #assortment .container > ul > li ul :hover a i,
+              header #assortment .container > ul > li ul :nth-child(2) i {
+                color: #FF5E7A; }
+        header #assortment .container > ul :hover ul {
+          display: block; }
+        header #assortment .container > ul > :nth-child(1) {
+          background: #f6b37f;
+          width: 12%; }
+          header #assortment .container > ul > :nth-child(1) a {
+            color: #FFFFFF; }
+
+section .market ul > li {
+  float: left;
+  width: 110px;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 auto; }
+  section .market ul > li ul {
+    width: 1280px; }
+    section .market ul > li ul li {
+      margin: 0 auto;
+      vertical-align: middle;
+      text-align: left;
+      width: 170px;
+      margin-top: 20px;
+      margin-right: 25px; }
+      section .market ul > li ul li img {
+        height: 150px;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 50%;
+        position: relative;
+        right: 5px; }
+      section .market ul > li ul li p {
+        margin-top: 10px;
+        text-align: left; }
+      section .market ul > li ul li :nth-child(3) {
+        color: #ff5400; }
+    section .market ul > li ul li:hover {
+      border: 2px solid #f6b37f;
+      border-radius: 4px;
+      margin-top: 0px; }
+section .market ul :nth-child(1) b,
+section .market ul b:hover {
+  color: #f50000;
+  border-bottom: 3px solid red;
+  padding-bottom: 5px; }
+section .commodity {
+  position: relative;
+  margin-top: 45px;
+  height: 600px; }
+  section .commodity p {
+    text-align: left;
+    margin-left: 3px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-overflow: inherit; }
+  section .commodity .com_bod {
+    position: relative;
+    height: 330px; }
+    section .commodity .com_bod .com_le {
+      display: inline-block;
+      width: 30%;
+      background: #84CCC9;
+      height: 300px;
+      position: absolute;
+      left: 0;
+      margin-left: 0px; }
+      section .commodity .com_bod .com_le img {
+        height: 300px;
+        width: 343px; }
+      section .commodity .com_bod .com_le p {
+        position: absolute;
+        bottom: 20px;
+        left: -3px;
+        background: #f29c9f;
+        height: 30px;
+        width: 343px;
+        opacity: 0.5; }
+    section .commodity .com_bod .com_ri {
+      position: absolute;
+      left: 343px;
+      top: 0; }
+      section .commodity .com_bod .com_ri :nth-child(1) li {
+        margin-bottom: 20px; }
+      section .commodity .com_bod .com_ri ul li {
+        background: #84CCC9;
+        width: 185px;
+        height: 140px;
+        float: right;
+        margin-left: 14px; }
+        section .commodity .com_bod .com_ri ul li img {
+          width: 185px;
+          height: 140px; }
+  section .commodity .banner {
+    position: relative;
+    bottom: 10px; }
+    section .commodity .banner ul li {
+      float: left;
+      width: 285px;
+      height: 150px;
+      background: #7ecef3; }
+      section .commodity .banner ul li img {
+        width: 285px;
+        height: 150px; }
+    section .commodity .banner :nth-child(2n) {
+      background: #84ccc9; }
+  section .commodity a {
+    height: 30px;
+    background: #eeeeee;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: #000000; }
+section .service p {
+  font-size: 20px; }
+section .service .chang_fx {
+  width: 300px; }
+section .service .serv_b {
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 20px; }
+  section .service .serv_b .wi {
+    width: 33%;
+    height: 350px;
+    text-align: center;
+    vertical-align: middle; }
+  section .service .serv_b .serv_o {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    text-align: center;
+    vertical-align: middle; }
+    section .service .serv_b .serv_o ul li {
+      background: #66ccff;
+      height: 150px;
+      width: 165px;
+      float: left;
+      margin-top: 20px;
+      margin-right: 15px; }
+      section .service .serv_b .serv_o ul li a {
+        display: block;
+        height: 150px;
+        width: 165px; }
+        section .service .serv_b .serv_o ul li a img {
+          height: 150px;
+          width: 165px; }
+    section .service .serv_b .serv_o ul li:hover {
+      border: 1px solid #f40; }
+    section .service .serv_b .serv_o ul > :nth-child(1) {
+      width: 350px;
+      margin-top: 0;
+      margin-right: 0;
+      background: #FFFFFF; }
+      section .service .serv_b .serv_o ul > :nth-child(1) .serv_change_t {
+        text-align: left;
+        height: 24%;
+        margin-bottom: 10px; }
+        section .service .serv_b .serv_o ul > :nth-child(1) .serv_change_t span {
+          color: #458fe6; }
+          section .service .serv_b .serv_o ul > :nth-child(1) .serv_change_t span h3 {
+            font-size: 27px;
+            font-weight: bold;
+            padding-left: 15px; }
+      section .service .serv_b .serv_o ul > :nth-child(1) .serv_change_d {
+        height: 76%;
+        margin: 0; }
+        section .service .serv_b .serv_o ul > :nth-child(1) .serv_change_d span {
+          width: 140px;
+          display: block;
+          text-align: left;
+          padding-left: 15px;
+          font-size: 16px; }
+        section .service .serv_b .serv_o ul > :nth-child(1) .serv_change_d span:nth-child(1) {
+          font-weight: bold; }
+        section .service .serv_b .serv_o ul > :nth-child(1) .serv_change_d a {
+          border: 1px solid #f40;
+          display: block;
+          height: 20px;
+          font-size: 16x;
+          line-height: 20px;
+          width: 130px;
+          text-align: center;
+          border-radius: 15px;
+          margin-top: 8px;
+          color: #F76820; }
+        section .service .serv_b .serv_o ul > :nth-child(1) .serv_change_d img {
+          float: right;
+          position: relative;
+          bottom: 110px;
+          right: 20px; }
+    section .service .serv_b .serv_o ul :nth-child(2) {
+      margin-right: 10px; }
+    section .service .serv_b .serv_o ul :nth-child(3) {
+      margin-left: 10px;
+      margin-right: 0; }
+  section .service .serv_b .serv_t {
+    display: inline-block;
+    position: relative;
+    top: 0; }
+    section .service .serv_b .serv_t ul li {
+      background: #66ccff;
+      height: 150px;
+      width: 165px;
+      float: left;
+      margin-right: 10px; }
+      section .service .serv_b .serv_t ul li a {
+        display: block;
+        height: 150px;
+        width: 165px; }
+        section .service .serv_b .serv_t ul li a img {
+          height: 150px;
+          width: 165px; }
+    section .service .serv_b .serv_t ul li:hover {
+      border: 1px solid #f40; }
+    section .service .serv_b .serv_t ul :nth-child(2) {
+      margin-right: 0;
+      margin-left: 10px; }
+    section .service .serv_b .serv_t ul :nth-child(3) {
+      margin-top: 20px;
+      width: 350px;
+      background: #E04D60;
+      margin-right: 0; }
+      section .service .serv_b .serv_t ul :nth-child(3) a {
+        height: 150px;
+        width: 350px;
+        display: block; }
+        section .service .serv_b .serv_t ul :nth-child(3) a img {
+          height: 150px;
+          width: 350px; }
+  section .service .serv_b .serv_s {
+    display: inline-block;
+    background: #959595;
+    position: relative;
+    top: -15px;
+    height: 320px; }
+section .service > ul li {
+  float: left;
+  width: 284px;
+  height: 150px;
+  background: #7ecef3; }
+section .service > ul :nth-child(2n) {
+  background: #84ccc9; }
+section .service > a {
+  width: 100%;
+  height: 30px;
+  background: #EEEEEE;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  color: #000; }
+section .secondhand {
+  margin-top: 30px; }
+  section .secondhand p {
+    font-size: 20px; }
+  section .secondhand a {
+    width: 100%;
+    height: 30px;
+    background: #EEEEEE;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    margin-top: 30px;
+    color: #000; }
+section .friendly_link {
+  margin-top: 30px; }
+  section .friendly_link p {
+    font-size: 20px; }
+  section .friendly_link ul li {
+    float: left;
+    width: 173px;
+    height: 90px;
+    background: #84ccc9;
+    text-align: center;
+    vertical-align: middle;
+    margin: 10px; }
+    section .friendly_link ul li a {
+      display: block; }
+      section .friendly_link ul li a img {
+        width: 173px;
+        height: 90px; }
+  section .friendly_link ul :nth-child(1) {
+    margin-left: 0; }
+  section .friendly_link ul :nth-last-child(1) {
+    margin-right: 0; }
+
+footer {
+  height: 150px;
+  bottom: 0;
+  background: #959595;
+  margin-top: 30px; }
+
+.test {
+  width: 1140px;
+  z-index: 1; }
+  .test .lunbo_wrap {
+    z-index: 2;
+    width: 100%;
+    overflow: hidden;
+    position: relative; }
+    .test .lunbo_wrap .pic_box {
+      position: absolute;
+      height: 100%;
+      width: 9999px;
+      left: 0;
+      top: 0;
+      transition: all 500ms ease-in; }
+      .test .lunbo_wrap .pic_box li {
+        float: left; }
+    .test .lunbo_wrap #left_arrow,
+    .test .lunbo_wrap #right_arrow {
+      position: absolute;
+      top: 50%;
+      margin-top: -30px;
+      font-size: 40px;
+      color: white;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      cursor: pointer; }
+    .test .lunbo_wrap #left_arrow {
+      left: 0; }
+    .test .lunbo_wrap #right_arrow {
+      right: 0; }
+    .test .lunbo_wrap .pannel {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%); }
+      .test .lunbo_wrap .pannel li {
+        margin-right: 5px;
+        cursor: pointer;
+        display: block;
+        width: 10px;
+        height: 10px;
+        background: #cccccc;
+        border-radius: 50%;
+        float: left; }
+      .test .lunbo_wrap .pannel li.active {
+        background: red; }
+
+/*# sourceMappingURL=index.css.map */

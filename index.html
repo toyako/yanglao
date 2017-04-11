@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,userscalable=no" />
+		<title>我的养老网</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/lib/_reset.css" />
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/lib/bootstrap.css" />
+	</head>
+
+	<body>
+		<header>
+			<!---------顶端导航栏---------->
+			<div class="container">
+				<div class="top_le col-md-6">
+					<p>
+						<a href="#" onclick="addfav()"><i class="iconfont icon-star"></i>收藏本站</a>
+						你好，欢迎来到我的养老网商城！
+						<a href="">[登陆]</a>
+						<a href="">[免费注册]</a>
+					</p><br />
+					<div class="logo">
+						<p><b>聚牛理财</b></p>
+						<p>诚信·客观·专业·尽责</p>
+					</div>
+				</div>
+				<div class="top_ri col-md-6">
+					<ul>
+						<li>
+							<a href=""><i class="iconfont icon-shopping"></i>我的购物车</a>
+						</li>
+						<li>
+							<a href="">我的订单<i class="iconfont icon-down"></i></a>
+						</li>
+						<li>
+							<a href="">我的收藏<i class="iconfont icon-down"></i></a>
+						</li>
+						<li>
+							<a href="">微信商城<i class="iconfont icon-down"></i></a>
+						</li>
+						<li>
+							<a href="">手机商城<i class="iconfont icon-down"></i></a>
+						</li>
+						<li>
+							<a href="">帮助中心<i class="iconfont icon-down"></i></a>
+						</li>
+					</ul>
+					<div id="search" class="col-md-12">
+						<div class="search_inp">
+							<input type="text" placeholder="夕阳红" />
+							<a href="">搜索</a><br />
+						</div>
+						<ul>
+							<li>
+								<a href="">热门搜索：夕阳红</a>
+							</li>
+							<li>
+								<a href="">夕阳红</a>
+							</li>
+							<li>
+								<a href="">夕阳红</a>
+							</li>
+							<li>
+								<a href="">夕阳红</a>
+							</li>
+							<li>
+								<a href="">夕阳红</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-------导航分栏-------->
+			<div id="assortment" class="container-fluid">
+				<p></p>
+				<div class="container">
+					<ul>
+						<li>
+							<a href="">&nbsp;全部分类&nbsp;&nbsp;>&nbsp;&nbsp;</a>
+							<ul style="z-index: 99;">
+								<li>
+									<p>商品区</p>
+								</li>
+								<li class="active">
+									<a href=""><i class="iconfont icon-yifu"></i>衣服</a>
+								</li>
+								<li>
+									<a href=""><i class="iconfont icon-hufu"></i>护肤</a>
+								</li>
+								<li>
+									<a href=""><i class="iconfont icon-lingshi"></i>零食</a>
+								</li>
+								<li>
+									<a href=""><i class="iconfont icon-jiadian"></i>家电</a>
+								</li>
+								<li>
+									<a href=""><i class="iconfont icon-jiaju"></i>家具</a>
+								</li>
+								<li>
+									<a href=""><i class="iconfont icon-shuma"></i>数码</a>
+								</li>
+								<li>
+									<a href="">查看更多</a>
+								</li>
+								<li>
+									<p>服务区</p>
+								</li>
+								<li>
+									<a href=""><i class="iconfont icon-meirong"></i>美容</a>
+								</li>
+								<li>
+									<a href=""><i class="iconfont icon-yangshenghuo"></i>养生</a>
+								</li>
+								<li>
+									<a href=""><i class="iconfont icon-lvyou1"></i>旅游</a>
+								</li>
+								<li>
+									<a href=""><i class="iconfont icon-sauna"></i>桑拿</a>
+								</li>
+								<li>
+									<a href=""><i class="iconfont icon-zuyu"></i>足浴</a>
+								</li>
+								<li>
+									<a href=""><i class="iconfont icon-wenquan"></i>温泉</a>
+								</li>
+								<li>
+									<a href="">查看更多</a>
+								</li>
+								<li>
+									<p>夕阳红</p>
+								</li>
+								<li>
+									<a href=""><i class="iconfont icon-zheyang"></i>更多服务</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="">首页</a>
+						</li>
+						<li>
+							<a href="">预售产品</a>
+						</li>
+						<li>
+							<a href="">商品区</a>
+						</li>
+						<li>
+							<a href="">服务区</a>
+						</li>
+						<li>
+							<a href="">入驻夕阳红</a>
+						</li>
+					</ul>
+					<div class="top_banner">
+						<div class="test">
+							<div class="lunbo_wrap">
+								<ul class="pic_box">
+									<li><img src="img/1.jpg" /></li>
+									<li><img src="img/2.jpg" /></li>
+									<li><img src="img/3.jpg" /></li>
+									<li><img src="img/4.jpg" /></li>
+									<li><img src="img/5.jpg" /></li>
+								</ul>
+								<ul class="pannel"></ul>
+								<span id="left_arrow">
+					&lt;
+				</span>
+								<span id="right_arrow">
+					&gt;
+				</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="container">
+			<div class="market clearfix">
+				<ul>
+					<li>
+						<b>热销产品</b>
+						<ul>
+							<li class="col-md-2">
+								<img src="http://res.wdmfw.com/upload/store/606/2016/09/02/df9bf11a-fcf7-4460-8a45-c4f59d4cb15f.jpg_middle.jpg" />
+								<p>劲力RCY2103*电吹风 酒店吹风机 吹风筒</p>
+								<p>价格:¥188.00</p>
+							</li>
+							<li class="col-md-2">
+								<img src="http://res.wdmfw.com/upload/store/568/2016/09/07/61703447-657d-427d-a088-a839f9594592.jpg_middle.jpg" />
+								<p>【家具建材】米致*化妆品收纳盒 木质创意家居用品桌面杂物首饰盒韩国创意抽屉收纳</p>
+								<p>价格:¥280.00</p>
+							</li>
+							<li class="col-md-2">
+								<img src="https://asearch.alicdn.com/bao/uploaded/i1/143680346748621062/TB2GEevbCBjpuFjy1XdXXaooVXa_!!0-saturn_solar.jpg_220x220.jpg" />
+								<p>【家用电器】套餐 小林*冰宝贴退烧贴 降温贴 儿童用 + 世佳*电子体温计MT-403</p>
+								<p>价格:¥198.00</p>
+							</li>
+							<li class="col-md-2">
+								<img src="//img.alicdn.com/tfscom/i4/2461050731/TB2zrvOj4lmpuFjSZPfXXc9iXXa_!!2461050731.jpg_290x290.jpg_.webp" />
+								<p>新店特惠马甲女春秋中长款韩版无袖秋冬学生时尚修身格子西装翻领</p>
+								<p>价格:¥98.00</p>
+							</li>
+							<li class="col-md-2">
+								<img src="//img.alicdn.com/tfscom/i2/2168748903/TB2VkCylrBnpuFjSZFGXXX51pXa_!!2168748903.jpg_290x290.jpg_.webp" />
+								<p>春夏连衣裙女宽松圆领显瘦印花短袖t恤上衣包臀半身短裙两件套装</p>
+								<p>价格:¥158.00</p>
+							</li>
+							<li class="col-md-2">
+								<img src="//img.alicdn.com/tfscom/i2/2595808149/TB25GRhiUdnpuFjSZPhXXbChpXa_!!2595808149.jpg_290x290.jpg_.webp" />
+								<p>婴幼儿软牛仔连体衣春秋薄款衣服男女宝宝卡通爬服0-3岁</p>
+								<p>价格:¥298.00</p>
+							</li>
+						</ul>
+					</li>
+					<li><b>最新产品</b></li>
+					<li><b>预售产品</b></li>
+				</ul>
+			</div>
+			<!-----------商品区-------------->
+			<div class="commodity">
+				<p>商品区&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;COMMODITY</p>
+				<div class="com_bod clearfix">
+					<div class="com_le clearfix">
+						<img src="//img14.360buyimg.com/jdcms/s220x220_jfs/t3253/220/7393093859/295022/b455cba5/58b64249Nb9b64bad.jpg!q90.webp" />
+						<p>三鸡光电欧式吊灯客厅灯锌合金水晶餐厅灯饰美式吊灯具 1头壁灯</p>
+					</div>
+					<div class="com_ri clearfix">
+						<ul>
+							<li>
+								<img src="//img13.360buyimg.com/n4/s130x130_jfs/t3640/202/671229119/199533/aa83bb60/5810b52bN61506f7a.jpg" />
+							</li>
+							<li>
+								<img src="//img10.360buyimg.com/n4/s130x130_jfs/t3061/328/8947019009/101983/1d02fac2/58cb9d41Nc82a902b.jpg" />
+							</li>
+							<li>
+								<img src="//img10.360buyimg.com/n4/s130x130_jfs/t3196/279/2510213925/281859/57b5eff5/57e1fbefN316fe844.jpg" />
+							</li>
+							<li>
+								<img src="//img13.360buyimg.com/n4/s130x130_jfs/t3124/2/5182597832/154732/602c0b8b/58622ea5N6ca2c04d.jpg" />
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<img src="//img13.360buyimg.com/cms/s400x170_jfs/t4138/131/2663307108/46323/6eb23168/58d4e93cN0a32075a.jpg!q90.webp" />
+							</li>
+							<li>
+								<img src="//img14.360buyimg.com/cms/s400x170_jfs/t4378/274/3650039712/21415/67bb758c/58e5df48N50f51451.jpg!q90.webp" />
+							</li>
+							<li>
+								<img src="//img11.360buyimg.com/cms/s400x170_jfs/t4198/113/2525769484/170290/8a750e03/58d32d64N32de8ae3.jpg!q90.webp" />
+							</li>
+							<li>
+								<img src="//img14.360buyimg.com/cms/s400x170_jfs/t4765/143/658071587/90683/8ae11c1d/58e615e1N19e1ca55.jpg!q90.webp" />
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="banner clearfix">
+					<ul>
+						<li>
+							<img src="img/p_1.png" />
+						</li>
+						<li>
+							<img src="img/p_2.png" />
+						</li>
+						<li>
+							<img src="img/p_3.png" />
+						</li>
+						<li>
+							<img src="img/p_4.png" />
+						</li>
+					</ul>
+				</div>
+				<a href="#" class="col-md-12">查看更多</a>
+			</div>
+			<!----------服务区--------->
+			<div class="service">
+				<p>
+					服务区&nbsp;&nbsp;&nbsp;SERVICE
+				</p>
+				<div class="serv_b clearfix">
+					<div class="serv_o wi">
+						<ul>
+							<li>
+								<div class="serv_change_t">
+									<span><h3>量贩团</h3></span>
+								</div>
+								<div class="serv_change_d">
+									<span>0.01元疯抢</span>
+									<span>超值付邮领</span>
+									<a href="">点击购买</a>
+									<img src="//img.alicdn.com/i2/1949506013657689978/TB24db5nbxmpuFjSZJiXXXauVXa_!!0-juitemmedia.jpg_120x120.jpg" />
+								</div>
+							</li>
+							<li>
+								<a href=""><img src="//img.alicdn.com/i3/1832306003018909640/TB27iyplolnpuFjSZFjXXXTaVXa_!!0-juitemmedia.jpg_120x120.jpg" /></a>
+							</li>
+							<li>
+								<a href=""><img src="https://img.alicdn.com/tps/TB1jWr5LVXXXXXOXXXXXXXXXXXX-564-558.png_120x120.jpg" /></a>
+							</li>
+						</ul>
+					</div>
+					<div class="serv_t wi">
+						<ul>
+							<li>
+								<a href=""><img src="https://img.alicdn.com/tps/TB1qA5nPFXXXXXjXpXXXXXXXXXX-320-320.jpg_120x120.jpg" /></a>
+							</li>
+							<li>
+								<a href=""><img src="//img.alicdn.com/i3/1855106008722208836/TB1Qh_kQpXXXXaJXVXXXXXXXXXX_!!0-tejia.jpg_120x120.jpg" /></a>
+							</li>
+							<li>
+								<a href=""><img src="https://gtms03.alicdn.com/tps/i3/TB197VzIXXXXXbJXpXXDgwcQVXX-375-130.jpg" /></a>
+							</li>
+						</ul>
+					</div>
+					<div class="serv_s wi">
+
+					</div>
+				</div>
+				<br />
+				<ul class="clearfix">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul><br />
+				<a href="">查看更多</a>
+			</div>
+			<!----------友情链接----------->
+			<div class="secondhand">
+				<p>二手市场&nbsp;&nbsp;&nbsp;SECONDHAND MARKET</p>
+				<div class="test">
+					<div class="lunbo_wrap">
+						<ul class="pic_box">
+							<li><img src="img/1.jpg" /></li>
+							<li><img src="img/2.jpg" /></li>
+							<li><img src="img/3.jpg" /></li>
+							<li><img src="img/4.jpg" /></li>
+							<li><img src="img/5.jpg" /></li>
+						</ul>
+						<ul class="pannel"></ul>
+						<span id="left_arrow">
+					&lt;
+				</span>
+						<span id="right_arrow">
+					&gt;
+				</span>
+					</div>
+				</div>
+				<a href=" ">查看详情</a>
+			</div>
+			<!--------友情链接--------->
+			<div class="friendly_link">
+				<p>友情链接</p>
+				<ul>
+					<li>
+						<a href="http://513zhibo.com"><img src="http://513zhibo.com/public/attachment/201612/31/10/58671e2db40e8.jpg" /></a>
+					</li>
+					<li>
+						<a href="http://jn789.com/">
+							<img src="http://jn789.com/images/logo.gif" />
+						</a>
+					</li>
+					<li>
+						<a href="https://nbs3.emay.cn/"><img src="https://nbs3.emay.cn/images/top_logo.jpg" /></a>
+					</li>
+					<li>
+						<a href="http://finance.sina.com.cn/">
+							<img src="http://i3.sinaimg.cn/cj/pic/newLogo/logo_home_fin.gif" />
+						</a>
+					</li>
+					<li>
+						<a href="http://www.ftchinese.com/">
+							<img src="http://static.ftchinese.com/images/masthead36.png" />
+						</a>
+					</li>
+					<li>
+						<a href="http://k.thea.cn/index.php">
+							<img src="http://k.thea.cn//templates/front/images/logo.png" />
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<footer class="container-fluid">
+
+		</footer>
+
+		<script src="js/lib/jquery-2.1.0.js " type="text/javascript " charset="utf-8 "></script>
+		<script src="js/lib/bootstrap.min.js " type="text/javascript " charset="utf-8 "></script>
+		<script src="js/index.js " type="text/javascript " charset="utf-8 "></script>
+	</body>
+
+</html>
