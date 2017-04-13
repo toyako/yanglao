@@ -71,7 +71,7 @@ header {
       padding-left: 0;
       margin: 0;
       position: relative;
-      top: 25px; }
+      top: 30px; }
     header #assortment .container {
       height: 502px; }
       header #assortment .container > ul {
@@ -81,22 +81,28 @@ header {
           text-align: center;
           vertical-align: middle;
           width: 8%;
-          height: 25px;
-          line-height: 25px; }
+          height: 30px;
+          line-height: 30px; }
           header #assortment .container > ul > li a {
-            color: #000000; }
+            color: #000000;
+            height: 30px;
+            display: block; }
           header #assortment .container > ul > li ul {
             display: none;
             background: #f6b37f;
             position: absolute;
-            width: 136px;
+            opacity: .9;
+            width: 137px;
             margin-top: -2px;
-            padding-bottom: 2px; }
-            header #assortment .container > ul > li ul li p {
-              margin: 10px 0 2px;
-              color: #000000; }
-            header #assortment .container > ul > li ul li a {
-              color: #FFFFFF; }
+            height: 488px; }
+            header #assortment .container > ul > li ul li {
+              height: 25px;
+              line-height: 25px; }
+              header #assortment .container > ul > li ul li p {
+                margin: 10px 0 2px;
+                color: #000000; }
+              header #assortment .container > ul > li ul li a {
+                color: #FFFFFF; }
             header #assortment .container > ul > li ul :hover a,
             header #assortment .container > ul > li ul :nth-child(2) {
               color: #ff5e7a; }
@@ -108,10 +114,10 @@ header {
                 color: #FF5E7A; }
         header #assortment .container > ul :hover ul {
           display: block; }
-        header #assortment .container > ul > :nth-child(1) {
+        header #assortment .container > ul > :nth-child(1), header #assortment .container > ul > li:hover {
           background: #f6b37f;
           width: 12%; }
-          header #assortment .container > ul > :nth-child(1) a {
+          header #assortment .container > ul > :nth-child(1) a, header #assortment .container > ul > li:hover a {
             color: #FFFFFF; }
 
 section .market ul > li {
@@ -165,7 +171,7 @@ section .commodity {
     height: 330px; }
     section .commodity .com_bod .com_le {
       display: inline-block;
-      width: 30%;
+      width: 30/11.4%;
       background: #84CCC9;
       height: 300px;
       position: absolute;
@@ -177,11 +183,11 @@ section .commodity {
       section .commodity .com_bod .com_le p {
         position: absolute;
         bottom: 20px;
-        left: -3px;
         background: #f29c9f;
         height: 30px;
-        width: 343px;
-        opacity: 0.5; }
+        width: 342px;
+        opacity: 0.5;
+        margin-left: 0px; }
     section .commodity .com_bod .com_ri {
       position: absolute;
       left: 343px;
@@ -308,16 +314,16 @@ section .service .serv_b {
     section .service .serv_b .serv_t ul li {
       background: #66ccff;
       height: 150px;
-      width: 165px;
+      width: 160px;
       float: left;
       margin-right: 10px; }
       section .service .serv_b .serv_t ul li a {
         display: block;
         height: 150px;
-        width: 165px; }
+        width: 160px; }
         section .service .serv_b .serv_t ul li a img {
           height: 150px;
-          width: 165px; }
+          width: 160px; }
     section .service .serv_b .serv_t ul li:hover {
       border: 1px solid #f40; }
     section .service .serv_b .serv_t ul :nth-child(2) {
@@ -341,6 +347,13 @@ section .service .serv_b {
     position: relative;
     top: -15px;
     height: 320px; }
+    section .service .serv_b .serv_s a {
+      display: block;
+      height: 320px;
+      width: 376px; }
+      section .service .serv_b .serv_s a img {
+        height: 320px;
+        width: 376px; }
 section .service > ul li {
   float: left;
   width: 284px;
@@ -446,5 +459,34 @@ footer {
         float: left; }
       .test .lunbo_wrap .pannel li.active {
         background: red; }
+
+@media screen and (max-width: 948px) {
+  html, body {
+    width: 1170px; }
+
+  .head_top {
+    width: 1170px; }
+    .head_top .top_le {
+      width: 540px;
+      display: inline-block; }
+    .head_top .top_ri {
+      display: inline-block;
+      top: -53px;
+      height: 104px; }
+
+  #assortment {
+    width: 1170px; }
+
+  .commodity .com_ri {
+    width: 800px; }
+  .commodity .banner > ul {
+    width: 1140px; }
+  .commodity > a {
+    display: block;
+    width: 1140px; }
+
+  .serv_b {
+    width: 1140px;
+    margin-top: 0px; } }
 
 /*# sourceMappingURL=index.css.map */

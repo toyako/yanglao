@@ -93,7 +93,7 @@ header {
             }
         }
     }
-    //  二级菜单
+    //  二级菜单  
     #assortment {
         padding-left: 0;
         padding-right: 0;
@@ -103,7 +103,7 @@ header {
             padding-left: 0;
             margin: 0;
             position: relative;
-            top: 25px;
+            top: 30px;
         }
         .container {
             height: 502px;
@@ -114,19 +114,27 @@ header {
                     text-align: center;
                     vertical-align: middle;
                     width: 8%;
-                    height: 25px;
-                    line-height: 25px;
+                    height: 30px;
+                    line-height: 30px;
                     a {
                         color: #000000;
+                        height: 30px;
+                        display: block;
                     }
                     ul {
                         display: none;
                         background: #f6b37f;
                         position: absolute;
-                        width: 136px;
+                        opacity: .9;
+                        width: 137px;
                         margin-top: -2px;
-                        padding-bottom: 2px;
+//                      padding-bottom: 2px;
+                        height: 488px;
                         li {
+                            
+                                
+                    height: 25px;
+                    line-height: 25px;
                             p {
                                 margin: 10px 0 2px;
                                 color: #000000;
@@ -150,7 +158,7 @@ header {
                  :hover ul {
                     display: block;
                 }
-                > :nth-child(1) {
+                > :nth-child(1),>li:hover {
                     background: #f6b37f;
                     width: 12%;
                     a {
@@ -227,7 +235,7 @@ section {
             height: 330px;
             .com_le {
                 display: inline-block;
-                width: 30%;
+                width: 30/11.4%;
                 background: #84CCC9;
                 height: 300px;
                 position: absolute;
@@ -240,11 +248,11 @@ section {
                 p {
                     position: absolute;
                     bottom: 20px;
-                    left: -3px;
                     background: #f29c9f;
                     height: 30px;
-                    width: 343px;
+                    width: 342px;
                     opacity: 0.5;
+                    margin-left: 0px;
                 }
             }
             .com_ri {
@@ -411,16 +419,16 @@ section {
                     li {
                         background: #66ccff;
                         height: 150px;
-                        width: 165px;
+                        width: 160px;
                         float: left;
                         margin-right: 10px;
                         a {
                             display: block;
                             height: 150px;
-                            width: 165px;
+                            width: 160px;
                             img {
                                 height: 150px;
-                                width: 165px;
+                                width: 160px;
                             }
                         }
                     }
@@ -454,6 +462,15 @@ section {
                 position: relative;
                 top: -15px;
                 height: 320px;
+                a{
+                    display: block;
+                    height: 320px;
+                    width: 376px;
+                    img{
+                        height: 320px;
+                        width: 376px;
+                    }
+                }
             }
         }
         >ul {
@@ -646,4 +663,54 @@ footer {
             }
         }
     }
+}
+@media screen and (max-height:832px){//判断屏幕高度小于832px
+    
+}
+@media screen and (max-width:948px){//判断屏幕高度在843和948之间
+    
+html,body{
+        width: 1170px;
+    }
+    .head_top{
+        width: 1170px;
+        .top_le{
+        width: 540px;
+        display: inline-block;
+    }
+    .top_ri{
+        display: inline-block;
+        top: -53px;
+        height: 104px;
+    }
+    }
+    #assortment{
+        width: 1170px;
+    }
+    .commodity{
+        .com_ri{
+            width: 800px;
+        }
+        .banner{
+            >ul{
+                width: 1140px;
+            }
+        }
+        >a{
+            display: block;
+            width: 1140px;
+        }
+    }
+    .serv_b{
+        width: 1140px;margin-top: 0px;
+    }
+}
+@media screen and (min-width:768px){//判断屏幕高度在948和1008之间
+//  header{
+//      width: 1170px;
+//      background: #66ccff;
+//      .head_top{
+//          width: 1170px;
+//      }
+//  }
 }
