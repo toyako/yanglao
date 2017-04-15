@@ -54,7 +54,7 @@ var right_arrow = $("#right_arrow");
 var pic_number = $(".pic_box li").length;
 var width = parentWidth;
 cur_index = 0;
-last_index = 4;
+last_index = 0;
 points = [];
 for(var i = 0; i < pic_number; i++) {
 	var cssClass = "";
@@ -129,9 +129,19 @@ lunbo_warp.on("mousemove", function() {
 	clearInterval(t);
 })
 lunbo_warp.on("mouseout", function() {
-	t = setInterval(right, 1000);
+	t = setInterval(right, 3000);
 })
 $(".pannel li").on("click", function() {
 	cur_index = $(this).index();
 	scroll();
+});
+
+
+var pub = $(".public ul li")[2];
+var putrend = $(".pu_trends")[0];
+console.log(pul)
+var pul = $(".pu_login")[0];
+$(pub).on("mousemove",function(){
+	pul.style.display="block";
+	putrend.style.display="none";
 });

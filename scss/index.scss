@@ -27,14 +27,22 @@ header {
         .logo {
             margin-top: -30px;
             margin-left: 20px;
-            p {
-                margin: 0px;
-                font-size: 18px;
-                color: #fa9967;
+            img {
+                width: 80px;
+                height: 80px;
             }
-             :nth-child(1) {
-                font-size: 40px;
-                color: #f76820;
+            .logo_text {
+                display: inline-block;
+                position: relative;
+                top: 30px;
+                p {
+                    margin: 0px;
+                    font-size: 18px;
+                    color: #fa9967;
+                }
+                p:nth-child(1) {
+                    font-size: 30px;
+                }
             }
         }
     }
@@ -106,7 +114,7 @@ header {
             top: 30px;
         }
         .container {
-            height: 502px;
+            height: 430px;
             >ul {
                 margin-bottom: 25px;
                 >li {
@@ -125,16 +133,12 @@ header {
                         display: none;
                         background: #f6b37f;
                         position: absolute;
-                        opacity: .9;
                         width: 137px;
                         margin-top: -2px;
-//                      padding-bottom: 2px;
-                        height: 488px;
+                        height: 388px;
                         li {
-                            
-                                
-                    height: 25px;
-                    line-height: 25px;
+                            height: 19px;
+                            line-height: 25px;
                             p {
                                 margin: 10px 0 2px;
                                 color: #000000;
@@ -158,11 +162,96 @@ header {
                  :hover ul {
                     display: block;
                 }
-                > :nth-child(1),>li:hover {
+                > :nth-child(1),
+                >li:hover {
                     background: #f6b37f;
                     width: 12%;
                     a {
                         color: #FFFFFF;
+                    }
+                }
+            }
+            .test {
+                width: 880px;
+                display: inline-block;
+            }
+            .tb_ri {
+                background: #dfcda9;
+                height: 386px;
+                position: relative;
+                left: 880px;
+                top: -391px;
+                display: inline-block;
+                .public {
+                    width: 260px;
+                    height: 40px;
+                    ul {
+                        width: 260px;
+                        height: 40px;
+                        margin: 0px;
+                        background: red;
+                        li {
+                            float: left;
+                            width: 33%;
+                            text-align: center;
+                            height: 40px;
+                            background: #E8FFE8;
+                            line-height: 40px;
+                            border: 1px solid #E8FFE8;
+                        }
+                        li:nth-child(1) {
+                            width: 88px;
+                        }
+                    }
+                }
+                .pu_trends {
+                    height: 346px;
+                    overflow-y: hidden;
+                    .pu_dt {
+                        li {
+                            background: #FFFFFF;
+                            vertical-align: middle;
+                            img {
+                                height: 50px;
+                                width: 50px;
+                                float: left;
+                                margin: 0px 15px;
+                            }
+                            .trand_list {
+                                display: inline-block;
+                                background: #f8f8f8;
+                                margin-top: 3px;
+                                width: 165px;
+                                p {
+                                    font-size: 13px;
+                                    margin: 0px;
+                                    height: 15px;
+                                }
+                                p:nth-child(3) {
+                                    color: #dd1e2a;
+                                }
+                            }
+                        }
+                    }
+                }
+                .pu_bulletin {}
+                .pu_login {
+                    text-align: center;
+                    vertical-align: middle;
+                    margin-top: 80px;
+                    display: none;
+                    position: absolute;
+                    left: 30px;
+                    li {
+                        width: 200px;
+                        background: #DFF0D8;
+                        text-align: center;
+                        margin: 15px auto;
+                        height: 40px;
+                        line-height: 40px;
+                        a {
+                            display: block;
+                        }
                     }
                 }
             }
@@ -332,7 +421,6 @@ section {
                 vertical-align: middle;
                 ul {
                     li {
-                        background: #66ccff;
                         height: 150px;
                         width: 165px;
                         float: left;
@@ -343,8 +431,8 @@ section {
                             height: 150px;
                             width: 165px;
                             img {
-                                height: 150px;
-                                width: 165px;
+                                height: 148px;
+                                width: 160px;
                             }
                         }
                     }
@@ -355,7 +443,6 @@ section {
                         width: 350px;
                         margin-top: 0;
                         margin-right: 0;
-                        background: #FFFFFF;
                         .serv_change_t {
                             text-align: left;
                             height: 24%;
@@ -370,7 +457,7 @@ section {
                             }
                         }
                         .serv_change_d {
-                            height: 76%;
+                            height: 55%;
                             margin: 0;
                             span {
                                 width: 140px;
@@ -392,7 +479,6 @@ section {
                                 text-align: center;
                                 border-radius: 15px;
                                 margin-top: 8px;
-                                color: #F76820;
                             }
                             img {
                                 float: right;
@@ -417,7 +503,6 @@ section {
                 top: 0;
                 ul {
                     li {
-                        background: #66ccff;
                         height: 150px;
                         width: 160px;
                         float: left;
@@ -427,8 +512,8 @@ section {
                             height: 150px;
                             width: 160px;
                             img {
-                                height: 150px;
-                                width: 160px;
+                                height: 148px;
+                                width: 156px;
                             }
                         }
                     }
@@ -437,20 +522,50 @@ section {
                     }
                      :nth-child(2) {
                         margin-right: 0;
-                        margin-left: 10px;
                     }
                      :nth-child(3) {
                         margin-top: 20px;
                         width: 350px;
-                        background: #E04D60;
                         margin-right: 0;
-                        a {
-                            height: 150px;
-                            width: 350px;
-                            display: block;
+                        .serv_change_t {
+                            text-align: left;
+                            height: 24%;
+                            margin-bottom: 10px;
+                            span {
+                                color: #dc3535;
+                                font-size: 20px;
+                            }
+                        }
+                        .serv_change_d {
+                            height: 55%;
+                            margin: 0;
+                            span {
+                                width: 140px;
+                                display: block;
+                                text-align: left;
+                                padding-left: 15px;
+                                font-size: 16px;
+                            }
+                            span:nth-child(1) {
+                                font-size: 13px;
+                            }
+                            a {
+                                border: 1px solid #f40;
+                                display: block;
+                                height: 20px;
+                                font-size: 16x;
+                                line-height: 20px;
+                                width: 130px;
+                                text-align: center;
+                                border-radius: 15px;
+                                margin-top: 8px;
+                                color: #F40;
+                            }
                             img {
-                                height: 150px;
-                                width: 350px;
+                                float: right;
+                                position: relative;
+                                bottom: 110px;
+                                right: 20px;
                             }
                         }
                     }
@@ -462,11 +577,11 @@ section {
                 position: relative;
                 top: -15px;
                 height: 320px;
-                a{
+                a {
                     display: block;
                     height: 320px;
                     width: 376px;
-                    img{
+                    img {
                         height: 320px;
                         width: 376px;
                     }
@@ -497,7 +612,7 @@ section {
     }
     .secondhand {
         margin-top: 30px;
-        p{
+        p {
             font-size: 20px;
         }
         //      .test {
@@ -601,7 +716,6 @@ section {
 
 footer {
     height: 150px;
-    bottom: 0;
     background: #959595;
     margin-top: 30px;
 }
@@ -664,53 +778,62 @@ footer {
         }
     }
 }
-@media screen and (max-height:832px){//判断屏幕高度小于832px
-    
+
+@media screen and (max-height:832px) {
+    //判断屏幕高度小于832px
 }
-@media screen and (max-width:948px){//判断屏幕高度在843和948之间
-    
-html,body{
+
+@media screen and (max-width:948px) {
+    //判断屏幕高度在843和948之间
+    html,
+    body {
         width: 1170px;
     }
-    .head_top{
+    .head_top {
         width: 1170px;
-        .top_le{
-        width: 540px;
-        display: inline-block;
+        .top_le {
+            width: 540px;
+            display: inline-block;
+        }
+        .top_ri {
+            display: inline-block;
+            top: -53px;
+            height: 104px;
+        }
     }
-    .top_ri{
-        display: inline-block;
-        top: -53px;
-        height: 104px;
-    }
-    }
-    #assortment{
+    #assortment {
         width: 1170px;
     }
-    .commodity{
-        .com_ri{
+    .commodity {
+        .com_ri {
             width: 800px;
         }
-        .banner{
-            >ul{
+        .banner {
+            >ul {
                 width: 1140px;
             }
         }
-        >a{
+        >a {
             display: block;
             width: 1140px;
         }
     }
-    .serv_b{
-        width: 1140px;margin-top: 0px;
+    .serv_b {
+        width: 1140px;
+        margin-top: 0px;
     }
 }
-@media screen and (min-width:768px){//判断屏幕高度在948和1008之间
-//  header{
-//      width: 1170px;
-//      background: #66ccff;
-//      .head_top{
-//          width: 1170px;
-//      }
-//  }
+
+@media screen and (min-width: 768px) {
+    //判断屏幕最大宽度768
+    .container {
+        width: 1170px!important;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    //最小1024
+    footer {
+        width: 1170px;
+    }
 }

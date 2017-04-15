@@ -20,13 +20,19 @@ header {
   header .top_le .logo {
     margin-top: -30px;
     margin-left: 20px; }
-    header .top_le .logo p {
-      margin: 0px;
-      font-size: 18px;
-      color: #fa9967; }
-    header .top_le .logo :nth-child(1) {
-      font-size: 40px;
-      color: #f76820; }
+    header .top_le .logo img {
+      width: 80px;
+      height: 80px; }
+    header .top_le .logo .logo_text {
+      display: inline-block;
+      position: relative;
+      top: 30px; }
+      header .top_le .logo .logo_text p {
+        margin: 0px;
+        font-size: 18px;
+        color: #fa9967; }
+      header .top_le .logo .logo_text p:nth-child(1) {
+        font-size: 30px; }
   header .top_ri ul li {
     float: left;
     margin-right: 15px;
@@ -73,7 +79,7 @@ header {
       position: relative;
       top: 30px; }
     header #assortment .container {
-      height: 502px; }
+      height: 430px; }
       header #assortment .container > ul {
         margin-bottom: 25px; }
         header #assortment .container > ul > li {
@@ -91,12 +97,11 @@ header {
             display: none;
             background: #f6b37f;
             position: absolute;
-            opacity: .9;
             width: 137px;
             margin-top: -2px;
-            height: 488px; }
+            height: 388px; }
             header #assortment .container > ul > li ul li {
-              height: 25px;
+              height: 19px;
               line-height: 25px; }
               header #assortment .container > ul > li ul li p {
                 margin: 10px 0 2px;
@@ -114,11 +119,79 @@ header {
                 color: #FF5E7A; }
         header #assortment .container > ul :hover ul {
           display: block; }
-        header #assortment .container > ul > :nth-child(1), header #assortment .container > ul > li:hover {
+        header #assortment .container > ul > :nth-child(1),
+        header #assortment .container > ul > li:hover {
           background: #f6b37f;
           width: 12%; }
-          header #assortment .container > ul > :nth-child(1) a, header #assortment .container > ul > li:hover a {
+          header #assortment .container > ul > :nth-child(1) a,
+          header #assortment .container > ul > li:hover a {
             color: #FFFFFF; }
+      header #assortment .container .test {
+        width: 880px;
+        display: inline-block; }
+      header #assortment .container .tb_ri {
+        background: #dfcda9;
+        height: 386px;
+        position: relative;
+        left: 880px;
+        top: -391px;
+        display: inline-block; }
+        header #assortment .container .tb_ri .public {
+          width: 260px;
+          height: 40px; }
+          header #assortment .container .tb_ri .public ul {
+            width: 260px;
+            height: 40px;
+            margin: 0px;
+            background: red; }
+            header #assortment .container .tb_ri .public ul li {
+              float: left;
+              width: 33%;
+              text-align: center;
+              height: 40px;
+              background: #E8FFE8;
+              line-height: 40px;
+              border: 1px solid #E8FFE8; }
+            header #assortment .container .tb_ri .public ul li:nth-child(1) {
+              width: 88px; }
+        header #assortment .container .tb_ri .pu_trends {
+          height: 346px;
+          overflow-y: hidden; }
+          header #assortment .container .tb_ri .pu_trends .pu_dt li {
+            background: #FFFFFF;
+            vertical-align: middle; }
+            header #assortment .container .tb_ri .pu_trends .pu_dt li img {
+              height: 50px;
+              width: 50px;
+              float: left;
+              margin: 0px 15px; }
+            header #assortment .container .tb_ri .pu_trends .pu_dt li .trand_list {
+              display: inline-block;
+              background: #f8f8f8;
+              margin-top: 3px;
+              width: 165px; }
+              header #assortment .container .tb_ri .pu_trends .pu_dt li .trand_list p {
+                font-size: 13px;
+                margin: 0px;
+                height: 15px; }
+              header #assortment .container .tb_ri .pu_trends .pu_dt li .trand_list p:nth-child(3) {
+                color: #dd1e2a; }
+        header #assortment .container .tb_ri .pu_login {
+          text-align: center;
+          vertical-align: middle;
+          margin-top: 80px;
+          display: none;
+          position: absolute;
+          left: 30px; }
+          header #assortment .container .tb_ri .pu_login li {
+            width: 200px;
+            background: #DFF0D8;
+            text-align: center;
+            margin: 15px auto;
+            height: 40px;
+            line-height: 40px; }
+            header #assortment .container .tb_ri .pu_login li a {
+              display: block; }
 
 section .market ul > li {
   float: left;
@@ -245,7 +318,6 @@ section .service .serv_b {
     text-align: center;
     vertical-align: middle; }
     section .service .serv_b .serv_o ul li {
-      background: #66ccff;
       height: 150px;
       width: 165px;
       float: left;
@@ -256,15 +328,14 @@ section .service .serv_b {
         height: 150px;
         width: 165px; }
         section .service .serv_b .serv_o ul li a img {
-          height: 150px;
-          width: 165px; }
+          height: 148px;
+          width: 160px; }
     section .service .serv_b .serv_o ul li:hover {
       border: 1px solid #f40; }
     section .service .serv_b .serv_o ul > :nth-child(1) {
       width: 350px;
       margin-top: 0;
-      margin-right: 0;
-      background: #FFFFFF; }
+      margin-right: 0; }
       section .service .serv_b .serv_o ul > :nth-child(1) .serv_change_t {
         text-align: left;
         height: 24%;
@@ -276,7 +347,7 @@ section .service .serv_b {
             font-weight: bold;
             padding-left: 15px; }
       section .service .serv_b .serv_o ul > :nth-child(1) .serv_change_d {
-        height: 76%;
+        height: 55%;
         margin: 0; }
         section .service .serv_b .serv_o ul > :nth-child(1) .serv_change_d span {
           width: 140px;
@@ -295,8 +366,7 @@ section .service .serv_b {
           width: 130px;
           text-align: center;
           border-radius: 15px;
-          margin-top: 8px;
-          color: #F76820; }
+          margin-top: 8px; }
         section .service .serv_b .serv_o ul > :nth-child(1) .serv_change_d img {
           float: right;
           position: relative;
@@ -312,7 +382,6 @@ section .service .serv_b {
     position: relative;
     top: 0; }
     section .service .serv_b .serv_t ul li {
-      background: #66ccff;
       height: 150px;
       width: 160px;
       float: left;
@@ -322,25 +391,50 @@ section .service .serv_b {
         height: 150px;
         width: 160px; }
         section .service .serv_b .serv_t ul li a img {
-          height: 150px;
-          width: 160px; }
+          height: 148px;
+          width: 156px; }
     section .service .serv_b .serv_t ul li:hover {
       border: 1px solid #f40; }
     section .service .serv_b .serv_t ul :nth-child(2) {
-      margin-right: 0;
-      margin-left: 10px; }
+      margin-right: 0; }
     section .service .serv_b .serv_t ul :nth-child(3) {
       margin-top: 20px;
       width: 350px;
-      background: #E04D60;
       margin-right: 0; }
-      section .service .serv_b .serv_t ul :nth-child(3) a {
-        height: 150px;
-        width: 350px;
-        display: block; }
-        section .service .serv_b .serv_t ul :nth-child(3) a img {
-          height: 150px;
-          width: 350px; }
+      section .service .serv_b .serv_t ul :nth-child(3) .serv_change_t {
+        text-align: left;
+        height: 24%;
+        margin-bottom: 10px; }
+        section .service .serv_b .serv_t ul :nth-child(3) .serv_change_t span {
+          color: #dc3535;
+          font-size: 20px; }
+      section .service .serv_b .serv_t ul :nth-child(3) .serv_change_d {
+        height: 55%;
+        margin: 0; }
+        section .service .serv_b .serv_t ul :nth-child(3) .serv_change_d span {
+          width: 140px;
+          display: block;
+          text-align: left;
+          padding-left: 15px;
+          font-size: 16px; }
+        section .service .serv_b .serv_t ul :nth-child(3) .serv_change_d span:nth-child(1) {
+          font-size: 13px; }
+        section .service .serv_b .serv_t ul :nth-child(3) .serv_change_d a {
+          border: 1px solid #f40;
+          display: block;
+          height: 20px;
+          font-size: 16x;
+          line-height: 20px;
+          width: 130px;
+          text-align: center;
+          border-radius: 15px;
+          margin-top: 8px;
+          color: #F40; }
+        section .service .serv_b .serv_t ul :nth-child(3) .serv_change_d img {
+          float: right;
+          position: relative;
+          bottom: 110px;
+          right: 20px; }
   section .service .serv_b .serv_s {
     display: inline-block;
     background: #959595;
@@ -408,7 +502,6 @@ section .friendly_link {
 
 footer {
   height: 150px;
-  bottom: 0;
   background: #959595;
   margin-top: 30px; }
 
@@ -461,7 +554,8 @@ footer {
         background: red; }
 
 @media screen and (max-width: 948px) {
-  html, body {
+  html,
+  body {
     width: 1170px; }
 
   .head_top {
@@ -488,5 +582,11 @@ footer {
   .serv_b {
     width: 1140px;
     margin-top: 0px; } }
+@media screen and (min-width: 768px) {
+  .container {
+    width: 1170px !important; } }
+@media screen and (max-width: 1024px) {
+  footer {
+    width: 1170px; } }
 
 /*# sourceMappingURL=index.css.map */
