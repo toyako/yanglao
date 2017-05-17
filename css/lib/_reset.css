@@ -10,7 +10,9 @@ button,input[type="button"]{cursor:pointer;border:0 none;}
 a,button,input,img{-webkit-touch-callout:none;}
 img{pointer-events:none;/*禁止图片的点击事件，例如长按保存图片*/}
 input,select,textarea{outline:none;}
-a{text-decoration:none;}
+a{text-decoration:none !important;}
+a:hover{text-decoration:none !important;}
+a:active{text-decoration:none !important;}
 .fl{ float: left}
 .fr{ float: right}
 .clear{clear:both;}

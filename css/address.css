@@ -1,0 +1,84 @@
+section .u-title {
+  border-bottom: 2px solid #808080;
+  padding-bottom: 7px;
+  margin-top: 31px;
+  margin-bottom: 30px; }
+  section .u-title h2 {
+    font: 700 18px/20px "STHei", "Microsoft YaHei", "WenQuanYi Micro Hei"; }
+section .address-tips {
+  margin-bottom: 10px; }
+section .ui-tiptext-container-message {
+  background: #e5f5ff;
+  border: 1px solid #c9d5e2;
+  line-height: 27px; }
+section .ui-tiptext-content {
+  line-height: 27px; }
+section .ui-tiptext {
+  color: #4d4d4d;
+  padding: 0 0 0 35px;
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+  zoom: 1;
+  margin: 0; }
+  section .ui-tiptext .icon-warning {
+    color: #348ed2; }
+section .address-add {
+  border: 1px solid #c9d5e2; }
+  section .address-add .address-add-link {
+    text-align: center;
+    line-height: 50px; }
+    section .address-add .address-add-link a {
+      color: #08c;
+      cursor: pointer;
+      font-size: 15px;
+      display: block; }
+  section .address-add .address-add-link:hover {
+    background-color: #f1f7fb; }
+  section .address-add .address-add-form {
+    border-top: 1px dashed #e2e8ed; }
+    section .address-add .address-add-form form .ui-form-item {
+      font-family: tahoma, \5b8b\4f53, \9ED1\4F53, "Hei", sans-serif;
+      font-size: 14px;
+      padding: 0 5px 15px 193px; }
+      section .address-add .address-add-form form .ui-form-item .ui-label {
+        font-weight: 100;
+        text-align: right;
+        width: 190px; }
+      section .address-add .address-add-form form .ui-form-item .ui-textarea {
+        border-color: #A6A6A6 #CCC #CCC;
+        color: #4d4d4d;
+        width: 322px;
+        resize: none;
+        height: 79px;
+        line-height: 15px;
+        border: 1px solid #ccc;
+        padding: 1px 3px 0 4px;
+        overflow: auto;
+        margin-left: 4px; }
+    section .address-add .address-add-form form .ui-form-other-tinp,
+    section .address-add .address-add-form form .ui-form-explain,
+    section .address-add .address-add-form form .ui-from-item-submit {
+      padding: 0 5px 15px 193px;
+      font-weight: 100; }
+    section .address-add .address-add-form form .ui-from-item-submit {
+      padding-left: 385px; }
+    section .address-add .address-add-form form .ui-button-text {
+      width: 90px;
+      padding: 5px 0;
+      background-color: #f29d18;
+      border-radius: 3px;
+      color: #fff; }
+    section .address-add .address-add-form form .ui-form-required {
+      margin-right: 6px;
+      font-family: SimSun;
+      font-size: 14px;
+      color: #f00; }
+    section .address-add .address-add-form .ui-input {
+      color: #4d4d4d;
+      line-height: 30px;
+      height: 30px;
+      padding: 6px 4px;
+      border: 1px solid #ccc; }
+
+/*# sourceMappingURL=address.css.map */

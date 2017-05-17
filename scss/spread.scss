@@ -1,0 +1,165 @@
+@charset "utf-8";
+header {
+    margin-bottom: 0px;
+    height: 42px;
+    .top_le {
+        height: 42px;
+    }
+}
+
+section {
+    .sh_con {
+        background: #00A1D6;
+        margin-bottom: 20px;
+        .sh_nav {
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            >span {
+                font-size: 25px;
+                color: #fff;
+                text-align: left;
+            }
+            ul {
+                margin-bottom: 0;
+                li {
+                    float: left;
+                    width: 120px;
+                    a {
+                        display: block;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .sh_nav {
+            form {
+                input {
+                    height: 20px;
+                    margin: 0;
+                    padding: 0;
+                    border: none;
+                    width: 250px;
+                }
+                button {
+                    line-height: 20px;
+                    background: none;
+                    height: 20px;
+                    color: #fff;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .s_nav_index {
+        >ul.col-md-2 {
+            border: 1px solid #e1e2e5;
+            padding: 0;
+            text-align: center;
+            background-color: #fafafa;
+            color: #222;
+            width: 13%;
+            >li {
+                >a {
+                    color: #717171;
+                    font-size: 16px;
+                    padding-bottom: 7px;
+                    display: block;
+                    height: 40px;
+                    line-height: 40px;
+                    border-bottom: 1px solid #e1e2e5;
+                    color: #222;
+                }
+                >ul {
+                    border: none;
+                    >li {
+                        height: 45px;
+                        line-height: 45px;
+                        a {
+                            display: block;
+                            color: #222;
+                        }
+                        a:hover {
+                            background-color: #e1e4ea;
+                        }
+                        a:checked,
+                        a:active,
+                        a.active {
+                            background-color: #00A1D7;
+                            color: #fff;
+                            i {
+                                color: #fff;
+                            }
+                        }
+                        i {
+                            color: #99a2aa
+                        }
+                    }
+                }
+            }
+        }
+        .tuiguang {
+            .tsi {
+                width: 100%;
+                border: 1px solid #C9CED2;
+                border-bottom: 1px solid #e2e9ed;
+                border-radius: 4px 4px 0 0;
+                background: #eef2f4;
+                padding: 9pt 28px;
+                min-height: 46px;
+            }
+            .tg {
+                width: 100%;
+                border: 1px solid #C9CED2;
+                border-top: none;
+                border-radius: 0 0 4px 4px;
+                box-sizing: border-box;
+                background: #fff;
+                padding: 30px 40px;
+                color: #405760;
+                .xiaxian {
+                    .inw{
+                        width:250px;
+                        height: 30px;
+                        padding-left: 5px;
+                    }
+                    #submit {
+                        background: #FF8725;
+                        border: none;
+                        color: #fff;
+                        font-size: 14px;
+                        font-weight: bold;
+                        cursor: pointer;
+                        margin: -3px 0 0 5px;
+                        display:inline;
+                        width: 100px;
+                        height: 35px;
+                    }
+                }
+                .xinxi {
+                    margin-top: 20px;
+                    text-align: center;
+                    tbody {
+                        tr {
+                            th {
+                                padding: 5px 10px;
+                                line-height: 200%;
+                                text-align: left;
+                                background: #f7f7f7;
+                                font-size: 12px;
+                                border-collapse: collapse;
+                                border-bottom: 1px solid #eaeaea;
+                                border-top: 1px solid #eaeaea;
+                                table-layout: fixed;
+                                word-break: break-all;
+                                word-wrap: break-word;
+                                zoom: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

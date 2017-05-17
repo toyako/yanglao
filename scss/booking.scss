@@ -1,0 +1,60 @@
+@charset "utf-8";
+section{
+    h3{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    ul{
+        margin: 0px;
+        padding: 0px;
+        
+        li{
+            width: 160px;
+            height: 128px;
+            text-align: center;
+            cursor: pointer;
+            float: left;
+            vertical-align: middle;
+            display: block;
+        }
+        li:hover ::after{
+                display: block;
+    width: 100%;
+    height: 0;
+    border-bottom: 1px solid #000;
+    content: "";
+    overflow: hidden;
+    zoom: 1;
+    position: relative;
+    left: 0;
+    bottom: -27px;
+    z-index: 10;
+        }
+    }
+    .te_bod{
+        background-image: url(../img/booking/minote-zhuwen.jpg);
+        height: 560px;
+        border-top: 1px solid #DFDFDF;
+        .te_bl{
+            position: relative;
+            left: 150px;
+            top: 150px;
+            h2{
+                font-size: 45px;
+            }
+            p{
+                font-size: 20px;
+            }
+            .te_an{
+                height: 38px;
+                line-height: 38px;
+                text-align: center;
+                width: 150px;
+                border: 1px solid #b0b0b0;
+                font-size: 16px;
+                color: #b0b0b0;
+                margin-top: 20px;
+            }
+        }
+    }
+}

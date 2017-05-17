@@ -1,0 +1,2282 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,userscalable=no" />
+		<title>我的养老网</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/lib/_reset.css" />
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/lib/_bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/server.css" />
+	</head>
+	<body>
+		<header class="clearfix">
+			<!---------顶端导航栏---------->
+			<div class="head_top clearfix">
+				<div class="heads z_top b-header-blur">
+					<div class="mask_warp">
+						<div class="mask_bg" style="background-image: url(img/common/bg.jpg);"></div>
+						<div class="mask"></div>
+					</div>
+					<div class="head_top_warp">
+						<div class="top_le col-md-6">
+							<p>
+								<a href="#" onclick="addfav()"><i class="iconfont icon-star"></i>收藏本站</a>&nbsp;&nbsp;&nbsp;您好，欢迎来到我的养老网商城！&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="">[登陆]</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="">[免费注册]</a>
+							</p>
+						</div>
+						<div class="top_ri col-md-6">
+							<ul>
+								<li>
+									<a href=""><i class="iconfont icon-shopping"></i>我的购物车</a>
+								</li>
+								<li>
+									<a href="">我的订单<i class="iconfont icon-down"></i></a>
+								</li>
+								<li>
+									<a href="">我的收藏<i class="iconfont icon-down"></i></a>
+								</li>
+								<li>
+									<a href="">微信商城<i class="iconfont icon-down"></i></a>
+								</li>
+								<li>
+									<a href="">手机商城<i class="iconfont icon-down"></i></a>
+								</li>
+								<li>
+									<a href="">帮助中心<i class="iconfont icon-down"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="z_set col-md-12">
+					<div class="logo col-md-6">
+						<img src="img/common/logo.png" />
+						<div class="logo_text">
+							<p>我的养老网</p>
+							<p>www.wdylw123.com</p>
+						</div>
+					</div>
+					<div class="search col-md-6">
+						<div class="search_inp">
+							<input type="text" placeholder="夕阳红" />
+							<a href="">搜索</a><br />
+						</div>
+						<ul>
+							<li>
+								<a href="">热门搜索：夕阳红</a>
+							</li>
+							<li>
+								<a href="">夕阳红</a>
+							</li>
+							<li>
+								<a href="">夕阳红</a>
+							</li>
+							<li>
+								<a href="">夕阳红</a>
+							</li>
+							<li>
+								<a href="">夕阳红</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-------导航分栏-------->
+			<div id="assortment" class="container-fluid clearfix">
+				<p></p>
+				<div class="cen">
+					<ul class="container">
+						<li>
+							<a href="#">&nbsp;全部分类&nbsp;&nbsp;>&nbsp;&nbsp;</a>
+							<ul style="z-index: 99;">
+								<li>
+									<p>商品区</p>
+								</li>
+								<li class="active">
+									<a href=""><i class="iconfont icon-yifu"></i>衣服</a>
+								</li>
+								<li>
+									<a href=""><i class="iconfont icon-hufu"></i>护肤</a>
+								</li>
+								<li>
+									<a href=""><i class="iconfont icon-lingshi"></i>零食</a>
+								</li>
+								<li>
+									<a href=""><i class="iconfont icon-jiadian"></i>家电</a>
+								</li>
+								<li>
+									<a href=""><i class="iconfont icon-jiaju"></i>家具</a>
+								</li>
+								<li>
+									<a href=""><i class="iconfont icon-shuma"></i>数码</a>
+								</li>
+								<li>
+									<a href="">查看更多</a>
+								</li>
+								<li>
+									<p>服务区</p>
+								</li>
+								<li>
+									<a href=""><i class="iconfont icon-meirong"></i>美容</a>
+								</li>
+								<li>
+									<a href=""><i class="iconfont icon-yangshenghuo"></i>养生</a>
+								</li>
+								<li>
+									<a href=""><i class="iconfont icon-lvyou1"></i>旅游</a>
+								</li>
+								<li>
+									<a href=""><i class="iconfont icon-sauna"></i>桑拿</a>
+								</li>
+								<li>
+									<a href=""><i class="iconfont icon-zuyu"></i>足浴</a>
+								</li>
+								<li>
+									<a href=""><i class="iconfont icon-wenquan"></i>温泉</a>
+								</li>
+								<li>
+									<a href="">查看更多</a>
+								</li>
+								<li>
+									<p>夕阳红</p>
+								</li>
+								<li>
+									<a href=""><i class="iconfont icon-zheyang"></i>更多服务</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="booking.html">预售产品</a>
+						</li>
+						<li>
+							<a href="product.html">商品区</a>
+						</li>
+						<li>
+							<a href="server.html">服务区</a>
+						</li>
+						<li>
+							<a href="booking.html">入驻夕阳红</a>
+						</li>
+					</ul>
+					<div class="top_ban">
+						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+							<!-- 轮播图的控制点 -->
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+							</ol>
+
+							<!-- 大图的容器 -->
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img src="img/product/1.jpg" alt="kv1">
+								</div>
+								<div class="item">
+									<img src="img/product/2.jpg" alt="kv2">
+								</div>
+								<div class="item">
+									<img src="img/product/3.jpg" alt="kv3">
+								</div>
+								<div class="item">
+									<img src="img/product/4.jpg" alt="kv4">
+								</div>
+							</div>
+
+							<!-- Controls -->
+							<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+							</a>
+							<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+							</a>
+						</div>
+						<div class="tb_ri">
+							<div class="public">
+								<ul>
+									<li>养老网动态</li>
+									<li>公告</li>
+									<li>登录</li>
+								</ul>
+							</div>
+							<div class="pu_trends">
+								<div id="dance" style="overflow: hidden;height:388px;width:260px;">
+									<div id="demo1">
+										<table border="0" cellspacing="0" cellpadding="0" align="center" width="98%" style="margin: 4px 0px;">
+											<tbody>
+												<tr>
+													<td height="25" align="left" valign="middle" class="zi3">
+														<img src="//i0.hdslb.com/bfs/archive/3ea09590468d179baaf7d3d48d309159a75d1f4e.jpg_320x200.jpg" />
+														<div class="trand_list">
+															<p>疯粤crazycanton</p>
+															<p>通过 购物赚取养老金</p>
+														</div>
+													</td>
+													<td align="center" valign="middle" class="zi5">￥10086.00元</td>
+												</tr>
+
+												<tr>
+													<td height="25" align="left" valign="middle" class="zi3">
+														<img src="//i0.hdslb.com/bfs/archive/bfaa73d0488d9841455e88bc369e0731b91c7922.jpg_320x200.jpg" />
+														<div class="trand_list">
+															<p>EdisonXxu</p>
+															<p>通过 购物赚取养老金</p>
+														</div>
+													</td>
+													<td align="center" valign="middle" class="zi5">￥10086.00元</td>
+												</tr>
+												<tr>
+													<td height="25" align="left" valign="middle" class="zi3">
+														<img src="//i0.hdslb.com/bfs/archive/003c8c38d5f9537e2055c497be32b55225357ef0.jpg_320x200.jpg" />
+														<div class="trand_list">
+															<p>柚子又抽了</p>
+															<p>通过 购物赚取养老金</p>
+														</div>
+													</td>
+													<td align="center" valign="middle" class="zi5">￥10086.00元</td>
+												</tr>
+												<tr>
+													<td height="25" align="left" valign="middle" class="zi3">
+														<img src="//i0.hdslb.com/bfs/archive/225a67544676c2aae788ca27a53744918562cef9.jpg_320x200.jpg" />
+														<div class="trand_list">
+															<p>SoFun搜趣坊</p>
+															<p>通过 购物赚取养老金</p>
+														</div>
+													</td>
+													<td align="center" valign="middle" class="zi5">￥10086.00元</td>
+												</tr>
+												<tr>
+													<td height="25" align="left" valign="middle" class="zi3">
+														<img src="//i0.hdslb.com/bfs/archive/86e2d5395208c71b0f0afd1b197dae4e0eff0937.jpg_320x200.jpg" />
+														<div class="trand_list">
+															<p>泠鸢yousa</p>
+															<p>通过 购物赚取养老金</p>
+														</div>
+													</td>
+													<td align="center" valign="middle" class="zi5">￥10086.00元</td>
+												</tr>
+												<tr>
+													<td height="25" align="left" valign="middle" class="zi3">
+														<img src="//i0.hdslb.com/bfs/archive/6801fc461b419ebd4980f8e7eadca55085f44f42.jpg_320x200.jpg" />
+														<div class="trand_list">
+															<p>纳兰寻风</p>
+															<p>通过 购物赚取养老金</p>
+														</div>
+													</td>
+													<td align="center" valign="middle" class="zi5">￥10086.00元</td>
+												</tr>
+
+												<tr>
+													<td height="25" align="left" valign="middle" class="zi3">
+														<img src="//i0.hdslb.com/bfs/archive/b279d4e862d750135702f075993f44cf0ac230ed.jpg_320x200.jpg" />
+														<div class="trand_list">
+															<p>彼优传媒</p>
+															<p>通过 购物赚取养老金</p>
+														</div>
+													</td>
+													<td align="center" valign="middle" class="zi5">￥10086.00元</td>
+												</tr>
+
+												<tr>
+													<td height="25" align="left" valign="middle" class="zi3">
+														<img src="//i0.hdslb.com/bfs/archive/9a65cee2ed141536fb64520d9a90c012ebcd29f5.jpg_320x200.jpg" />
+														<div class="trand_list">
+															<p>MaxKim</p>
+															<p>通过 购物赚取养老金</p>
+														</div>
+													</td>
+													<td align="center" valign="middle" class="zi5">￥10086.00元</td>
+												</tr>
+
+												<tr>
+													<td height="25" align="left" valign="middle" class="zi3">
+														<img src="//i0.hdslb.com/bfs/archive/2329b566df8ce99af3d0672cf950cfd2915b3f54.jpg_320x200.jpg" />
+														<div class="trand_list">
+															<p>科技微讯</p>
+															<p>通过 购物赚取养老金</p>
+														</div>
+													</td>
+													<td align="center" valign="middle" class="zi5">￥10086.00元</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<div id="demo2">
+
+									</div>
+
+								</div>
+							</div>
+							<ul class="pu_bulletin">
+								<li>
+									<a href="#"></a>
+								</li>
+							</ul>
+							<ul class="pu_login" style="z-index: 99;">
+								<li>
+									<a href="#">注册</a>
+								</li>
+								<li>
+									<a href="#">登录</a>
+								</li>
+								<li>
+									<a href="#">商家入驻</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="container">
+			<div class="food com_cs clearfix">
+				<p>美食</p>
+				<ul class=" clearfix">
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p1.meituan.net/deal/ac267bba4b0f43dec63176087e9190df109669.jpg@205w_124h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【同和/京溪】神牛铁板烧<br /></span>
+							<p>神牛铁板烧，建议2人使用，提供免费WiFi</p>
+						</h3>
+						<p>
+							<span>￥60</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 168
+							</del>
+							</span>
+							<span>已售423661</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<a href="">
+									<span>
+										<span>
+											
+										</span>
+									</span>
+									<span>4561人评价</span>
+								</a>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p1.meituan.net/deal/00408c1a52ae7e740d22807fc75c77b6182894.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【新市】稻香酒家<br /></span>
+							<p>酱香狮子头鹅煲，建议2人使用，提供免费WiFi</p>
+						</h3>
+						<p>
+							<span>￥60</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 168
+							</del>
+							</span>
+							<span>已售111</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/deal/e2a5684f4d434029f98af70c857e511b23760.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【5店通用】探蟹肉蟹煲<br /></span>
+							<p>探蟹肉蟹煲，建议2人使用，提供免费WiFi</p>
+						</h3>
+						<p>
+							<span>￥118</span>
+							<span>
+								门店价
+								<del>
+								<span>￥</span> 157
+							</del>
+							</span>
+							<span>已售12511</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p1.meituan.net/deal/00408c1a52ae7e740d22807fc75c77b6182894.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【江南大道沿线】稻香酒家<br /></span>
+							<p>酱香狮子头鹅煲，建议2人使用，提供免费WiFi</p>
+						</h3>
+						<p>
+							<span>￥60</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 168
+							</del>
+							</span>
+							<span>已售423661</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/deal/c200aa739ccc0efac6df6a9352c0e4a932392.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【76店通用】真功夫<br /></span>
+							<p>新枸杞红枣露1份，提供免费WiFi</p>
+						</h3>
+						<p>
+							<span>￥6.5</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 8
+							</del>
+							</span>
+							<span>已售1261</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/deal/af04f2415d43196f93c813218c9f1a8842966.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【10店通用】遇见小面<br /></span>
+							<p>遇见小面1碗，提供免费WiFi</p>
+						</h3>
+						<p>
+							<span>￥9.9</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 15
+							</del>
+							</span>
+							<span>已售7312</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p1.meituan.net/deal/00408c1a52ae7e740d22807fc75c77b6182894.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【上下九商业区】稻香酒家<br /></span>
+							<p>酱香狮子头鹅煲，建议2人使用，提供免费WiFi</p>
+						</h3>
+						<p>
+							<span>￥47</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 168
+							</del>
+							</span>
+							<span>已售423661</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p1.meituan.net/deal/00408c1a52ae7e740d22807fc75c77b6182894.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【客村/赤岗】稻香酒家<br /></span>
+							<p>酱香狮子头鹅煲，建议2人使用，提供免费WiFi</p>
+						</h3>
+						<p>
+							<span>￥47</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 168
+							</del>
+							</span>
+							<span>已售423661</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p1.meituan.net/deal/00408c1a52ae7e740d22807fc75c77b6182894.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【跑马场】稻香酒家<br /></span>
+							<p>酱香狮子头鹅煲，建议2人使用，提供免费WiFi</p>
+						</h3>
+						<p>
+							<span>￥60</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 168
+							</del>
+							</span>
+							<span>已售423661</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p1.meituan.net/deal/00408c1a52ae7e740d22807fc75c77b6182894.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【白云区】稻香酒家<br /></span>
+							<p>酱香狮子头鹅煲，建议2人使用，提供免费WiFi</p>
+						</h3>
+						<p>
+							<span>￥1</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 168
+							</del>
+							</span>
+							<span>已售423661</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/deal/3fcd2c658be1e6560154769bc69127f63562164.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【全国】正新鸡排<br /></span>
+							<p>【官方】正新鸡排单人餐</p>
+						</h3>
+						<p>
+							<span>￥10.9</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 20
+							</del>
+							</span>
+							<span>已售423661</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/deal/d3604367c86c9bca21508a09e23b4b8281837.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【11店通用】华莱士<br /></span>
+							<p>上校鸡块送薯条，建议单人使用，包间免费</p>
+						</h3>
+						<p>
+							<span>￥7.28</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 12.5
+							</del>
+							</span>
+							<span>已售98161</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/deal/af4593992d6014d69f253c5ce16e4d6043033.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【22店通用】點都德<br /></span>
+							<p>100元代金券1张，全场通用，可叠加使用</p>
+						</h3>
+						<p>
+							<span>￥90</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 100
+							</del>
+							</span>
+							<span>已售39112</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<a href="">
+									<span>
+										<span>
+											
+										</span>
+									</span>
+									<span>4511人评价</span>
+								</a>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/deal/0bef0ad4d70bc1abb32062b9c6f99623121403.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【114店通用】尊宝比萨<br /></span>
+							<p>单人套餐</p>
+						</h3>
+						<p>
+							<span>￥25</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 40
+							</del>
+							</span>
+							<span>已售781</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<a href="">
+									<span>
+										<span>
+											
+										</span>
+									</span>
+									<span>6554人评价</span>
+								</a>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/deal/e2ff321002ecc8dc6feb01938eea346572962.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【全国】傣妹火锅<br /></span>
+							<p>50元代金券1张，除酒水饮料外全场通用，可叠加使用</p>
+						</h3>
+						<p>
+							<span>￥45</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 60
+							</del>
+							</span>
+							<span>已售54315</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<a href="">
+									<span>
+										<span>
+											
+										</span>
+									</span>
+									<span>945人评价</span>
+								</a>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p1.meituan.net/deal/cecf634c69893eaf92853cec949d69a829474.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【8店通用】汤响自助回转火锅百汇<br /></span>
+							<p>单人自助火锅午餐，提供免费WiFi</p>
+						</h3>
+						<p>
+							<span>￥38</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 49
+							</del>
+							</span>
+							<span>已售67111</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<a href="">
+									<span>
+										<span>
+											
+										</span>
+									</span>
+									<span>6615人评价</span>
+								</a>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/deal/940fc8858f1ff13b91b5efd4f82da5a0354672.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【31店通用】万岁寿司<br /></span>
+							<p>100元美团代金券1张，全场通用，可叠加使用50张</p>
+						</h3>
+						<p>
+							<span>￥88</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 100
+							</del>
+							</span>
+							<span>已售423661</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<a href="">
+									<span>
+										<span>
+											
+										</span>
+									</span>
+									<span>3262人评价</span>
+								</a>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/deal/344764002ad53ad5f16e0fedf9b7bdaf54621.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【10店通用】大卡司<br /></span>
+							<p>奶茶饮品套餐6选1，建议单人使用</p>
+						</h3>
+						<p>
+							<span>￥19</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 23
+							</del>
+							</span>
+							<span>已售99961</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<a href="">
+									<span>
+										<span>
+											
+										</span>
+									</span>
+									<span>55331人评价</span>
+								</a>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p1.meituan.net/deal/69e23c2ba88930421e87221f4a8d7c1a279480.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【3店通用】西尊比萨<br /></span>
+							<p>新年特惠超值套餐，建议单人使用，提供免费WiFi</p>
+						</h3>
+						<p>
+							<span>￥19.9</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 33
+							</del>
+							</span>
+							<span>已售31551</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<a href="">
+									<span>
+										<span>
+											
+										</span>
+									</span>
+									<span>8421人评价</span>
+								</a>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p1.meituan.net/deal/c0ef86ef59641fc6ed3102f5ecd27c0125571.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【67店通用】皇冠·玛莉奥<br /></span>
+							<p>枧水豆沙粽1对，仅限自提，不提供配送</p>
+						</h3>
+						<p>
+							<span>￥7.8</span>
+							<span>
+								门店价
+								<del>
+								<span>￥</span> 11
+							</del>
+							</span>
+							<span>已售0</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<a href="">
+									<span>
+										<span>
+											
+										</span>
+									</span>
+									<span>1280人评价</span>
+								</a>
+							</p>
+						</div>
+					</li>
+				</ul>
+				<a href="#">更多美食，请点击查看</a>
+			</div>
+			<div class="disport com_cs clearfix">
+				<p>休闲娱乐</p>
+				<ul class=" clearfix">
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p1.meituan.net/dpdeal/3442344a98518ca243ef2e9810fdf06237838.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【8店通用】网鱼网咖<br /></span>
+							<p>新会员专享上网费＋鱼奶茶超值单人套餐</p>
+						</h3>
+						<p>
+							<span>￥15</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 62
+							</del>
+							</span>
+							<span>已售9041</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/dpdeal/e58b4ebe1174ac386ef545dedc0414ea117163.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【3店通用】畅想国度华汇、大涌,奥园三店<br /></span>
+							<p>白天场6点5小时/晚场7小时欢唱</p>
+						</h3>
+						<p>
+							<span>￥9.9</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 258
+							</del>
+							</span>
+							<span>已售423661</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p1.meituan.net/dpdeal/b629ac40223b4d75958e6b394c11bb7b133936.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【钟落潭】歌利亚KTV<br /></span>
+							<p>周一至周日下午场欢唱3小时+单人饮料</p>
+						</h3>
+						<p>
+							<span>￥10.5</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 45
+							</del>
+							</span>
+							<span>已售74121</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p1.meituan.net/dpdeal/889a18e45658f9ffbe5ccf3de8695ddd164374.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【黄边】胜龙汇量贩式KTV<br /></span>
+							<p>单人下午场欢唱5小时</p>
+						</h3>
+						<p>
+							<span>￥8.8</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 98
+							</del>
+							</span>
+							<span>已售1452</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/dpdeal/48bedbed6ee2e5729f2ebd82c35a0c3b75822.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【麓湖公园周边】百威CEO量贩KTV<br /></span>
+							<p>单人周一至周日下午场2选1欢唱3小时+美食套餐</p>
+						</h3>
+						<p>
+							<span>￥30</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 86
+							</del>
+							</span>
+							<span>已售3551</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p1.meituan.net/dpdeal/b459441b64e1e457d6db9fb38b83559670898.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【石牌/百脑汇】凯乐会量贩KTV(国防大厦总店)<br /></span>
+							<p>单人周一至周五11:00-20:30任选4小时欢唱＋自助餐</p>
+						</h3>
+						<p>
+							<span>￥39.8</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 58
+							</del>
+							</span>
+							<span>已售423661</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/dpdeal/8ae5079c7c3cf9591583364c78b576d154549.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【体育中心】大世界保龄球馆<br /></span>
+							<p>保龄球2人套餐</p>
+						</h3>
+						<p>
+							<span>￥60</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 168
+							</del>
+							</span>
+							<span>已售423661</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p1.meituan.net/dpdeal/b459441b64e1e457d6db9fb38b83559670898.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【石牌/百脑汇】凯乐会量贩KTV(国防大厦总店)<br /></span>
+							<p>单人周一至周五11:00-20:30任选4小时欢唱＋自助餐</p>
+						</h3>
+						<p>
+							<span>￥38</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 168
+							</del>
+							</span>
+							<span>已售3661</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p1.meituan.net/dpdeal/7b76637212b16067c976b8bb81ed208f110123.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【岗顶/龙口】All IN KTV CLUB<br /></span>
+							<p>单人周一至周五14:00-20:00欢唱3小时</p>
+						</h3>
+						<p>
+							<span>￥60</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 168
+							</del>
+							</span>
+							<span>已售423661</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/dpdeal/64f668cdaf4bfc6d84326f65a05ecb8b60833.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【市桥】嘉华如苑休闲会所<br /></span>
+							<p>嘉华如苑休闲会所草本沐足</p>
+						</h3>
+						<p>
+							<span>￥79</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 112
+							</del>
+							</span>
+							<span>已售812</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p1.meituan.net/dpdeal/1acd979b4219fc6d9b92d066cc03cd6c76250.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【东晓南路沿线】金矿食唱<br /></span>
+							<p>单人3小时纯唱套餐</p>
+						</h3>
+						<p>
+							<span>￥19</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 62
+							</del>
+							</span>
+							<span>已售5416</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/dpdeal/141b8ea15bd8034b1bdd60cf76fe1edb109705.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【大学城】ABC量贩式KTV<br /></span>
+							<p>单人周一至周日13:00-17:00欢唱3小时</p>
+						</h3>
+						<p>
+							<span>￥9.9</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 28.7
+							</del>
+							</span>
+							<span>已售1994</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+				</ul>
+				<a href="#">更多休闲娱乐，请点击查看</a>
+			</div>
+			<div class="movie com_cs">
+				<p>猫眼电影</p>
+				<ul class=" clearfix">
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/deal/86838b007db37da80647e0221e1ce7f820149.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【6店通用】星美汇<br /></span>
+							<p>单人2D/3D电影票，广州10大影城不限时段通兑！免票儿童免费观看2D/3D电影1次，提供免费W</p>
+						</h3>
+						<p>
+							<span>￥30</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 80
+							</del>
+							</span>
+							<span>已售15615</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/deal/23274d55ea33cade7e0c951572e5a55986905.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【客村/赤岗】广州塔金逸空中电影城<br /></span>
+							<p>“精品茶点+电影票”单人套餐，提供免费WiFi</p>
+						</h3>
+						<p>
+							<span>￥79</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 272
+							</del>
+							</span>
+							<span>已售794</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/deal/ce5ad9443c58e9b40236715a4621e7d9128474.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【4店通用】星美汇<br /></span>
+							<p>浪漫红酒双人套餐，提供免费WiFi</p>
+						</h3>
+						<p>
+							<span>￥99</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 156
+							</del>
+							</span>
+							<span>已售57</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+				</ul>
+				<a href="#">更多猫眼电影，请点击查看</a>
+			</div>
+			<div class="hotel com_cs">
+				<p>酒店</p>
+				<ul class=" clearfix">
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p1.meituan.net/hotel/eac1762ecfd1d49d51f392100adf471c283797.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【广州南站】佳美酒店<br /></span>
+							<p>标准单人房（免费车接车送）钟点房3小时，免费WiFi。广州南站酒店，建于2015年8月，以精致的</p>
+						</h3>
+						<p>
+							<span>￥68</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 88
+							</del>
+							</span>
+							<span>已售15615</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p1.meituan.net/hotel/f59214fa79eb5a1671be74dcf566ce6d1953251.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【广州南站】汉廷假日酒店<br /></span>
+							<p>豪华大床房钟点房3小时，免费WiFi。本公寓欢迎您的入住。</p>
+						</h3>
+						<p>
+							<span>￥68</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 188
+							</del>
+							</span>
+							<span>已售794</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p1.meituan.net/deal/ba3e36ee7cb62b1d7693710731ce34ca376992.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【岗顶/龙口】广州乐游青年旅舍<br /></span>
+							<p>女生六人独卫房（床位）钟点房3小时，免费WiFi。超值享受</p>
+						</h3>
+						<p>
+							<span>￥60</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 65
+							</del>
+							</span>
+							<span>已售152</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/hotel/53be32e377ffec4ed3045a78a032c3fa2459344.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【白云国际机场】天籁主题酒店式公寓<br /></span>
+							<p>豪华大床房钟点房3小时，免费WiFi。天籁度假公寓干净整洁，欢迎您的到来！</p>
+						</h3>
+						<p>
+							<span>￥55</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 120
+							</del>
+							</span>
+							<span>已售57</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p1.meituan.net/deal/2cfc0e714113780f8a1a11e2080e0b20111814.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【广州南站】速7连锁酒店<br /></span>
+							<p>大床房钟点房3小时，免费WiFi。润丰阁是一家现代快捷宾馆，提供专车免费接送，设施完善，免费wi</p>
+						</h3>
+						<p>
+							<span>￥68</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 88
+							</del>
+							</span>
+							<span>已售57</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p1.meituan.net/hotel/b62cc442ba5b7c7ae1c4dd9ad0f35ea3117218.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【广州南站】美晨连锁快捷酒店<br /></span>
+							<p>标准大床房钟点房3小时，免费WiFi。本酒店欢迎您的入住。</p>
+						</h3>
+						<p>
+							<span>￥48</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 188
+							</del>
+							</span>
+							<span>已售57</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/deal/1c9f2521f68fce44b7d60074da2083ca85036.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【广州南站】汉延美心假日酒店<br /></span>
+							<p>标准 双人房（免 费专车接待可开增值税）钟点房3小时，免费WiFi。广州南站美心酒店式公寓</p>
+						</h3>
+						<p>
+							<span>￥46</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 88
+							</del>
+							</span>
+							<span>已售57</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/hotel/a919e1ace3c7c27a29ec25f6db8a70551263071.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【广州南站】微8假日连锁酒店<br /></span>
+							<p>【限时抢购】豪华大床房【机打发 票+专车接待】钟点房3小时，免费WiFi。交通方便，设备齐全</p>
+						</h3>
+						<p>
+							<span>￥68</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 88
+							</del>
+							</span>
+							<span>已售57</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+				</ul>
+				<a href="#">更多猫眼电影，请点击查看</a>
+			</div>
+			
+			
+			<div class="life_service com_cs">
+				<p>生活服务</p>
+				<ul class=" clearfix">
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/dpdeal/ffb7b7b2e052a16677620ed4b513a7af91530.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【石牌/百脑汇】长安医院体检中心<br /></span>
+							<p>女性单人盆底功能检查</p>
+						</h3>
+						<p>
+							<span>￥0.1</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 180
+							</del>
+							</span>
+							<span>已售155</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/dpdeal/8e6049783a8bd2aee369daf9f15aa16e95168.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【2店通用】宝岛眼镜<br /></span>
+							<p>豪华1+7验光服务</p>
+						</h3>
+						<p>
+							<span>￥50</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 120
+							</del>
+							</span>
+							<span>已售3190</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p1.meituan.net/dpdeal/a6cfbaa0f6fb5391ef96625bfc434d9d97789.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【3店通用】2020视光<br /></span>
+							<p>超值眼镜组合券</p>
+						</h3>
+						<p>
+							<span>￥1</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 600
+							</del>
+							</span>
+							<span>已售502</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/dpdeal/a8a36bff3253d3478d8e10b07006dc16199762.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【11店通用】先花店<br /></span>
+							<p>11枝红/粉玫 19枝红/粉康 鲜花预订 超值精品爆款礼盒</p>
+						</h3>
+						<p>
+							<span>￥87</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 280
+							</del>
+							</span>
+							<span>已售68449</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/dpdeal/e7b75b8be6e3221434d39621b0c32552238275.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【2店通用】【全市免费上门】手机维修  十分到家<br /></span>
+							<p>苹果手机上门维修代金券</p>
+						</h3>
+						<p>
+							<span>￥9.9</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 30
+							</del>
+							</span>
+							<span>已售153</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p1.meituan.net/dpdeal/7c9f38a5b7594a7977912c7ad867c8e644897.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【2店通用】禅心瑜伽<br /></span>
+							<p>瑜伽课程单人体验套组</p>
+						</h3>
+						<p>
+							<span>￥9.9</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 90
+							</del>
+							</span>
+							<span>已售484</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/dpdeal/dcba5ed7c8fed11734028f8e12f0c369109010.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【2店通用】孩子王<br /></span>
+							<p>单人孩子王单次软体沙池通玩</p>
+						</h3>
+						<p>
+							<span>￥39.9</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 158
+							</del>
+							</span>
+							<span>已售1171</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p1.meituan.net/dpdeal/b610ec380cf6ae1c38a12eb9f799a560114623.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【黄边】众友车管家<br /></span>
+							<p>众友车管家臭氧消毒</p>
+						</h3>
+						<p>
+							<span>￥12</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 60
+							</del>
+							</span>
+							<span>已售193</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+				</ul>
+				<a href="#">更多生活服务，请点击查看</a>
+			</div>
+			
+			
+			<div class="hotel com_cs">
+				<p>丽人</p>
+				<ul class=" clearfix">
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/dpdeal/1e50a6437d4265d5319de4c449120864164122.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【16店通用】佑米造型<br /></span>
+							<p>单人洗剪吹1份</p>
+						</h3>
+						<p>
+							<span>￥29.8</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 38
+							</del>
+							</span>
+							<span>已售205612</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p1.meituan.net/dpdeal/0230837c17c9559481475b766ab471b370413.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【24店通用】欧莱雅私人定制美发连锁<br /></span>
+							<p>单人洗剪吹/护理套餐2选1</p>
+						</h3>
+						<p>
+							<span>￥38</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 128
+							</del>
+							</span>
+							<span>已售61233</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/dpdeal/b9f1daad8a7f4f615208e3dfa995e105137326.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【17店通用】佛伦斯私人订制烫染国际连锁<br /></span>
+							<p>单人首席洗剪吹套餐</p>
+						</h3>
+						<p>
+							<span>￥39</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 78
+							</del>
+							</span>
+							<span>已售115652</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/dpdeal/07d802af59f284abd7eb33c2ddd7a7bd98108.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【12店通用】瑞豪专业烫染连锁<br /></span>
+							<p>【高级发型师】洗剪吹套餐</p>
+						</h3>
+						<p>
+							<span>￥28.8</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 38
+							</del>
+							</span>
+							<span>已售99456</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/dpdeal/13e3bcddfa26c8f6eecae9a02f29e96f154077.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【北京路商业区】哈尼*TT日式美甲美睫<br /></span>
+							<p>单人手部护理套餐</p>
+						</h3>
+						<p>
+							<span>￥9.9</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 174
+							</del>
+							</span>
+							<span>已售57</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p1.meituan.net/dpdeal/e6f7924201d0e8d8542aade37d3a9a6754650.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【15店通用】施华蔻美发连锁<br /></span>
+							<p>单人洗剪吹</p>
+						</h3>
+						<p>
+							<span>￥38</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 128
+							</del>
+							</span>
+							<span>已售32265</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p1.meituan.net/dpdeal/e4b49cc3d8cee19de36e1afbc11c3a92202798.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【江南大道沿线】美联社&镁连社<br /></span>
+							<p>单人洗剪吹造型套餐</p>
+						</h3>
+						<p>
+							<span>￥48
+								门店价
+								<del>
+									
+								<span>￥</span> 150
+							</del>
+							</span>
+							<span>已售44350</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/dpdeal/13e3bcddfa26c8f6eecae9a02f29e96f154077.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【3店通用】创意美甲工作室<br /></span>
+							<p>单人手部护理套餐</p>
+						</h3>
+						<p>
+							<span>￥9.9</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 174
+							</del>
+							</span>
+							<span>已售241</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+				</ul>
+				<a href="#">更多丽人，请点击查看</a>
+			</div>
+			
+			
+			
+			
+			<div class="tourism com_cs">
+				<p>旅游</p>
+				<ul class=" clearfix">
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p1.meituan.net/dpdeal/7ad90ab82bcbaeb3368bed08be0fd239305320.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【13店通用】珠江夜游9码头通用船票<br /></span>
+							<p>珠江夜游9码头通用豪华船票</p>
+						</h3>
+						<p>
+							<span>￥45</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 58
+							</del>
+							</span>
+							<span>已售15615</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/deal/3091ed82bcda861e1723ce0e90fde9ec1176742.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【番禺区】广州长隆欢乐世界门票儿童长者票<br /></span>
+							<p>仅售175.0元！最高价值175.0元的广州长隆欢乐世界门票儿童长者票,请至少提前1天的23点45分前购买</p>
+						</h3>
+						<p>
+							<span>￥175</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 175
+							</del>
+							</span>
+							<span>已售7404</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/deal/e95f8dc85225c1c92f88cc5c38fd986f874686.png@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【天河客运站】华南植物园成人票<br /></span>
+							<p>仅售15.0元！最高价值20.0元的华南植物园成人票,请至少当天的17点前购买</p>
+						</h3>
+						<p>
+							<span>￥15</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 20
+							</del>
+							</span>
+							<span>已售152</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p1.meituan.net/deal/a0c62c25ef83a540de2a1376ec246e3c928089.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【沙湾镇】宝墨园<br /></span>
+							<p>仅售40.0~48.0元！最高价值54.0元的宝墨园门票(成人票),请至少当天的8点30分前购买</p>
+						</h3>
+						<p>
+							<span>￥48</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 54
+							</del>
+							</span>
+							<span>已售9452</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p1.meituan.net/zeus/3c8ff5acd6c0d6259672450199e2ee65331520.png@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【广州等】广州增城保利皇冠假日酒店1晚+双人自助早餐+双人自助晚餐<br /></span>
+							<p>广州增城保利皇冠假日酒店1晚+双人自助早餐+双人自助晚餐</p>
+						</h3>
+						<p>
+							<span>￥70</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 95
+							</del>
+							</span>
+							<span>已售296/span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/deal/201209/26/7_0926124226.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【长隆/南村/万达】余荫山房门票成人票<br /></span>
+							<p>仅售14.9元！最高价值18.0元的余荫山房门票成人票,购买后2小时生效</p>
+						</h3>
+						<p>
+							<span>￥14</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 18
+							</del>
+							</span>
+							<span>已售7</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p1.meituan.net/zeus/57c96d04335c1b6fc145e02705034749319651.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【广州等】广州嘉华万达酒店1晚+双早+双人海鲜自助晚餐<br /></span>
+							<p>广州嘉华万达酒店1晚+双早+双人海鲜自助晚餐</p>
+						</h3>
+						<p>
+							<span>￥1079</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 2999
+							</del>
+							</span>
+							<span>已售57</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+					<li class="col-md-3">
+						<a href="#">
+							<img src="http://p0.meituan.net/deal/453d7f1737797325c2a9dfb24b449d6794506.jpg@260w_154h_1e.webp" />
+							<span>免<br />预约</span>
+						</a>
+						<h3>
+							<span>【番禺区】大夫山汇友烧烤场<br /></span>
+							<p>烧烤炉出租套系1份，提供免费WiFi</p>
+						</h3>
+						<p>
+							<span>￥70</span>
+							<span>
+								门店价
+								<del>
+									
+								<span>￥</span> 95
+							</del>
+							</span>
+							<span>已售57</span>
+						</p>
+						<div class="evaluate">
+							<p>
+								<span>暂无评价</span>
+							</p>
+						</div>
+					</li>
+				</ul>
+				<a href="#">更多猫眼电影，请点击查看</a>
+			</div>
+		</section>
+		<footer class="container-fluid">
+			<ul>
+				<li class="col-md-3">
+					<ul>
+						<li>客服热线</li>
+						<li>12345678</li>
+						<li>我的养老网</li>
+						<li>每个人的养老生活</li>
+					</ul>
+				</li>
+				<li class="col-md-2">
+					<ul>
+						<li>关于养老网</li>
+						<li></li>
+						<li>
+							<a href="">联系我们</a>
+						</li>
+						<li>
+							<a href="">简介</a>
+						</li>
+						<li>
+							<a href="">CEO致辞</a>
+						</li>
+					</ul>
+				</li>
+				<li class="col-md-2">
+					<ul>
+						<li>新手指南</li>
+						<li>
+							<a href="">付款方式</a>
+						</li>
+						<li>
+							<a href="">订购流程</a>
+						</li>
+						<li>
+							<a href="">注册新用户</a>
+						</li>
+						<li>
+							<a href="">常见问题解答</a>
+						</li>
+					</ul>
+				</li>
+				<li class="col-md-2">
+					<ul>
+						<li>购买保障</li>
+						<li>
+							<a href="">免责声明</a>
+						</li>
+						<li>
+							<a href="">隐私保护</a>
+						</li>
+						<li>
+							<a href="">注册协议</a>
+						</li>
+						<li>
+							<a href="">正品保障</a>
+						</li>
+					</ul>
+				</li>
+				<li class="col-md-3">
+					<ul>
+						<li>养老网公众微信号</li>
+						<li></li>
+						<li>关注最新消息</li>
+					</ul>
+				</li>
+			</ul>
+		</footer>
+		<script type="text/javascript">
+			var speeda = 50;
+			demo2.innerHTML = demo1.innerHTML;
+
+			function Marqueea() {
+				if(demo2.offsetTop - dance.scrollTop <= 0) {
+					dance.scrollTop -= demo1.offsetHeight;
+				} else {
+					dance.scrollTop++;
+				}
+			};
+			var MyMara = setInterval(Marqueea, speeda);
+			demoa.onmouseover=function() {clearInterval(MyMara)}
+			dance.onmouseout = function() {
+				MyMara = setInterval(Marqueea, speeda);
+			};
+		</script>
+		<script src="js/lib/jquery-2.1.0.js " type="text/javascript " charset="utf-8 "></script>
+		<script src="js/lib/bootstrap.min.js " type="text/javascript " charset="utf-8 "></script>
+	</body>
+
+</html>

@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  color: #676767; }
+
+p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+header {
+  margin-bottom: 20px; }
+  header .head_top {
+    color: #222;
+    position: relative;
+    z-index: 10000; }
+    header .head_top .z_top.b-header-blur {
+      background-color: transparent; }
+    header .head_top .heads {
+      height: 42px;
+      background: #fff;
+      box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;
+      top: 0;
+      left: 0;
+      width: 100%;
+      position: relative;
+      z-index: 10000;
+      color: #222; }
+      header .head_top .heads .mask_warp {
+        display: block; }
+        header .head_top .heads .mask_warp .mask_bg {
+          position: absolute;
+          height: 62px;
+          padding: 0 20px;
+          width: 100%;
+          -webkit-filter: blur(5px);
+          -ms-filter: blur(5px);
+          filter: blur(5px);
+          z-index: 50;
+          background-position: top 0 !important;
+          background-repeat: no-repeat; }
+        header .head_top .heads .mask_warp .mask {
+          background-color: #000;
+          background-color: rgba(255, 251, 251, 0.4);
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 100; }
+      header .head_top .heads .head_top_warp {
+        z-index: 10000;
+        height: 42px;
+        line-height: 42px;
+        position: relative;
+        z-index: 10000;
+        zoom: 1;
+        font-size: 15px; }
+        header .head_top .heads .head_top_warp p {
+          color: #000000; }
+          header .head_top .heads .head_top_warp p a {
+            color: #545454;
+            height: 42px;
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle; }
+            header .head_top .heads .head_top_warp p a i {
+              color: darkorange; }
+          header .head_top .heads .head_top_warp p a:nth-child(2) {
+            width: 55px; }
+          header .head_top .heads .head_top_warp p a:hover {
+            background-color: rgba(255, 251, 251, 0.4); }
+        header .head_top .heads .head_top_warp .top_le {
+          padding-left: 130px; }
+        header .head_top .heads .head_top_warp .top_ri {
+          height: 42px; }
+          header .head_top .heads .head_top_warp .top_ri ul li {
+            float: left;
+            margin-right: 15px;
+            text-align: center;
+            vertical-align: middle;
+            height: 42px; }
+            header .head_top .heads .head_top_warp .top_ri ul li i.icon-shopping {
+              color: #e18594;
+              font-size: 20px; }
+    header .head_top .z_set {
+      margin-bottom: 30px; }
+      header .head_top .z_set .logo {
+        margin-top: -30px;
+        padding-left: 127px; }
+        header .head_top .z_set .logo img {
+          width: 80px;
+          height: 80px; }
+        header .head_top .z_set .logo .logo_text {
+          display: inline-block;
+          position: relative;
+          top: 30px; }
+          header .head_top .z_set .logo .logo_text p {
+            margin: 0px;
+            font-size: 18px;
+            color: #fa9967; }
+          header .head_top .z_set .logo .logo_text p:nth-child(1) {
+            font-size: 30px; }
+      header .head_top .z_set .search {
+        margin-top: 30px; }
+        header .head_top .z_set .search .search_inp input {
+          border: 2px solid #E75558;
+          width: 70%;
+          padding-left: 5px;
+          height: 30px;
+          background-color: #000;
+          background-color: rgba(255, 251, 251, 0.4); }
+        header .head_top .z_set .search .search_inp > a {
+          background: #E75558;
+          color: #FFFFFF;
+          height: 30px;
+          width: 10%;
+          display: inline-block;
+          text-align: center;
+          vertical-align: middle;
+          margin-left: -5px;
+          margin-top: -2px;
+          line-height: 30px; }
+        header .head_top .z_set .search ul li {
+          float: left;
+          margin-right: 15px; }
+          header .head_top .z_set .search ul li a {
+            color: #ababab;
+            margin-right: 10px; }
+        header .head_top .z_set .search ul :nth-child(1) {
+          margin-top: 0px; }
+  header #assortment {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 10px;
+    height: 483px; }
+    header #assortment > p {
+      border-bottom: 2px solid #ee914b;
+      padding-left: 0;
+      margin: 0;
+      position: relative;
+      top: 30px; }
+    header #assortment .cen {
+      height: 430px; }
+      header #assortment .cen > ul {
+        margin-bottom: 25px; }
+        header #assortment .cen > ul > li {
+          float: left;
+          text-align: center;
+          vertical-align: middle;
+          width: 8%;
+          height: 30px;
+          line-height: 30px; }
+          header #assortment .cen > ul > li a {
+            color: #000000;
+            height: 30px;
+            display: block; }
+          header #assortment .cen > ul > li ul {
+            display: none;
+            background: #f6b37f;
+            position: absolute;
+            width: 137px;
+            margin-top: -2px;
+            height: 430px; }
+            header #assortment .cen > ul > li ul li {
+              height: 19px;
+              line-height: 25px; }
+              header #assortment .cen > ul > li ul li p {
+                margin: 10px 0 2px;
+                color: #000000; }
+              header #assortment .cen > ul > li ul li a {
+                color: #FFFFFF; }
+            header #assortment .cen > ul > li ul :hover a {
+              color: #ff5e7a; }
+              header #assortment .cen > ul > li ul :hover a a {
+                color: #FF5E7A; }
+              header #assortment .cen > ul > li ul :hover a i {
+                color: #FF5E7A; }
+        header #assortment .cen > ul :hover ul {
+          display: block; }
+        header #assortment .cen > ul > :nth-child(1) {
+          background: #f6b37f;
+          width: 12%; }
+          header #assortment .cen > ul > :nth-child(1) a {
+            color: #FFFFFF; }
+        header #assortment .cen > ul > li:hover {
+          background: #f6b37f; }
+          header #assortment .cen > ul > li:hover a {
+            color: #FFFFFF; }
+      header #assortment .cen .top_ban {
+        margin-top: -25px;
+        height: 400px; }
+        header #assortment .cen .top_ban .slide .carousel-inner .item img {
+          width: 100%;
+          height: 428px; }
+      header #assortment .cen .tb_ri {
+        background: #dfcda9;
+        height: 428px;
+        position: relative;
+        left: 880px;
+        top: -428px;
+        display: inline-block; }
+        header #assortment .cen .tb_ri .public {
+          width: 260px;
+          height: 40px; }
+          header #assortment .cen .tb_ri .public ul {
+            width: 260px;
+            height: 40px;
+            margin: 0px;
+            background: red; }
+            header #assortment .cen .tb_ri .public ul li {
+              float: left;
+              width: 33%;
+              text-align: center;
+              height: 40px;
+              background: #E8FFE8;
+              line-height: 40px;
+              border: 1px solid #E8FFE8; }
+            header #assortment .cen .tb_ri .public ul li:nth-child(1) {
+              width: 88px; }
+        header #assortment .cen .tb_ri .pu_trends {
+          height: 388px;
+          overflow-y: hidden; }
+          header #assortment .cen .tb_ri .pu_trends #dance {
+            background: #FFFFFF; }
+            header #assortment .cen .tb_ri .pu_trends #dance #demo1 tbody tr,
+            header #assortment .cen .tb_ri .pu_trends #dance #demo2 tbody tr {
+              height: 70px; }
+              header #assortment .cen .tb_ri .pu_trends #dance #demo1 tbody tr td,
+              header #assortment .cen .tb_ri .pu_trends #dance #demo2 tbody tr td {
+                display: inline-block;
+                margin-top: 15px; }
+                header #assortment .cen .tb_ri .pu_trends #dance #demo1 tbody tr td img,
+                header #assortment .cen .tb_ri .pu_trends #dance #demo2 tbody tr td img {
+                  height: 50px;
+                  width: 50px;
+                  float: left;
+                  margin: 0px 15px;
+                  margin-right: 25px; }
+                header #assortment .cen .tb_ri .pu_trends #dance #demo1 tbody tr td .trand_list,
+                header #assortment .cen .tb_ri .pu_trends #dance #demo2 tbody tr td .trand_list {
+                  display: inline-block;
+                  background: #f8f8f8;
+                  margin-top: 3px; }
+                  header #assortment .cen .tb_ri .pu_trends #dance #demo1 tbody tr td .trand_list p,
+                  header #assortment .cen .tb_ri .pu_trends #dance #demo2 tbody tr td .trand_list p {
+                    font-size: 13px;
+                    margin: 0px;
+                    height: 15px; }
+              header #assortment .cen .tb_ri .pu_trends #dance #demo1 tbody tr td:nth-child(2),
+              header #assortment .cen .tb_ri .pu_trends #dance #demo2 tbody tr td:nth-child(2) {
+                margin-left: 85px;
+                font-size: 12px;
+                color: #dd1e2a;
+                margin-top: 10px; }
+        header #assortment .cen .tb_ri .pu_login {
+          text-align: center;
+          vertical-align: middle;
+          margin-top: 80px;
+          display: none;
+          position: absolute;
+          left: 30px; }
+          header #assortment .cen .tb_ri .pu_login li {
+            width: 200px;
+            background: #DFF0D8;
+            text-align: center;
+            margin: 15px auto;
+            height: 40px;
+            line-height: 40px; }
+            header #assortment .cen .tb_ri .pu_login li a {
+              display: block; }
+
+footer {
+  height: 150px;
+  margin-top: 30px;
+  border-top: 2px solid #b1bec8; }
+  footer > ul {
+    margin-top: 20px; }
+    footer > ul > li {
+      height: 150px;
+      border-right: 1px solid #b1bec8; }
+      footer > ul > li ul li {
+        text-align: left;
+        margin-bottom: 5px;
+        color: #676767;
+        padding-left: 35%; }
+      footer > ul > li ul li:nth-child(1) {
+        font-size: 15px;
+        font-weight: bold; }
+
+@media screen and (max-width: 948px) {
+  html,
+  body {
+    width: 1170px; }
+
+  .head_top {
+    width: 1170px; }
+    .head_top .top_le {
+      width: 540px;
+      display: inline-block; }
+    .head_top .top_ri {
+      display: inline-block;
+      top: -53px;
+      height: 104px; }
+
+  #assortment {
+    width: 1170px; }
+
+  .commodity .com_ri {
+    width: 800px; }
+  .commodity .banner > ul {
+    width: 1140px; }
+  .commodity > a {
+    display: block;
+    width: 1140px; }
+
+  .serv_b {
+    width: 1140px;
+    margin-top: 0px; } }
+footer {
+  height: 150px;
+  margin-top: 30px; }
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 1170px !important; } }
+@media screen and (max-width: 1024px) {
+  footer {
+    width: 1170px; } }
+
+/*# sourceMappingURL=common.css.map */

@@ -1,0 +1,130 @@
+header {
+  margin-bottom: 0px;
+  height: 42px; }
+  header .top_le {
+    height: 42px; }
+
+section .sh_con {
+  background: #00A1D6;
+  margin-bottom: 20px; }
+  section .sh_con .sh_nav {
+    height: 60px;
+    line-height: 60px;
+    text-align: center; }
+    section .sh_con .sh_nav > span {
+      font-size: 25px;
+      color: #fff;
+      text-align: left; }
+    section .sh_con .sh_nav ul {
+      margin-bottom: 0; }
+      section .sh_con .sh_nav ul li {
+        float: left;
+        width: 120px; }
+        section .sh_con .sh_nav ul li a {
+          display: block;
+          color: #fff; }
+  section .sh_con .sh_nav form input {
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 250px; }
+  section .sh_con .sh_nav form button {
+    line-height: 20px;
+    background: none;
+    height: 20px;
+    color: #fff;
+    margin: 0;
+    padding: 0; }
+section .s_nav_index > ul.col-md-2 {
+  border: 1px solid #e1e2e5;
+  padding: 0;
+  text-align: center;
+  background-color: #fafafa;
+  color: #222;
+  width: 13%; }
+  section .s_nav_index > ul.col-md-2 > li > a {
+    color: #717171;
+    font-size: 16px;
+    padding-bottom: 7px;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #e1e2e5;
+    color: #222; }
+  section .s_nav_index > ul.col-md-2 > li > ul {
+    border: none; }
+    section .s_nav_index > ul.col-md-2 > li > ul > li {
+      height: 45px;
+      line-height: 45px; }
+      section .s_nav_index > ul.col-md-2 > li > ul > li a {
+        display: block;
+        color: #222; }
+      section .s_nav_index > ul.col-md-2 > li > ul > li a:hover {
+        background-color: #e1e4ea; }
+      section .s_nav_index > ul.col-md-2 > li > ul > li a:checked,
+      section .s_nav_index > ul.col-md-2 > li > ul > li a:active,
+      section .s_nav_index > ul.col-md-2 > li > ul > li a.active {
+        background-color: #00A1D7;
+        color: #fff; }
+        section .s_nav_index > ul.col-md-2 > li > ul > li a:checked i,
+        section .s_nav_index > ul.col-md-2 > li > ul > li a:active i,
+        section .s_nav_index > ul.col-md-2 > li > ul > li a.active i {
+          color: #fff; }
+      section .s_nav_index > ul.col-md-2 > li > ul > li i {
+        color: #99a2aa; }
+section .s_nav_index .se_face .fc_tl {
+  color: #999;
+  font-size: 22px;
+  border-bottom: 1px solid #e1e2e5; }
+section .s_nav_index .se_face .fc_le .fc_inp {
+  margin-top: 30px; }
+  section .s_nav_index .se_face .fc_le .fc_inp input {
+    color: #666;
+    font-family: "SimSun";
+    margin: 0;
+    outline: none;
+    padding: 0;
+    font-size: 100%; }
+  section .s_nav_index .se_face .fc_le .fc_inp input[type=button] {
+    background: none;
+    border: none;
+    background: url(../img/face_but.png) 0 0;
+    background-repeat: no-repeat;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    width: 130px; }
+  section .s_nav_index .se_face .fc_le .fc_inp input[type=file] {
+    height: 38px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    font-size: 30px;
+    position: absolute;
+    left: 15px;
+    top: 30px;
+    width: 130px; }
+  section .s_nav_index .se_face .fc_le .fc_inp input[type=file]:hover input[type=button] {
+    background-position: 0 -75px; }
+  section .s_nav_index .se_face .fc_le .fc_inp span {
+    color: #999;
+    display: inline-block;
+    margin-left: 6px;
+    text-align: left; }
+section .s_nav_index .se_face .fc_ri p {
+  font-size: 16px; }
+section .s_nav_index .se_face .fc_ri .tu100 {
+  width: 100px;
+  height: 100px; }
+section .s_nav_index .se_face .fc_ri .tu50 {
+  width: 50px;
+  height: 50px; }
+section .s_nav_index .se_face .fc_ri ul li {
+  float: left;
+  margin: 5px;
+  cursor: pointer; }
+  section .s_nav_index .se_face .fc_ri ul li img {
+    width: 35px;
+    height: 35px; }
+
+/*# sourceMappingURL=face.css.map */

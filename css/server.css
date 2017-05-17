@@ -1,0 +1,92 @@
+section .com_cs p {
+  height: 30px;
+  line-height: 30px;
+  font-size: 20px;
+  color: #666; }
+section .com_cs h3 span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 255px;
+  display: inline-block; }
+section .com_cs ul li {
+  border: 1px solid #eee;
+  position: relative;
+  text-align: center;
+  padding-top: 15px; }
+  section .com_cs ul li > a {
+    display: block; }
+    section .com_cs ul li > a img {
+      height: 155px;
+      width: 253px; }
+    section .com_cs ul li > a > span {
+      position: absolute;
+      left: 15px;
+      top: 15px;
+      width: 43px;
+      height: 40px;
+      text-align: center;
+      background: #2bb8aa;
+      color: #FFFFFF; }
+  section .com_cs ul li > h3 {
+    text-align: left; }
+    section .com_cs ul li > h3 span {
+      font-size: 16px;
+      font-weight: bold;
+      color: #666; }
+    section .com_cs ul li > h3 p {
+      font-size: 14px;
+      margin-left: 5px;
+      color: #999; }
+  section .com_cs ul li > p {
+    text-align: left; }
+    section .com_cs ul li > p span {
+      color: #999;
+      font-size: 12px; }
+    section .com_cs ul li > p > span:nth-child(1) {
+      color: #f76120;
+      font-size: 20px;
+      margin-right: 10px; }
+    section .com_cs ul li > p > span:nth-child(3) {
+      float: right;
+      margin-top: 8px; }
+  section .com_cs ul li .evaluate p a {
+    float: right; }
+    section .com_cs ul li .evaluate p a span:nth-child(1) {
+      height: 12px;
+      color: #999;
+      margin-right: 5px;
+      vertical-align: -1px;
+      width: 60px;
+      line-height: 12px;
+      display: inline-block;
+      background-image: url(../img/server/stay2.png);
+      background-repeat: repeat-x;
+      overflow: hidden; }
+      section .com_cs ul li .evaluate p a span:nth-child(1) span {
+        width: 89%;
+        background-image: url(../img/server/stay.png);
+        display: inline-block;
+        height: 12px;
+        line-height: 12px;
+        background-repeat: repeat-x;
+        overflow: hidden;
+        vertical-align: top; }
+    section .com_cs ul li .evaluate p a span:nth-child(2) {
+      font-size: 12px;
+      display: inline-block; }
+section .com_cs > a {
+  display: block;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 14px;
+  background: #f6f6f6;
+  border: 1px solid #F2DEDE;
+  color: #666; }
+section .food {
+  margin-top: 30px; }
+section .disport {
+  margin-top: 30px; }
+
+/*# sourceMappingURL=server.css.map */

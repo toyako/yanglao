@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width,userscalable=no" />
@@ -9,49 +8,81 @@
 		<link rel="stylesheet" type="text/css" href="css/lib/_reset.css" />
 		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
 		<link rel="stylesheet" type="text/css" href="css/lib/_bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
 	</head>
-
 	<body>
-		<header>
+		<header class="clearfix">
 			<!---------顶端导航栏---------->
-			<div class="head_top container">
-				<div class="top_le col-md-6">
-					<p>
-						<a href="#" onclick="addfav()"><i class="iconfont icon-star"></i>收藏本站</a>
-						你好，欢迎来到我的养老网商城！
-						<a href="">[登陆]</a>
-						<a href="">[免费注册]</a>
-					</p><br />
-					<div class="logo">
-						<img src="img/logo.png" />
+			<div class="head_top clearfix">
+				<div class="heads z_top b-header-blur">
+					<div class="mask_warp">
+						<div class="mask_bg" style="background-image: url(img/common/bg.jpg);"></div>
+						<div class="mask"></div>
+					</div>
+					<div class="head_top_warp">
+						<div class="top_le col-md-6">
+							<p>
+								<a href="#" onclick="addfav()"><i class="iconfont icon-star"></i>收藏本站</a>&nbsp;&nbsp;&nbsp;您好，欢迎来到我的养老网商城！&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="login.html">[登陆]</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="register.html">[免费注册]</a>
+							</p>
+						</div>
+						<div class="top_ri col-md-6">
+							<ul>
+								<li>
+									<div class="st_hd">
+										<a href="personal.html">我的订单<i class="iconfont icon-down"></i></a>
+									</div>
+									<div class="st_bd">
+
+									</div>
+								</li>
+								<li>
+
+									<div class="st_hd">
+										<a href="">我的收藏<i class="iconfont icon-down"></i></a>
+									</div>
+									<div class="st_bd">
+
+									</div>
+								</li>
+								<li>
+									<div class="st_hd">
+										<a href="">微信商城<i class="iconfont icon-down"></i></a>
+									</div>
+									<div class="st_bd">
+
+									</div>
+								</li>
+								<li>
+									<div class="st_hd">
+										<a href="">手机商城<i class="iconfont icon-down"></i></a>
+									</div>
+									<div class="st_bd">
+
+									</div>
+								</li>
+								<li>
+									<div class="st_hd">
+										<a href="">帮助中心<i class="iconfont icon-down"></i></a>
+									</div>
+									<div class="st_bd">
+
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="z_set col-md-12">
+					<div class="logo col-md-6">
+						<img src="img/common/logo.png" />
 						<div class="logo_text">
 							<p>我的养老网</p>
 							<p>www.wdylw123.com</p>
 						</div>
 					</div>
-				</div>
-				<div class="top_ri col-md-6">
-					<ul>
-						<li>
-							<a href=""><i class="iconfont icon-shopping"></i>我的购物车</a>
-						</li>
-						<li>
-							<a href="">我的订单<i class="iconfont icon-down"></i></a>
-						</li>
-						<li>
-							<a href="">我的收藏<i class="iconfont icon-down"></i></a>
-						</li>
-						<li>
-							<a href="">微信商城<i class="iconfont icon-down"></i></a>
-						</li>
-						<li>
-							<a href="">手机商城<i class="iconfont icon-down"></i></a>
-						</li>
-						<li>
-							<a href="">帮助中心<i class="iconfont icon-down"></i></a>
-						</li>
-					</ul>
-					<div id="search" class="col-md-12">
+					<div class="search col-md-6">
 						<div class="search_inp">
 							<input type="text" placeholder="夕阳红" />
 							<a href="">搜索</a><br />
@@ -76,11 +107,12 @@
 					</div>
 				</div>
 			</div>
+
 			<!-------导航分栏-------->
-			<div id="assortment" class="container-fluid">
+			<div id="assortment" class="container-fluid clearfix">
 				<p></p>
-				<div class="container">
-					<ul>
+				<div class="cen">
+					<ul class="container">
 						<li>
 							<a href="#">&nbsp;全部分类&nbsp;&nbsp;>&nbsp;&nbsp;</a>
 							<ul style="z-index: 99;">
@@ -88,7 +120,7 @@
 									<p>商品区</p>
 								</li>
 								<li class="active">
-									<a href=""><i class="iconfont icon-yifu"></i>衣服</a>
+									<a href=""><i class="iconfont icon-yifu"></i>服装</a>
 								</li>
 								<li>
 									<a href=""><i class="iconfont icon-hufu"></i>护肤</a>
@@ -136,44 +168,63 @@
 									<p>夕阳红</p>
 								</li>
 								<li>
-									<a href=""><i class="iconfont icon-zheyang"></i>更多服务</a>
+									<a href="">余晖依旧</a>
+								</li>
+								<li>
+									<a href="">劳动所得</a>
+								</li>
+								<li>
+									<a href="">闲物买卖</a>
 								</li>
 							</ul>
 						</li>
 						<li>
-							<a href="">首页</a>
+							<a href="index.html">首页</a>
 						</li>
 						<li>
-							<a href="">预售产品</a>
+							<a href="booking.html">预售产品</a>
 						</li>
 						<li>
-							<a href="">商品区</a>
+							<a href="product.html">商品区</a>
 						</li>
 						<li>
-							<a href="">服务区</a>
+							<a href="server.html">服务区</a>
 						</li>
 						<li>
 							<a href="">入驻夕阳红</a>
 						</li>
 					</ul>
-					<div class="top_banner">
-						<div class="test">
-							<div class="lunbo_wrap">
-								<ul class="pic_box">
-									<li><img src="img/1.jpg" /></li>
-									<li><img src="img/2.jpg" /></li>
-									<li><img src="img/3.jpg" /></li>
-									<li><img src="img/4.jpg" /></li>
-									<li><img src="img/5.jpg" /></li>
-								</ul>
-								<ul class="pannel"></ul>
-								<span id="left_arrow">
-					&lt;
-				</span>
-								<span id="right_arrow">
-					&gt;
-				</span>
+					<div class="top_ban">
+						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+							<!-- 轮播图的控制点 -->
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+							</ol>
+
+							<!-- 大图的容器 -->
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img src="img/product/1.jpg" alt="kv1">
+								</div>
+								<div class="item">
+									<img src="img/product/2.jpg" alt="kv2">
+								</div>
+								<div class="item">
+									<img src="img/product/3.jpg" alt="kv3">
+								</div>
+								<div class="item">
+									<img src="img/product/4.jpg" alt="kv4">
+								</div>
 							</div>
+
+							<!-- Controls -->
+							<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+							</a>
+							<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+							</a>
 						</div>
 						<div class="tb_ri">
 							<div class="public">
@@ -184,64 +235,113 @@
 								</ul>
 							</div>
 							<div class="pu_trends">
-								<ul class="pu_dt">
-									<li>
-										<img src="img/my.jpg" />
-										<div class="trand_list">
-											<p>****</p>
-											<p>通过 购物赚取养老金</p>
-											<p>￥10086.00元</p>
-										</div>
-									</li>
-									<li>
-										<img src="img/my.jpg" />
-										<div class="trand_list">
-											<p>****</p>
-											<p>通过 购物赚取养老金</p>
-											<p>￥10086.00元</p>
-										</div>
-									</li>
-									<li>
-										<img src="img/my.jpg" />
-										<div class="trand_list">
-											<p>****</p>
-											<p>通过 购物赚取养老金</p>
-											<p>￥10086.00元</p>
-										</div>
-									</li>
-									<li>
-										<img src="img/my.jpg" />
-										<div class="trand_list">
-											<p>****</p>
-											<p>通过 购物赚取养老金</p>
-											<p>￥10086.00元</p>
-										</div>
-									</li>
-									<li>
-										<img src="img/my.jpg" />
-										<div class="trand_list">
-											<p>****</p>
-											<p>通过 购物赚取养老金</p>
-											<p>￥10086.00元</p>
-										</div>
-									</li>
-									<li>
-										<img src="img/my.jpg" />
-										<div class="trand_list">
-											<p>****</p>
-											<p>通过 购物赚取养老金</p>
-											<p>￥10086.00元</p>
-										</div>
-									</li>
-									<li>
-										<img src="img/my.jpg" />
-										<div class="trand_list">
-											<p>****</p>
-											<p>通过 购物赚取养老金</p>
-											<p>￥10086.00元</p>
-										</div>
-									</li>
-								</ul>
+								<div id="dance" style="overflow: hidden;height:388px;width:260px;">
+									<div id="demo1">
+										<table border="0" cellspacing="0" cellpadding="0" align="center" width="98%" style="margin: 4px 0px;">
+											<tbody>
+												<tr>
+													<td height="25" align="left" valign="middle" class="zi3">
+														<img src="//i0.hdslb.com/bfs/archive/3ea09590468d179baaf7d3d48d309159a75d1f4e.jpg_320x200.jpg" />
+														<div class="trand_list">
+															<p>疯粤crazycanton</p>
+															<p>通过 购物赚取养老金</p>
+														</div>
+													</td>
+													<td align="center" valign="middle" class="zi5">￥10086.00元</td>
+												</tr>
+
+												<tr>
+													<td height="25" align="left" valign="middle" class="zi3">
+														<img src="//i0.hdslb.com/bfs/archive/bfaa73d0488d9841455e88bc369e0731b91c7922.jpg_320x200.jpg" />
+														<div class="trand_list">
+															<p>EdisonXxu</p>
+															<p>通过 购物赚取养老金</p>
+														</div>
+													</td>
+													<td align="center" valign="middle" class="zi5">￥10086.00元</td>
+												</tr>
+												<tr>
+													<td height="25" align="left" valign="middle" class="zi3">
+														<img src="//i0.hdslb.com/bfs/archive/003c8c38d5f9537e2055c497be32b55225357ef0.jpg_320x200.jpg" />
+														<div class="trand_list">
+															<p>柚子又抽了</p>
+															<p>通过 购物赚取养老金</p>
+														</div>
+													</td>
+													<td align="center" valign="middle" class="zi5">￥10086.00元</td>
+												</tr>
+												<tr>
+													<td height="25" align="left" valign="middle" class="zi3">
+														<img src="//i0.hdslb.com/bfs/archive/225a67544676c2aae788ca27a53744918562cef9.jpg_320x200.jpg" />
+														<div class="trand_list">
+															<p>SoFun搜趣坊</p>
+															<p>通过 购物赚取养老金</p>
+														</div>
+													</td>
+													<td align="center" valign="middle" class="zi5">￥10086.00元</td>
+												</tr>
+												<tr>
+													<td height="25" align="left" valign="middle" class="zi3">
+														<img src="//i0.hdslb.com/bfs/archive/86e2d5395208c71b0f0afd1b197dae4e0eff0937.jpg_320x200.jpg" />
+														<div class="trand_list">
+															<p>泠鸢yousa</p>
+															<p>通过 购物赚取养老金</p>
+														</div>
+													</td>
+													<td align="center" valign="middle" class="zi5">￥10086.00元</td>
+												</tr>
+												<tr>
+													<td height="25" align="left" valign="middle" class="zi3">
+														<img src="//i0.hdslb.com/bfs/archive/6801fc461b419ebd4980f8e7eadca55085f44f42.jpg_320x200.jpg" />
+														<div class="trand_list">
+															<p>纳兰寻风</p>
+															<p>通过 购物赚取养老金</p>
+														</div>
+													</td>
+													<td align="center" valign="middle" class="zi5">￥10086.00元</td>
+												</tr>
+
+												<tr>
+													<td height="25" align="left" valign="middle" class="zi3">
+														<img src="//i0.hdslb.com/bfs/archive/b279d4e862d750135702f075993f44cf0ac230ed.jpg_320x200.jpg" />
+														<div class="trand_list">
+															<p>彼优传媒</p>
+															<p>通过 购物赚取养老金</p>
+														</div>
+													</td>
+													<td align="center" valign="middle" class="zi5">￥10086.00元</td>
+												</tr>
+
+												<tr>
+													<td height="25" align="left" valign="middle" class="zi3">
+														<img src="//i0.hdslb.com/bfs/archive/9a65cee2ed141536fb64520d9a90c012ebcd29f5.jpg_320x200.jpg" />
+														<div class="trand_list">
+															<p>MaxKim</p>
+															<p>通过 购物赚取养老金</p>
+														</div>
+													</td>
+													<td align="center" valign="middle" class="zi5">￥10086.00元</td>
+												</tr>
+
+												<tr>
+													<td height="25" align="left" valign="middle" class="zi3">
+														<img src="//i0.hdslb.com/bfs/archive/2329b566df8ce99af3d0672cf950cfd2915b3f54.jpg_320x200.jpg" />
+														<div class="trand_list">
+															<p>科技微讯</p>
+															<p>通过 购物赚取养老金</p>
+														</div>
+													</td>
+													<td align="center" valign="middle" class="zi5">￥10086.00元</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<div id="demo2">
+
+									</div>
+
+								</div>
 							</div>
 							<ul class="pu_bulletin">
 								<li>
@@ -264,11 +364,12 @@
 				</div>
 			</div>
 		</header>
+
 		<section class="container">
 			<div class="market clearfix">
 				<ul>
 					<li>
-						<b>热销产品</b>
+						<b>热销产品<s></s></b>
 						<ul>
 							<li class="col-md-2">
 								<img src="http://res.wdmfw.com/upload/store/606/2016/09/02/df9bf11a-fcf7-4460-8a45-c4f59d4cb15f.jpg_middle.jpg" />
@@ -302,8 +403,8 @@
 							</li>
 						</ul>
 					</li>
-					<li><b>最新产品</b></li>
-					<li><b>预售产品</b></li>
+					<li><b>最新产品<s></s></b></li>
+					<li><b>预售产品<s></s></b></li>
 				</ul>
 			</div>
 			<!-----------商品区-------------->
@@ -348,16 +449,16 @@
 				<div class="banner clearfix">
 					<ul>
 						<li>
-							<img src="img/p_1.png" />
+							<img src="img/index/p_1.png" />
 						</li>
 						<li>
-							<img src="img/p_2.png" />
+							<img src="img/index/p_2.png" />
 						</li>
 						<li>
-							<img src="img/p_3.png" />
+							<img src="img/index/p_3.png" />
 						</li>
 						<li>
-							<img src="img/p_4.png" />
+							<img src="img/index/p_4.png" />
 						</li>
 					</ul>
 				</div>
@@ -406,7 +507,7 @@
 									<span>百雀羚水嫩倍现春季补水套装</span>
 									<span>￥186</span>
 									<a href="">已抢购209件</a>
-									<img src="//img.alicdn.com/i1/1243706008693265290/TB20qwUmb4npuFjSZFmXXXl4FXa_!!0-juitemmedia.jpg_120x120.jpg"/>
+									<img src="//img.alicdn.com/i1/1243706008693265290/TB20qwUmb4npuFjSZFmXXXl4FXa_!!0-juitemmedia.jpg_120x120.jpg" />
 								</div>
 							</li>
 						</ul>
@@ -432,11 +533,11 @@
 				<div class="test">
 					<div class="lunbo_wrap">
 						<ul class="pic_box">
-							<li><img src="img/1.jpg" /></li>
-							<li><img src="img/2.jpg" /></li>
-							<li><img src="img/3.jpg" /></li>
-							<li><img src="img/4.jpg" /></li>
-							<li><img src="img/5.jpg" /></li>
+							<li><img src="img/index/1.jpg" /></li>
+							<li><img src="img/index/2.jpg" /></li>
+							<li><img src="img/index/3.jpg" /></li>
+							<li><img src="img/index/4.jpg" /></li>
+							<li><img src="img/index/5.jpg" /></li>
 						</ul>
 						<ul class="pannel"></ul>
 						<span id="left_arrow">
@@ -483,12 +584,92 @@
 			</div>
 		</section>
 		<footer class="container-fluid">
-
+			<ul>
+				<li class="col-md-3">
+					<ul>
+						<li>客服热线</li>
+						<li>12345678</li>
+						<li>我的养老网</li>
+						<li>每个人的养老生活</li>
+					</ul>
+				</li>
+				<li class="col-md-2">
+					<ul>
+						<li>关于养老网</li>
+						<li></li>
+						<li>
+							<a href="">联系我们</a>
+						</li>
+						<li>
+							<a href="">简介</a>
+						</li>
+						<li>
+							<a href="">CEO致辞</a>
+						</li>
+					</ul>
+				</li>
+				<li class="col-md-2">
+					<ul>
+						<li>新手指南</li>
+						<li>
+							<a href="">付款方式</a>
+						</li>
+						<li>
+							<a href="">订购流程</a>
+						</li>
+						<li>
+							<a href="">注册新用户</a>
+						</li>
+						<li>
+							<a href="">常见问题解答</a>
+						</li>
+					</ul>
+				</li>
+				<li class="col-md-2">
+					<ul>
+						<li>购买保障</li>
+						<li>
+							<a href="">免责声明</a>
+						</li>
+						<li>
+							<a href="">隐私保护</a>
+						</li>
+						<li>
+							<a href="">注册协议</a>
+						</li>
+						<li>
+							<a href="">正品保障</a>
+						</li>
+					</ul>
+				</li>
+				<li class="col-md-3">
+					<ul>
+						<li>养老网公众微信号</li>
+						<li></li>
+						<li>关注最新消息</li>
+					</ul>
+				</li>
+			</ul>
 		</footer>
+		<script type="text/javascript">
+			var speeda = 30;
+			demo2.innerHTML = demo1.innerHTML;
 
+			function Marqueea() {
+				if(demo2.offsetTop - dance.scrollTop <= 0) {
+					dance.scrollTop -= demo1.offsetHeight;
+				} else {
+					dance.scrollTop++;
+				}
+			};
+			var MyMara = setInterval(Marqueea, speeda);
+			demoa.onmouseover=function() {clearInterval(MyMara)}
+			dance.onmouseout = function() {
+				MyMara = setInterval(Marqueea, speeda);
+			};
+		</script>
 		<script src="js/lib/jquery-2.1.0.js " type="text/javascript " charset="utf-8 "></script>
 		<script src="js/lib/bootstrap.min.js " type="text/javascript " charset="utf-8 "></script>
 		<script src="js/index.js " type="text/javascript " charset="utf-8 "></script>
 	</body>
-
 </html>

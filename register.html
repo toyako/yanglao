@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,userscalable=no" />
+		<title>我的养老网</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/lib/_reset.css" />
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/lib/_bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/register.css" />
+	</head>
+
+	<body>
+		<header class="clearfix">
+			<!---------顶端导航栏---------->
+			<div class="head_top clearfix">
+				<div class="heads z_top b-header-blur">
+					<div class="mask_warp">
+						<div class="mask_bg"></div>
+						<div class="mask"></div>
+					</div>
+					<div class="head_top_warp">
+						<div class="top_le col-md-6">
+							<p>
+								<a href="#" onclick="addfav()"><i class="iconfont icon-star"></i>收藏本站</a>&nbsp;&nbsp;&nbsp;您好，欢迎来到我的养老网商城！&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="login.html">[登陆]</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="register.html">[免费注册]</a>
+							</p>
+						</div>
+						<div class="top_ri col-md-6">
+							<ul>
+								<li>
+									<a href=""><i class="iconfont icon-shopping"></i>我的购物车</a>
+								</li>
+								<li>
+									<a href="">我的订单<i class="iconfont icon-down"></i></a>
+								</li>
+								<li>
+									<a href="">我的收藏<i class="iconfont icon-down"></i></a>
+								</li>
+								<li>
+									<a href="">微信商城<i class="iconfont icon-down"></i></a>
+								</li>
+								<li>
+									<a href="">手机商城<i class="iconfont icon-down"></i></a>
+								</li>
+								<li>
+									<a href="">帮助中心<i class="iconfont icon-down"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="z_set col-md-12">
+					<div class="logo col-md-6">
+						<img src="img/common/logo.png" />
+						<div class="logo_text">
+							<a href="index.html">
+							<p>我的养老网</p>
+							<p>www.wdylw123.com</p></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="container">
+			<div class="zcdl">
+				<div class="line"></div>
+				<div class="reg_title"></div>
+				<div class="centen">
+					<form>
+						<div class="new_phone center_div">
+							<input class="user_name" type="text" name="uname" placeholder="昵称（例：养老生活）">
+						</div>
+						<div class="new_phone center_div">
+							<input class="user_password" type="password" id="password" name="userpwd" placeholder="密码（6-16个字符组成，区分大小写）">
+						</div>
+						<div class="new_phone center_div">
+							<select name="country_code" id="country_code">
+
+								<option value="1" code="86">中国大陆</option>
+
+								<option value="5" code="852">香港特别行政区</option>
+
+								<option value="2" code="853">澳门特别行政区</option>
+
+								<option value="3" code="886">台湾地区</option>
+
+								<option value="4" code="1">美国</option>
+
+								<option value="6" code="32">比利时</option>
+
+								<option value="7" code="61">澳大利亚</option>
+
+								<option value="8" code="33">法国</option>
+
+								<option value="9" code="1">加拿大</option>
+
+								<option value="10" code="81">日本</option>
+
+								<option value="11" code="65">新加坡</option>
+
+								<option value="12" code="82">韩国</option>
+
+								<option value="13" code="60">马来西亚</option>
+
+								<option value="14" code="44">英国</option>
+
+								<option value="15" code="39">意大利</option>
+
+								<option value="16" code="49">德国</option>
+
+								<option value="18" code="7">俄罗斯</option>
+
+								<option value="19" code="64">新西兰</option>
+
+							</select>
+							<input id="new_phone" type="text" name="tel" placeholder="填写常用手机号">
+						</div>
+						<div class="new_phone center_div yzm">
+							<input id="yzm" type="text" name="code" placeholder="手机验证码">
+							<a href="#" class="yzm_buttom" id="getCaptch">点击获取</a>
+						</div>
+						<div class="new_phone center_div magm">
+							<label>
+								<input type="checkbox" value="1">我已同意<a href="" style="color: #00a3d5;">《我的养老网用户使用协议》</a>和<a href="" style="color: #00a3d5;">《我的养老网账号中心规范》</a></label>
+						</div>
+						<input type="submit" value="注册" id="regSubmit">
+						<div class="new_phone center_div new_login">
+							<a href="login.html">已有账号，直接登录&gt;</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<footer class="container-fluid">
+			<ul>
+				<li class="col-md-3">
+					<ul>
+						<li>客服热线</li>
+						<li>12345678</li>
+						<li>我的养老网</li>
+						<li>每个人的养老生活</li>
+					</ul>
+				</li>
+				<li class="col-md-2">
+					<ul>
+						<li>关于养老网</li>
+						<li></li>
+						<li>
+							<a href="">联系我们</a>
+						</li>
+						<li>
+							<a href="">简介</a>
+						</li>
+						<li>
+							<a href="">CEO致辞</a>
+						</li>
+					</ul>
+				</li>
+				<li class="col-md-2">
+					<ul>
+						<li>新手指南</li>
+						<li>
+							<a href="">付款方式</a>
+						</li>
+						<li>
+							<a href="">订购流程</a>
+						</li>
+						<li>
+							<a href="">注册新用户</a>
+						</li>
+						<li>
+							<a href="">常见问题解答</a>
+						</li>
+					</ul>
+				</li>
+				<li class="col-md-2">
+					<ul>
+						<li>购买保障</li>
+						<li>
+							<a href="">免责声明</a>
+						</li>
+						<li>
+							<a href="">隐私保护</a>
+						</li>
+						<li>
+							<a href="">注册协议</a>
+						</li>
+						<li>
+							<a href="">正品保障</a>
+						</li>
+					</ul>
+				</li>
+				<li class="col-md-3">
+					<ul>
+						<li>养老网公众微信号</li>
+						<li></li>
+						<li>关注最新消息</li>
+					</ul>
+				</li>
+			</ul>
+		</footer>
+		<script src="js/lib/jquery-2.1.0.js " type="text/javascript " charset="utf-8 "></script>
+		<script src="js/lib/bootstrap.min.js " type="text/javascript " charset="utf-8 "></script>
+	</body>
+
+</html>

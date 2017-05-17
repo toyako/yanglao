@@ -1,0 +1,94 @@
+@charset "UTF-8";
+section .se_o .s_left > a {
+  display: block;
+  width: 100%; }
+  section .se_o .s_left > a img {
+    position: relative;
+    left: 0px;
+    right: 0px;
+    top: 0;
+    display: block;
+    width: 100%; }
+section .se_o .s_left .gonggao {
+  border: 1px #ddd solid;
+  margin-top: 10px;
+  background: #FFFFFF; }
+  section .se_o .s_left .gonggao > ul {
+    margin: 0px;
+    padding: 0px;
+    height: 30px; }
+    section .se_o .s_left .gonggao > ul > li {
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      border-right: 1px #ddd solid; }
+    section .se_o .s_left .gonggao > ul li:hover {
+      border-top: 2px #CD2F2E solid; }
+    section .se_o .s_left .gonggao > ul li:nth-child(2) {
+      border-bottom: 1px #ddd solid; }
+  section .se_o .s_left .gonggao .l_gg {
+    height: 180px; }
+    section .se_o .s_left .gonggao .l_gg ul li {
+      padding: 5px 15px; }
+      section .se_o .s_left .gonggao .l_gg ul li a {
+        color: #666; }
+section .se_o .s_right {
+  height: 335px;
+  padding: 0px; }
+  section .se_o .s_right ul {
+    border: 1px #ddd solid;
+    background: #FFFFFF;
+    height: 300px; }
+    section .se_o .s_right ul li {
+      padding: 0px;
+      text-align: center; }
+      section .se_o .s_right ul li img {
+        width: 200px; }
+      section .se_o .s_right ul li span b {
+        color: #E04D60;
+        font-size: 20px; }
+  section .se_o .s_right > p {
+    font-weight: bold;
+    font-size: 18px; }
+    section .se_o .s_right > p span {
+      color: red; }
+section .se_o > a {
+  display: block; }
+  section .se_o > a img {
+    width: 1140px; }
+section .se {
+  margin-top: 30px; }
+  section .se .l_le {
+    height: 437px;
+    padding: 0px; }
+    section .se .l_le img {
+      height: 435px;
+      width: auto; }
+  section .se .l_ri {
+    height: 437px;
+    padding: 0px; }
+    section .se .l_ri ul {
+      padding: 0px;
+      margin: 0px;
+      height: 218px; }
+      section .se .l_ri ul li {
+        width: 20%;
+        height: 218px;
+        border: 1px solid #ddd;
+        padding-top: 10px;
+        background: #FFFFFF;
+        border-bottom: none;
+        border-left: none; }
+        section .se .l_ri ul li img {
+          width: 150px; }
+        section .se .l_ri ul li span {
+          font-size: 15px;
+          font-family: "微软雅黑";
+          color: #cd0100;
+          font-weight: bold; }
+  section .se > a {
+    display: block; }
+    section .se > a img {
+      width: 100%; }
+
+/*# sourceMappingURL=product.css.map */

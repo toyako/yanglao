@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,userscalable=no" />
+		<title>我的养老网</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/lib/_reset.css" />
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/lib/_bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/address.css" />
+	</head>
+
+	<body>
+		<header class="clearfix">
+			<!---------顶端导航栏---------->
+			<div class="head_top clearfix">
+				<div class="heads z_top b-header-blur">
+					<div class="mask_warp">
+						<div class="mask_bg"></div>
+						<div class="mask"></div>
+					</div>
+					<div class="head_top_warp">
+						<div class="top_le col-md-6">
+							<p>
+								<a href="#" onclick="addfav()"><i class="iconfont icon-star"></i>收藏本站</a>&nbsp;&nbsp;&nbsp;您好，欢迎来到我的养老网商城！&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="login.html">[登陆]</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="register.html">[免费注册]</a>
+							</p>
+						</div>
+						<div class="top_ri col-md-6">
+							<ul>
+								<li>
+									<a href=""><i class="iconfont icon-shopping"></i>我的购物车</a>
+								</li>
+								<li>
+									<a href="">我的订单<i class="iconfont icon-down"></i></a>
+								</li>
+								<li>
+									<a href="">我的收藏<i class="iconfont icon-down"></i></a>
+								</li>
+								<li>
+									<a href="">微信商城<i class="iconfont icon-down"></i></a>
+								</li>
+								<li>
+									<a href="">手机商城<i class="iconfont icon-down"></i></a>
+								</li>
+								<li>
+									<a href="">帮助中心<i class="iconfont icon-down"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="container">
+			<div class="u-title">
+				<h2>收货地址管理</h2>
+			</div>
+			<div class="address-tips">
+				<div class="ui-tiptext-container ui-tiptext-container-message">
+					<div class="ui-tiptext-content">
+						<p class="ui-tiptext ui-tiptext-message">
+							<i class="iconfont icon-warning"></i>
+							<span class="ui-tiptext-cnt">最多添加 5 个收货地址，你还可以添加 5个收货地址</span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="address-add">
+				<div class="address-add-link">
+					<a href="" title="添加收货地址">+ 添加收货地址</a>
+				</div>
+				<div class="address-add-form">
+					<form>
+						<div class="ui-form-item">
+							<label class="ui-label"><span class="ui-form-required">*</span>收货人姓名：</label>
+							<input type="text" class="ui-input ui-input-fullname">
+						</div>
+						<div class="ui-form-item">
+							<label class="ui-label">
+								<span class="ui-form-required">*</span>所在地区：</label>
+							<select class="ui-select-item">
+								<option value="">请选择</option>
+								<option value="北京">北京</option>
+								<option value="天津">天津</option>
+								<option value="河北省">河北省</option>
+								<option value="山西省">山西省</option>
+								<option value="内蒙古自治区">内蒙古自治区</option>
+								<option value="辽宁省">辽宁省</option>
+								<option value="吉林省">吉林省</option>
+								<option value="黑龙江省">黑龙江省</option>
+								<option value="上海">上海</option>
+								<option value="江苏省">江苏省</option>
+								<option value="浙江省">浙江省</option>
+								<option value="安徽省">安徽省</option>
+								<option value="福建省">福建省</option>
+								<option value="江西省">江西省</option>
+								<option value="山东省">山东省</option>
+								<option value="河南省">河南省</option>
+								<option value="湖北省">湖北省</option>
+								<option value="湖南省">湖南省</option>
+								<option value="广东省">广东省</option>
+								<option value="广西壮族自治区">广西壮族自治区</option>
+								<option value="海南省">海南省</option>
+								<option value="重庆">重庆</option>
+								<option value="四川省">四川省</option>
+								<option value="贵州省">贵州省</option>
+								<option value="云南省">云南省</option>
+								<option value="西藏自治区">西藏自治区</option>
+								<option value="陕西省">陕西省</option>
+								<option value="甘肃省">甘肃省</option>
+								<option value="青海省">青海省</option>
+								<option value="宁夏回族自治区">宁夏回族自治区</option>
+								<option value="新疆维吾尔自治区">新疆维吾尔自治区</option>
+								<option value="台湾省">台湾省</option>
+								<option value="香港特别行政区">香港特别行政区</option>
+								<option value="澳门特别行政区">澳门特别行政区</option>
+								<option value="其他国家和地区">其他国家和地区</option>
+							</select>
+							<span class="ui-select-text">省</span>
+							<span id="J_select_hide">
+							<select class="ui-select-item"><option value="">请选择</option></select>
+							<span class="ui-select-text">市</span>
+							<span id="J_select_area_hide" class="fn-hide">
+								<select class="ui-select-item"><option value="">请选择</option></select>
+								<span class="ui-select-text">区</span>
+							</span>
+							</span>
+							<div class="ui-form-explain"></div>
+						</div>
+
+						<div class="ui-form-item">
+							<label class="ui-label" style="float: left;"><span class="ui-form-required">*</span>详细地址：</label>
+							<textarea class="ui-textarea"></textarea>
+						</div>
+
+						<div class="ui-form-item">
+							<label class="ui-label"><span class="ui-form-required">*</span>邮政编码：</label>
+							<input type="text" class="ui-input ui-input-post">
+						</div>
+						<div class="ui-form-item account-address-phone">
+							<label class="ui-label" style="float: left;">
+							<span class="ui-form-required">*</span>联系方式：
+						</label>
+							<div class="ui-form-other-tit">
+								<label class="mobile" style="font-weight: 100;">手机号码</label>
+								<label class="phone" style="font-weight: 100;">固定电话号码</label>
+							</div>
+							<div class="ui-form-other-tinp">
+								<input type="text" value="" class="ui-input ui-input-phone" placeholder="手机号码（11位）">
+								<span class="ui-input-phonesplit">或</span>
+								<input type="text" value="" class="ui-input ui-input-phone" placeholder="固定电话号码">
+							</div>
+							<div class="ui-form-explain" style="font-size: 12px;color: #b2b2b2;margin-right: 6px;">手机和固定电话选填一项</div>
+						</div>
+						<div class="ui-form-item ui-from-item-submit">
+							<span class="ui-button ui-button-morange"><input type="submit" value=" 保存 " class="ui-button-text" ></span>
+							<a href="#" class="address-add-cancle" style="margin-left: 5px;">取消</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		<footer class="container-fluid">
+			<ul>
+				<li class="col-md-3">
+					<ul>
+						<li>客服热线</li>
+						<li>12345678</li>
+						<li>我的养老网</li>
+						<li>每个人的养老生活</li>
+					</ul>
+				</li>
+				<li class="col-md-2">
+					<ul>
+						<li>关于养老网</li>
+						<li></li>
+						<li>
+							<a href="">联系我们</a>
+						</li>
+						<li>
+							<a href="">简介</a>
+						</li>
+						<li>
+							<a href="">CEO致辞</a>
+						</li>
+					</ul>
+				</li>
+				<li class="col-md-2">
+					<ul>
+						<li>新手指南</li>
+						<li>
+							<a href="">付款方式</a>
+						</li>
+						<li>
+							<a href="">订购流程</a>
+						</li>
+						<li>
+							<a href="">注册新用户</a>
+						</li>
+						<li>
+							<a href="">常见问题解答</a>
+						</li>
+					</ul>
+				</li>
+				<li class="col-md-2">
+					<ul>
+						<li>购买保障</li>
+						<li>
+							<a href="">免责声明</a>
+						</li>
+						<li>
+							<a href="">隐私保护</a>
+						</li>
+						<li>
+							<a href="">注册协议</a>
+						</li>
+						<li>
+							<a href="">正品保障</a>
+						</li>
+					</ul>
+				</li>
+				<li class="col-md-3">
+					<ul>
+						<li>养老网公众微信号</li>
+						<li></li>
+						<li>关注最新消息</li>
+					</ul>
+				</li>
+			</ul>
+		</footer>
+		<script src="js/lib/jquery-2.1.0.js " type="text/javascript " charset="utf-8 "></script>
+		<script src="js/lib/bootstrap.min.js " type="text/javascript " charset="utf-8 "></script>
+	</body>
+
+</html>

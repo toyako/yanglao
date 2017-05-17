@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,userscalable=no" />
+		<title>我的养老网</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/lib/_reset.css" />
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/lib/_bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/site.css" />
+	</head>
+
+	<body>
+		<header class="clearfix">
+			<!---------顶端导航栏---------->
+			<div class="head_top clearfix">
+				<div class="heads z_top b-header-blur">
+					<div class="mask_warp">
+						<div class="mask_bg"></div>
+						<div class="mask"></div>
+					</div>
+					<div class="head_top_warp">
+						<div class="top_le col-md-6">
+							<p>
+								<a href="#" onclick="addfav()"><i class="iconfont icon-star"></i>收藏本站</a>&nbsp;&nbsp;&nbsp;您好，欢迎来到我的养老网商城！&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="login.html">[登陆]</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="register.html">[免费注册]</a>
+							</p>
+						</div>
+						<div class="top_ri col-md-6">
+							<ul>
+								<li>
+									<a href=""><i class="iconfont icon-shopping"></i>我的购物车</a>
+								</li>
+								<li>
+									<a href="">我的订单<i class="iconfont icon-down"></i></a>
+								</li>
+								<li>
+									<a href="">我的收藏<i class="iconfont icon-down"></i></a>
+								</li>
+								<li>
+									<a href="">微信商城<i class="iconfont icon-down"></i></a>
+								</li>
+								<li>
+									<a href="">手机商城<i class="iconfont icon-down"></i></a>
+								</li>
+								<li>
+									<a href="">帮助中心<i class="iconfont icon-down"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="sh_con clearfix">
+				<div class="sh_nav container">
+					<span class="col-md-2">我的养老网</span>
+					<ul class="col-md-6">
+						<li>
+							<a href="">首页</a>
+						</li>
+						<li>
+							<a href="">账户设置</a>
+						</li>
+						<li>
+							<a href="">消息</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="s_nav_index container">
+				<ul class="col-md-2 clearfix">
+					<li style="cursor: default;color: #99a2aa;" class="clearfix">
+						<a href="#" style="cursor: default;color: #99a2aa;padding-right: 25px;">个人中心</a>
+						<ul>
+							<li>
+								<a href="personal.html"><i class="iconfont icon-yonghu"></i>&nbsp;&nbsp;&nbsp;用户信息</a>
+							</li>
+							<li>
+								<a href="face.html"><i class="iconfont icon-touxiang"></i>&nbsp;&nbsp;&nbsp;我的头像</a>
+							</li>
+							<li>
+								<a href="security.html"><i class="iconfont icon-anquanzhongxin"></i>&nbsp;&nbsp;&nbsp;安全设置</a>
+							</li>
+							<li>
+								<a href="site.html" class="active"><i class="iconfont icon-renzheng"></i>&nbsp;&nbsp;&nbsp;认证中心</a>
+							</li>
+							<li>
+								<a href="address.html"><i class="iconfont icon-ju-icon-receiptAddress"></i>&nbsp;&nbsp;&nbsp;收货地址</a>
+							</li>
+						</ul>
+					</li>
+					<li style="cursor: default;color: #99a2aa;border-top: 1px solid #e1e2e5;" class="clearfix">
+						<a href="#" style="cursor: default;color: #99a2aa;">我的养老金</a>
+						<ul>
+							<li>
+								<a href="pension.html"><i class="iconfont icon-gerenzhanghu"></i>&nbsp;&nbsp;&nbsp;个人账户</a>
+							</li>
+							<li>
+								<a href="surplus.html"><i class="iconfont icon-gongmujijin"></i>&nbsp;&nbsp;&nbsp;公积账户</a>
+							</li>
+							<li>
+								<a href="spread.html"><i class="iconfont icon-yaoqing"></i>&nbsp;&nbsp;&nbsp;推荐分享</a>
+							</li>
+							<li>
+								<a href="#"><i class="iconfont icon-weibiaoti1"></i>&nbsp;&nbsp;&nbsp;我的积分</a>
+							</li>
+							<li>
+								<a href="#"><i class="iconfont icon-xinyong"></i>&nbsp;&nbsp;&nbsp;信用积分</a>
+							</li>
+						</ul>
+					</li>
+					<li style="border-top: 1px solid #e1e2e5;">
+						<a href="#">我的购物车&nbsp;&nbsp;&nbsp;></a>
+					</li>
+					<li>
+						<a href="#">我的订单&nbsp;&nbsp;&nbsp;></a>
+					</li>
+				</ul>
+				<div class="login_ps col-lg-9">
+					<div class="qiye rz">
+						<div class="rz_top">
+							<div class="b1" style="float: left;">
+								<i class="iconfont icon-renzheng"></i>
+							</div>
+							<div class="b2">
+								企业认证
+							</div>
+							<div class="rz_ts">
+								<span class="cstatus cstatus-not">未认证</span>
+
+								<a class="f-du" href="#">立即认证</a>
+							</div>
+						</div>
+					</div>
+					<div class="qiye rz">
+						<div class="rz_top">
+							<div class="b1" style="float: left;">
+								<i class="iconfont icon-certification"style="color: #f9b758;"></i>
+							</div>
+							<div class="b2">
+								个人认证
+							</div>
+							<div class="rz_ts">
+								<span class="cstatus cstatus-not">未认证</span>
+
+								<a class="f-du" href="#">立即认证</a>
+							</div>
+						</div>
+					</div>
+					<div class="qiye rz">
+						<div class="rz_top">
+							<div class="b1" style="float: left;">
+								<i class="iconfont icon-youxiangrenzheng" style="color: #1296DB;"></i>
+							</div>
+							<div class="b2">
+								邮箱认证
+							</div>
+							<div class="rz_ts">
+								<span class="cstatus cstatus-not">未认证</span>
+								<a class="f-du" href="#">立即认证</a>
+							</div>
+						</div>
+					</div>
+					<div class="qiye rz">
+						<div class="rz_top">
+							<div class="b1" style="float: left;">
+								<i class="iconfont icon-shoujirenzheng" style="color: #EB6669;"></i>
+							</div>
+							<div class="b2">
+								手机认证
+							</div>
+							<div class="rz_ts">
+								<span class="cstatus cstatus-not">未认证</span>
+
+								<a class="f-du" href="#">立即认证</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="container-fluid">
+			<ul>
+				<li class="col-md-3">
+					<ul>
+						<li>客服热线</li>
+						<li>12345678</li>
+						<li>我的养老网</li>
+						<li>每个人的养老生活</li>
+					</ul>
+				</li>
+				<li class="col-md-2">
+					<ul>
+						<li>关于养老网</li>
+						<li></li>
+						<li>
+							<a href="">联系我们</a>
+						</li>
+						<li>
+							<a href="">简介</a>
+						</li>
+						<li>
+							<a href="">CEO致辞</a>
+						</li>
+					</ul>
+				</li>
+				<li class="col-md-2">
+					<ul>
+						<li>新手指南</li>
+						<li>
+							<a href="">付款方式</a>
+						</li>
+						<li>
+							<a href="">订购流程</a>
+						</li>
+						<li>
+							<a href="">注册新用户</a>
+						</li>
+						<li>
+							<a href="">常见问题解答</a>
+						</li>
+					</ul>
+				</li>
+				<li class="col-md-2">
+					<ul>
+						<li>购买保障</li>
+						<li>
+							<a href="">免责声明</a>
+						</li>
+						<li>
+							<a href="">隐私保护</a>
+						</li>
+						<li>
+							<a href="">注册协议</a>
+						</li>
+						<li>
+							<a href="">正品保障</a>
+						</li>
+					</ul>
+				</li>
+				<li class="col-md-3">
+					<ul>
+						<li>养老网公众微信号</li>
+						<li></li>
+						<li>关注最新消息</li>
+					</ul>
+				</li>
+			</ul>
+		</footer>
+		<script src="js/lib/jquery-2.1.0.js " type="text/javascript " charset="utf-8 "></script>
+		<script src="js/lib/bootstrap.min.js " type="text/javascript " charset="utf-8 "></script>
+	</body>
+
+</html>

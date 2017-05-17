@@ -1,0 +1,199 @@
+@charset "utf-8";
+header {
+    margin-bottom: 0px;
+    height: 42px;
+    .top_le {
+        height: 42px;
+    }
+}
+
+section {
+    .sh_con {
+        background: #00A1D6;
+        margin-bottom: 20px;
+        .sh_nav {
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            >span {
+                font-size: 25px;
+                color: #fff;
+                text-align: left;
+            }
+            ul {
+                margin-bottom: 0;
+                li {
+                    float: left;
+                    width: 120px;
+                    a {
+                        display: block;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .sh_nav {
+            form {
+                input {
+                    height: 20px;
+                    margin: 0;
+                    padding: 0;
+                    border: none;
+                    width: 250px;
+                }
+                button {
+                    line-height: 20px;
+                    background: none;
+                    height: 20px;
+                    color: #fff;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .s_nav_index {
+        >ul.col-md-2 {
+            border: 1px solid #e1e2e5;
+            padding: 0;
+            text-align: center;
+            background-color: #fafafa;
+            color: #222;
+            width: 13%;
+            >li {
+                >a {
+                    color: #717171;
+                    font-size: 16px;
+                    padding-bottom: 7px;
+                    display: block;
+                    height: 40px;
+                    line-height: 40px;
+                    border-bottom: 1px solid #e1e2e5;
+                    color: #222;
+                }
+                >ul {
+                    border: none;
+                    >li {
+                        height: 45px;
+                        line-height: 45px;
+                        a {
+                            display: block;
+                            color: #222;
+                        }
+                        a:hover {
+                            background-color: #e1e4ea;
+                        }
+                        a:checked,
+                        a:active,
+                        a.active {
+                            background-color: #00A1D7;
+                            color: #fff;
+                            i {
+                                color: #fff;
+                            }
+                        }
+                        i {
+                            color: #99a2aa
+                        }
+                    }
+                }
+            }
+        }
+        >.col-md-9 {
+            .yhxx {
+                .xx_top {
+                    border: 1px solid #e3e3e3;
+                    height: 100px;
+                    padding-top: 10px;
+                    .touxiang {
+                        text-align: center;
+                        width: 12%;
+                        padding-right: 0;
+                        img {
+                            width: 70px;
+                            height: 70px;
+                            border-radius: 50%;
+                        }
+                    }
+                    .mingzi {
+                        margin: 0;
+                        padding: 0;
+                        margin-top: 15px;
+                        margin-left: 4px;
+                    }
+                    .zhanghu {
+                        ul {
+                            margin-top: 20px;
+                            li {
+                                text-align: center;
+                                width: 33.3%;
+                                float: left;
+                                position: relative;
+                                right: 0px;
+                                font-size: 15px;
+                                display: block;
+                                a {
+                                    z-index: 1;
+                                    display: block;
+                                    color: #666;
+                                }
+                                a:hover {
+                                    color: red;
+                                }
+                            }
+                            li:nth-child(2) {
+                                border-left: 1px solid #999;
+                                border-right: 1px solid #999;
+                            }
+                        }
+                    }
+                    .renzheng {
+                        margin-left: 85px;
+                        margin-top: -35px;
+                        span {
+                            width: 7%;
+                            text-align: left;
+                            margin: 0;
+                            padding: 0;
+                        }
+                    }
+                }
+                .xqxinfo {
+                    tr {
+                        th {
+                            width: 110px;
+                            text-align: right;
+                            color: #666;
+                            font-weight: normal;
+                            padding-right: 10px;
+                            font-size: 12px;
+                        }
+                        td {
+                            font-size: 12px;
+                            padding: 10px 0;
+                            .yhzh_p {
+                                margin-top: 10px;
+                            }
+                            .six {
+                                span {
+                                    float: left;
+                                    height: 20px;
+                                    padding: 0 8px;
+                                    line-height: 20px;
+                                    border-radius: 3px;
+                                    margin-right: 20px;
+                                    background: #f4f4f4;
+                                    cursor: pointer;
+                                }
+                                span:checked,span:active,span.active{
+                                    background: #00A1D7;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

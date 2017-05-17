@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,userscalable=no" />
+		<title>我的养老网</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/lib/_reset.css" />
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/lib/_bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+	</head>
+
+	<body>
+		<header class="clearfix">
+			<!---------顶端导航栏---------->
+			<div class="head_top clearfix">
+				<div class="heads z_top b-header-blur">
+					<!--style="background: #676767;"-->
+					<div class="mask_warp">
+						<div class="mask_bg"></div>
+						<div class="mask"></div>
+					</div>
+					<div class="head_top_warp">
+						<div class="top_le col-md-6">
+							<p>
+								<a href="#" onclick="addfav()"><i class="iconfont icon-star"></i>收藏本站</a>&nbsp;&nbsp;&nbsp;您好，欢迎来到我的养老网商城！&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="login.html">[登陆]</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="register.html">[免费注册]</a>
+							</p>
+						</div>
+						<div class="top_ri col-md-6">
+							<ul>
+								<li>
+									<a href=""><i class="iconfont icon-shopping"></i>我的购物车</a>
+								</li>
+								<li>
+									<a href="">我的订单<i class="iconfont icon-down"></i></a>
+								</li>
+								<li>
+									<a href="">我的收藏<i class="iconfont icon-down"></i></a>
+								</li>
+								<li>
+									<a href="">微信商城<i class="iconfont icon-down"></i></a>
+								</li>
+								<li>
+									<a href="">手机商城<i class="iconfont icon-down"></i></a>
+								</li>
+								<li>
+									<a href="">帮助中心<i class="iconfont icon-down"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="z_set col-md-12">
+					<div class="logo col-md-6">
+						<img src="img/common/logo.png" />
+						<div class="logo_text">
+							<a href="index.html">
+								<p>我的养老网</p>
+								<p>www.wdylw123.com</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<setion>
+			<div id="avatar" class="profile-new-portrait">
+				<div id="passPortraitWrapper">
+					<div class="pass-portrait">
+						<ul class="pass-portrait-nav" id="passPortraitNav">
+							<li class="pass-portrait-current" id="portraitCustomLi"><span>自定义头像</span></li>
+							<li class="pass-portrait-navright" id="portraitHotrecomLi"><span>热门推荐头像</span></li>
+						</ul>
+						<div class="pass-portrait-content pass-portrait-clearfix">
+							<div class="pass-portrait-left">
+								<div class="pass-portrait-tabcontent" id="portraitCustom">
+									<div class="pass-portrait-crop pass-portrait-hide" id="passPortraitCrop">
+										<span id="loadingSpan">
+											<img src="https://passport.baidu.com/passApi/img/loadingPortrait.gif?v=90067020.gif" class="loadingImg">
+										</span>
+										<img src="https://passport.baidu.com/passApi/img/small_blank.gif?v=90067020.gif" id="cropImg">
+
+									</div>
+									<p class="pass-portrain-commonp">
+										方法一：选择本地照片，上传编辑自己的头像
+									</p>
+									<div class="pass-portrait-openimg">
+										<input type="button" class="pass-portrait-filebtn" name="openImgBtn" id="openImgBtn" value="选择图片">
+										<input type="file" class="pass-portrait-file" name="file" id="fileImg">
+										<span class="pass-portrait-msg">
+													支持jpg、jpeg、gif、png、bmp格式的图片
+												</span>
+									</div>
+									
+								</div>
+								<div class="pass-portrait-tabcontent pass-portrait-hide" id="portraitHotrecom">
+									
+								</div>
+								<div class="pass-form-hidden"><input type="hidden" name="isCrop" id="isCrop"><input type="hidden" name="serie" id="serie"><input type="hidden" name="num" id="num"><input type="hidden" name="picId" id="picId"><input type="hidden" name="isHistory" id="isHistory"><input type="hidden" name="historyId" id="historyId"></div>
+								<div class="pass-portrait-save "><input type="button" value="保存头像" class="pass-portrait-savebtn pass-portrait-disabled" disabled="true" id="savePortrait">&nbsp;<input type="button" value="重新选择" class="pass-portrait-cancelbtn pass-portrait-hide" id="passPortraitRechoicebtn"><input type="file" class="pass-portrait-refile pass-portrait-hide" name="file" id="fileReImg"><span class="pass-portrait-status pass-portrait-hide" id="passPortraitPrompt">成功更新头像</span></div>
+							</div>
+							<div class="pass-portrait-right">
+								<p class="pass-portrain-commonp">头像预览</p>
+								<p id="previewBoxBig" class="pass-portrait-previewboxbig"><img src="https://ss0.bdstatic.com/7Ls0a8Sm1A5BphGlnYG/sys/portrait/item/4aa6e6b49ee788b7e6b996e985b1e6b181e9b1bc63632f4e" class="pass-portrait-previewbig" id="previewImgBig"></p>
+								<p class="pass-portrain-commonp pass-portrain-previewp"><span>大头像100*100</span></p>
+								<p id="previewBoxSmall" class="pass-portrait-previewboxbigsmall"><img src="https://ss0.bdstatic.com/7Ls0a8Sm1A5BphGlnYG/sys/portrait/item/4aa6e6b49ee788b7e6b996e985b1e6b181e9b1bc63632f4e" class="pass-portrait-previewsmall" id="previewImgSmall"></p>
+								<p class="pass-portrain-commonp pass-portrain-previewp"><span>小头像55*55</span></p>
+								<p>我使用过的头像</p>
+								<ul class="pass-portrait-history" id="passPortraitHistory">
+									<li id="his-0"><img src="https://ss0.bdstatic.com/7Ls0a8Sm1A5BphGlnYG/sys/portrait/hotitem/wildkid/1" data-history="0"><span class="historySpan"></span></li>
+									<li id="his-1"><img src="https://ss3.baidu.com/7LsWdDW5_xN3otqbppnN2DJv/pass/s%3D110%3Bq%3D90%3Bg%3D0/sign=e24f025ebf315c6047956feebd8aba2e/5fdf8db1cb1349540b92462f554e9258d0094ae8.jpg" data-history="1"><span class="historySpan"></span></li>
+									<li id="his-2"><img src="https://ss3.baidu.com/7LsWdDW5_xN3otqbppnN2DJv/pass/s%3D110%3Bq%3D90%3Bg%3D0/sign=48ebed3eca3d70cf48faae0cc8e7a03d/9e3df8dcd100baa1fac4f8bc4410b912c9fc2ec8.jpg" data-history="2"><span class="historySpan"></span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</setion>
+		<footer class="container-fluid">
+			<ul>
+				<li class="col-md-3">
+					<ul>
+						<li>客服热线</li>
+						<li>12345678</li>
+						<li>我的养老网</li>
+						<li>每个人的养老生活</li>
+					</ul>
+				</li>
+				<li class="col-md-2">
+					<ul>
+						<li>关于养老网</li>
+						<li></li>
+						<li>
+							<a href="">联系我们</a>
+						</li>
+						<li>
+							<a href="">简介</a>
+						</li>
+						<li>
+							<a href="">CEO致辞</a>
+						</li>
+					</ul>
+				</li>
+				<li class="col-md-2">
+					<ul>
+						<li>新手指南</li>
+						<li>
+							<a href="">付款方式</a>
+						</li>
+						<li>
+							<a href="">订购流程</a>
+						</li>
+						<li>
+							<a href="">注册新用户</a>
+						</li>
+						<li>
+							<a href="">常见问题解答</a>
+						</li>
+					</ul>
+				</li>
+				<li class="col-md-2">
+					<ul>
+						<li>购买保障</li>
+						<li>
+							<a href="">免责声明</a>
+						</li>
+						<li>
+							<a href="">隐私保护</a>
+						</li>
+						<li>
+							<a href="">注册协议</a>
+						</li>
+						<li>
+							<a href="">正品保障</a>
+						</li>
+					</ul>
+				</li>
+				<li class="col-md-3">
+					<ul>
+						<li>养老网公众微信号</li>
+						<li></li>
+						<li>关注最新消息</li>
+					</ul>
+				</li>
+			</ul>
+		</footer>
+		<script src="js/lib/jquery-2.1.0.js " type="text/javascript " charset="utf-8 "></script>
+		<script src="js/lib/bootstrap.min.js " type="text/javascript " charset="utf-8 "></script>
+	</body>
+
+</html>

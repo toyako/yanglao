@@ -1,0 +1,92 @@
+section .zcdl {
+  position: relative; }
+  section .zcdl .line {
+    width: 100%;
+    height: 2px;
+    background-color: #f1f1f1;
+    margin-top: 28px; }
+  section .zcdl .reg_title {
+    width: 100%;
+    height: 50px;
+    float: left;
+    margin-top: -30px;
+    background: url(../img/register/t2.png) top center no-repeat; }
+  section .zcdl .centen {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px; }
+    section .zcdl .centen form input:active {
+      placeholder: none; }
+    section .zcdl .centen form .center_div {
+      width: 415px;
+      height: 42px;
+      margin: 0 auto;
+      line-height: 42px;
+      border-radius: 3px; }
+      section .zcdl .centen form .center_div .user_name,
+      section .zcdl .centen form .center_div .user_password {
+        width: 400px; }
+    section .zcdl .centen form .new_phone {
+      margin-top: 40px; }
+      section .zcdl .centen form .new_phone label {
+        line-height: initial;
+        text-align: left;
+        font: 12px/1.125 Arial, Helvetica, sans-serif; }
+        section .zcdl .centen form .new_phone label input {
+          height: auto; }
+    section .zcdl .centen form select {
+      height: 40px;
+      width: 90px;
+      border: none;
+      border: 1px solid #dfdfdf;
+      border-radius: 3px;
+      font: 12px/1.125 Arial, Helvetica, sans-serif; }
+    section .zcdl .centen form #new_phone {
+      width: 305px; }
+    section .zcdl .centen form input {
+      padding: 10px;
+      height: 40px;
+      font: 12px/1.125 Arial, Helvetica, sans-serif;
+      border: none;
+      border-radius: 3px;
+      border: 1px solid #dfdfdf; }
+    section .zcdl .centen form > .yzm {
+      position: relative;
+      height: 40px;
+      width: 400px; }
+      section .zcdl .centen form > .yzm .d_pass {
+        position: absolute;
+        right: 0;
+        top: -40px; }
+      section .zcdl .centen form > .yzm #yzm {
+        width: 150px;
+        float: left; }
+      section .zcdl .centen form > .yzm .yzmimg {
+        display: inline-block; }
+        section .zcdl .centen form > .yzm .yzmimg img {
+          height: 40px;
+          margin-top: -5px; }
+    section .zcdl .centen form #logSubmit {
+      background: #00a3d5;
+      width: 185px;
+      border-color: #eee;
+      margin: 0 15px 0 15px;
+      color: #fff; }
+    section .zcdl .centen form #regSubmit {
+      width: 185px;
+      background: #fff;
+      border: 1px solid #ccc;
+      margin: 0 15px 0 15px; }
+    section .zcdl .centen form .magm {
+      margin-top: 5px; }
+      section .zcdl .centen form .magm label {
+        margin-left: -150px; }
+        section .zcdl .centen form .magm label strong {
+          color: #bbb; }
+    section .zcdl .centen form .new_login {
+      margin-top: 0px; }
+      section .zcdl .centen form .new_login a {
+        color: #00a3d5;
+        margin-left: 265px; }
+
+/*# sourceMappingURL=login.css.map */
