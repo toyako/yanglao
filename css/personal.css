@@ -103,7 +103,9 @@ section .s_nav_index > .col-md-9 .yhxx .xx_top {
       section .s_nav_index > .col-md-9 .yhxx .xx_top .zhanghu ul li a {
         z-index: 1;
         display: block;
-        color: #666; }
+        color: #000; }
+        section .s_nav_index > .col-md-9 .yhxx .xx_top .zhanghu ul li a span {
+          color: #666; }
       section .s_nav_index > .col-md-9 .yhxx .xx_top .zhanghu ul li a:hover {
         color: red; }
     section .s_nav_index > .col-md-9 .yhxx .xx_top .zhanghu ul li:nth-child(2) {
@@ -138,8 +140,128 @@ section .s_nav_index > .col-md-9 .yhxx .xqxinfo tr td {
     margin-right: 20px;
     background: #f4f4f4;
     cursor: pointer; }
-  section .s_nav_index > .col-md-9 .yhxx .xqxinfo tr td .six span:checked, section .s_nav_index > .col-md-9 .yhxx .xqxinfo tr td .six span:active, section .s_nav_index > .col-md-9 .yhxx .xqxinfo tr td .six span.active {
+  section .s_nav_index > .col-md-9 .yhxx .xqxinfo tr td .six span:checked,
+  section .s_nav_index > .col-md-9 .yhxx .xqxinfo tr td .six span:active,
+  section .s_nav_index > .col-md-9 .yhxx .xqxinfo tr td .six span.active {
     background: #00A1D7;
     color: #fff; }
+
+@media screen and (max-width: 481px) {
+  .p10 {
+    padding: 0 10px; }
+
+  .c_my_use .cu_n {
+    background: #66ccff;
+    vertical-align: middle;
+    border: 1px solid #CCCCCC;
+    padding: 10px 10px 10px 20px; }
+    .c_my_use .cu_n span {
+      float: left;
+      width: 55px;
+      height: 55px;
+      display: inline-block;
+      text-align: center;
+      border-radius: 50%;
+      line-height: 50px;
+      margin-right: 10px; }
+      .c_my_use .cu_n span img {
+        border-radius: 50%;
+        width: 100%; }
+    .c_my_use .cu_n span:nth-child(3) {
+      font-size: 28px;
+      float: right; }
+  .c_my_use .cu_sc {
+    background: #66512C;
+    border: 1px solid #ccc;
+    border-top: none; }
+    .c_my_use .cu_sc ul li {
+      text-align: center;
+      line-height: 30px;
+      float: left;
+      width: 33.33333333333333333333%;
+      border-right: 1px solid #ccc; }
+      .c_my_use .cu_sc ul li a {
+        display: block; }
+        .c_my_use .cu_sc ul li a p {
+          height: auto; }
+    .c_my_use .cu_sc ul li:last-child {
+      border: none; }
+  .c_my_use .cu_d {
+    background: red; }
+    .c_my_use .cu_d a {
+      display: block;
+      text-align: left;
+      height: 40px;
+      line-height: 40px;
+      border: 1px solid #E3E3E3;
+      color: #000000;
+      border-top: none;
+      padding: 0 10px; }
+      .c_my_use .cu_d a span {
+        float: right; }
+  .c_my_use .cu_mon {
+    background: #089C08; }
+    .c_my_use .cu_mon a {
+      display: block;
+      text-align: left;
+      height: 40px;
+      line-height: 40px;
+      border: 1px solid #E3E3E3;
+      color: #000000;
+      border-top: none; }
+  .c_my_use .cu_men {
+    background: #405760; }
+    .c_my_use .cu_men ul {
+      margin-bottom: 0; }
+      .c_my_use .cu_men ul li {
+        text-align: center;
+        line-height: 30px;
+        float: left;
+        width: 33.3333333333333333%;
+        border-right: 1px solid #ccc;
+        height: 30px; }
+    .c_my_use .cu_men a {
+      display: block; }
+  .c_my_use .cu_up {
+    background: #795DA3;
+    border-top: 1px solid #ccc; }
+    .c_my_use .cu_up a {
+      display: block;
+      text-align: left;
+      height: 30px;
+      padding-left: 80px;
+      color: #000;
+      padding-right: 90px;
+      font-size: 17px; }
+      .c_my_use .cu_up a span {
+        float: right; }
+  .c_my_use .cu_seve {
+    background: #B0A17E;
+    border: 1px solid #CCCCCC;
+    border-top: none; }
+    .c_my_use .cu_seve ul {
+      margin: 0; }
+      .c_my_use .cu_seve ul li {
+        width: 25%;
+        float: left;
+        border-right: 1px solid #CCCCCC;
+        text-align: center; }
+        .c_my_use .cu_seve ul li a {
+          display: block;
+          color: #000000; }
+      .c_my_use .cu_seve ul li:last-child {
+        border: none; }
+  .c_my_use .cu_ser {
+    background: #EC971F;
+    border: 1px solid #ccc; }
+    .c_my_use .cu_ser ul {
+      margin: 0; }
+      .c_my_use .cu_ser ul li {
+        width: 49.9999%;
+        float: left;
+        border-right: 1px solid #CCCCCC;
+        text-align: center;
+        height: 30px;
+        line-height: 30px; } }
 
 /*# sourceMappingURL=personal.css.map */

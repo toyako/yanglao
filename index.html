@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width,userscalable=no" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="icon" href="img/common/favicon.ico" />
 		<title>我的养老网</title>
-		<link rel="stylesheet" type="text/css" href="css/index.css" />
 		<link rel="stylesheet" type="text/css" href="css/lib/_reset.css" />
 		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
 		<link rel="stylesheet" type="text/css" href="css/lib/_bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/lib/_animate.min.css" />
 	</head>
+
 	<body>
 		<header class="clearfix">
 			<!---------顶端导航栏---------->
 			<div class="head_top clearfix">
 				<div class="heads z_top b-header-blur">
 					<div class="mask_warp">
-						<div class="mask_bg" style="background-image: url(img/common/bg.jpg);"></div>
+						<div class="mask_bg" style="background-image: url(img/common/bg1.jpg);"></div>
 						<div class="mask"></div>
 					</div>
 					<div class="head_top_warp">
@@ -59,15 +63,13 @@
 										<a href="">手机商城<i class="iconfont icon-down"></i></a>
 									</div>
 									<div class="st_bd">
-
 									</div>
 								</li>
 								<li>
 									<div class="st_hd">
-										<a href="">帮助中心<i class="iconfont icon-down"></i></a>
+										<a href="help.html">帮助中心<i class="iconfont icon-down"></i></a>
 									</div>
 									<div class="st_bd">
-
 									</div>
 								</li>
 							</ul>
@@ -82,8 +84,8 @@
 							<p>www.wdylw123.com</p>
 						</div>
 					</div>
-					<div class="search col-md-6">
-						<div class="search_inp">
+					<div class="search col-md-6 clearfix">
+						<div class="search_inp clearfix">
 							<input type="text" placeholder="夕阳红" />
 							<a href="">搜索</a><br />
 						</div>
@@ -112,70 +114,64 @@
 			<div id="assortment" class="container-fluid clearfix">
 				<p></p>
 				<div class="cen">
-					<ul class="container">
+					<ul class="container clearfix">
 						<li>
 							<a href="#">&nbsp;全部分类&nbsp;&nbsp;>&nbsp;&nbsp;</a>
-							<ul style="z-index: 99;">
-								<li>
-									<p>商品区</p>
-								</li>
-								<li class="active">
-									<a href=""><i class="iconfont icon-yifu"></i>服装</a>
-								</li>
-								<li>
-									<a href=""><i class="iconfont icon-hufu"></i>护肤</a>
-								</li>
-								<li>
-									<a href=""><i class="iconfont icon-lingshi"></i>零食</a>
-								</li>
-								<li>
-									<a href=""><i class="iconfont icon-jiadian"></i>家电</a>
-								</li>
-								<li>
-									<a href=""><i class="iconfont icon-jiaju"></i>家具</a>
-								</li>
-								<li>
-									<a href=""><i class="iconfont icon-shuma"></i>数码</a>
-								</li>
-								<li>
-									<a href="">查看更多</a>
-								</li>
-								<li>
-									<p>服务区</p>
-								</li>
-								<li>
-									<a href=""><i class="iconfont icon-meirong"></i>美容</a>
-								</li>
-								<li>
-									<a href=""><i class="iconfont icon-yangshenghuo"></i>养生</a>
-								</li>
-								<li>
-									<a href=""><i class="iconfont icon-lvyou1"></i>旅游</a>
-								</li>
-								<li>
-									<a href=""><i class="iconfont icon-sauna"></i>桑拿</a>
-								</li>
-								<li>
-									<a href=""><i class="iconfont icon-zuyu"></i>足浴</a>
-								</li>
-								<li>
-									<a href=""><i class="iconfont icon-wenquan"></i>温泉</a>
-								</li>
-								<li>
-									<a href="">查看更多</a>
-								</li>
-								<li>
-									<p>夕阳红</p>
-								</li>
-								<li>
-									<a href="">余晖依旧</a>
-								</li>
-								<li>
-									<a href="">劳动所得</a>
-								</li>
-								<li>
-									<a href="">闲物买卖</a>
-								</li>
+							<ul style="z-index: 101;display: block;">
+								<div class="shopp tdi">
+									<h4>商品区</h4>
+									<li class="active">
+										<a href="shop.html"><i class="iconfont icon-yifu"></i>服装</a>
+									</li>
+									<li>
+										<a href="shop.html"><i class="iconfont icon-hufu"></i>护肤</a>
+									</li>
+									<li>
+										<a href="shop.html"><i class="iconfont icon-lingshi"></i>零食</a>
+									</li>
+									<li>
+										<a href="shop.html"><i class="iconfont icon-jiadian"></i>家电</a>
+									</li>
+									<li>
+										<a href="shop.html"><i class="iconfont icon-jiaju"></i>家具</a>
+									</li>
+									<li>
+										<a href="shop.html"><i class="iconfont icon-shuma"></i>数码</a>
+									</li>
+								</div>
+								<div class="sevr tdi">
+									<h4>服务区</h4>
+									<li>
+										<a href="shop.html"><i class="iconfont icon-meirong"></i>美容</a>
+									</li>
+									<li>
+										<a href="shop.html"><i class="iconfont icon-yangshenghuo"></i>养生</a>
+									</li>
+									<li>
+										<a href="shop.html"><i class="iconfont icon-lvyou1"></i>旅游</a>
+									</li>
+									<li>
+										<a href="shop.html"><i class="iconfont icon-sauna"></i>桑拿</a>
+									</li>
+									<li>
+										<a href="shop.html"><i class="iconfont icon-jiaoyin"></i>足浴</a>
+									</li>
+									<li>
+										<a href="shop.html"><i class="iconfont icon-wenquan"></i>温泉</a>
+									</li>
+								</div>
+								<div class="xiyang tdi">
+									<h4>夕阳红</h4>
+									<li style="width: 24%;">
+										<a href=""><i class="iconfont icon-zheyang" style="margin: 7px;"></i>余晖依旧</a>
+									</li>
+									<li style="width: 24%;">
+										<a href=""><i class="iconfont icon-laowujiesuan" style="margin: 7px;"></i>劳动所得</a>
+									</li>
+									<li style="width: 24%;">
+										<a href=""><i class="iconfont icon-xianzhi" style="margin: 8px;"></i>闲物买卖</a>
+									</li>
+								</div>
 							</ul>
 						</li>
 						<li>
@@ -191,13 +187,19 @@
 							<a href="server.html">服务区</a>
 						</li>
 						<li>
-							<a href="">入驻夕阳红</a>
+							<a href="elderly.html">入驻夕阳红</a>
 						</li>
 					</ul>
-					<div class="top_ban">
+					<div class="top_ban clearfix">
+						<div class="mask_warp">
+							<div class="mask_bg">
+								<img src="" />
+							</div>
+							<div class="mask"></div>
+						</div>
 						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 							<!-- 轮播图的控制点 -->
-							<ol class="carousel-indicators">
+							<ol class="carousel-indicators" style="z-index: 101;">
 								<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 								<li data-target="#carousel-example-generic" data-slide-to="1"></li>
 								<li data-target="#carousel-example-generic" data-slide-to="2"></li>
@@ -206,205 +208,129 @@
 
 							<!-- 大图的容器 -->
 							<div class="carousel-inner" role="listbox">
+								<div class="item">
+									<img src="img/product/timg.jpg" alt="kv1">
+								</div>
 								<div class="item active">
-									<img src="img/product/1.jpg" alt="kv1">
+									<img src="img/product/5818ccec3ac42.jpg" alt="kv2">
 								</div>
 								<div class="item">
-									<img src="img/product/2.jpg" alt="kv2">
+									<img src="img/product/5818cde11e74f.jpg" alt="kv3">
 								</div>
 								<div class="item">
-									<img src="img/product/3.jpg" alt="kv3">
-								</div>
-								<div class="item">
-									<img src="img/product/4.jpg" alt="kv4">
+									<img src="img/product/timg (1).jpg" alt="kv4">
 								</div>
 							</div>
 
 							<!-- Controls -->
-							<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+							<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev" style="z-index: 100;">
 							</a>
-							<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+							<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next" style="z-index: 100;">
 							</a>
-						</div>
-						<div class="tb_ri">
-							<div class="public">
-								<ul>
-									<li>养老网动态</li>
-									<li>公告</li>
-									<li>登录</li>
-								</ul>
-							</div>
-							<div class="pu_trends">
-								<div id="dance" style="overflow: hidden;height:388px;width:260px;">
-									<div id="demo1">
-										<table border="0" cellspacing="0" cellpadding="0" align="center" width="98%" style="margin: 4px 0px;">
-											<tbody>
-												<tr>
-													<td height="25" align="left" valign="middle" class="zi3">
-														<img src="//i0.hdslb.com/bfs/archive/3ea09590468d179baaf7d3d48d309159a75d1f4e.jpg_320x200.jpg" />
-														<div class="trand_list">
-															<p>疯粤crazycanton</p>
-															<p>通过 购物赚取养老金</p>
-														</div>
-													</td>
-													<td align="center" valign="middle" class="zi5">￥10086.00元</td>
-												</tr>
-
-												<tr>
-													<td height="25" align="left" valign="middle" class="zi3">
-														<img src="//i0.hdslb.com/bfs/archive/bfaa73d0488d9841455e88bc369e0731b91c7922.jpg_320x200.jpg" />
-														<div class="trand_list">
-															<p>EdisonXxu</p>
-															<p>通过 购物赚取养老金</p>
-														</div>
-													</td>
-													<td align="center" valign="middle" class="zi5">￥10086.00元</td>
-												</tr>
-												<tr>
-													<td height="25" align="left" valign="middle" class="zi3">
-														<img src="//i0.hdslb.com/bfs/archive/003c8c38d5f9537e2055c497be32b55225357ef0.jpg_320x200.jpg" />
-														<div class="trand_list">
-															<p>柚子又抽了</p>
-															<p>通过 购物赚取养老金</p>
-														</div>
-													</td>
-													<td align="center" valign="middle" class="zi5">￥10086.00元</td>
-												</tr>
-												<tr>
-													<td height="25" align="left" valign="middle" class="zi3">
-														<img src="//i0.hdslb.com/bfs/archive/225a67544676c2aae788ca27a53744918562cef9.jpg_320x200.jpg" />
-														<div class="trand_list">
-															<p>SoFun搜趣坊</p>
-															<p>通过 购物赚取养老金</p>
-														</div>
-													</td>
-													<td align="center" valign="middle" class="zi5">￥10086.00元</td>
-												</tr>
-												<tr>
-													<td height="25" align="left" valign="middle" class="zi3">
-														<img src="//i0.hdslb.com/bfs/archive/86e2d5395208c71b0f0afd1b197dae4e0eff0937.jpg_320x200.jpg" />
-														<div class="trand_list">
-															<p>泠鸢yousa</p>
-															<p>通过 购物赚取养老金</p>
-														</div>
-													</td>
-													<td align="center" valign="middle" class="zi5">￥10086.00元</td>
-												</tr>
-												<tr>
-													<td height="25" align="left" valign="middle" class="zi3">
-														<img src="//i0.hdslb.com/bfs/archive/6801fc461b419ebd4980f8e7eadca55085f44f42.jpg_320x200.jpg" />
-														<div class="trand_list">
-															<p>纳兰寻风</p>
-															<p>通过 购物赚取养老金</p>
-														</div>
-													</td>
-													<td align="center" valign="middle" class="zi5">￥10086.00元</td>
-												</tr>
-
-												<tr>
-													<td height="25" align="left" valign="middle" class="zi3">
-														<img src="//i0.hdslb.com/bfs/archive/b279d4e862d750135702f075993f44cf0ac230ed.jpg_320x200.jpg" />
-														<div class="trand_list">
-															<p>彼优传媒</p>
-															<p>通过 购物赚取养老金</p>
-														</div>
-													</td>
-													<td align="center" valign="middle" class="zi5">￥10086.00元</td>
-												</tr>
-
-												<tr>
-													<td height="25" align="left" valign="middle" class="zi3">
-														<img src="//i0.hdslb.com/bfs/archive/9a65cee2ed141536fb64520d9a90c012ebcd29f5.jpg_320x200.jpg" />
-														<div class="trand_list">
-															<p>MaxKim</p>
-															<p>通过 购物赚取养老金</p>
-														</div>
-													</td>
-													<td align="center" valign="middle" class="zi5">￥10086.00元</td>
-												</tr>
-
-												<tr>
-													<td height="25" align="left" valign="middle" class="zi3">
-														<img src="//i0.hdslb.com/bfs/archive/2329b566df8ce99af3d0672cf950cfd2915b3f54.jpg_320x200.jpg" />
-														<div class="trand_list">
-															<p>科技微讯</p>
-															<p>通过 购物赚取养老金</p>
-														</div>
-													</td>
-													<td align="center" valign="middle" class="zi5">￥10086.00元</td>
-												</tr>
-											</tbody>
-										</table>
+							<div class="tb_ri" style="z-index: 101;">
+								<!--<div>-->
+									<ul class="public">
+										<li>养老网动态</li>
+										<li>公告</li>
+										<li>登录</li>
+									</ul>
+								<!--</div>-->
+								<div class="pu_trends">
+									<div id="dance" style="overflow: hidden;height:388px;width:260px;">
+										<div id="demo1">
+											<table border="0" cellspacing="0" cellpadding="0" align="center" width="98%" style="margin: 4px 0px;">
+												<tbody></tbody>
+											</table>
+										</div>
+										<div id="demo2"></div>
 									</div>
-
-									<div id="demo2">
-
-									</div>
-
+								</div>
+								<div class="pu_bulletin">
+									<ul>
+										<li>
+											<a href="#">2017-6-12养老网公告</a>
+										</li><li>
+											<a href="#">2017-6-13养老网公告</a>
+										</li><li>
+											<a href="#">2017-6-14养老网公告</a>
+										</li><li>
+											<a href="#">2017-6-15养老网公告</a>
+										</li><li>
+											<a href="#">2017-6-16养老网公告</a>
+										</li><li>
+											<a href="#">2017-6-17养老网公告</a>
+										</li>
+									</ul>
+								</div>
+								<div class="pu_login" style="z-index: 99;">
+									<li>
+										<a href="#">注册</a>
+									</li>
+									<li>
+										<a href="#">登录</a>
+									</li>
+									<li>
+										<a href="#">商家入驻</a>
+									</li>
 								</div>
 							</div>
-							<ul class="pu_bulletin">
-								<li>
-									<a href="#"></a>
-								</li>
-							</ul>
-							<ul class="pu_login" style="z-index: 99;">
-								<li>
-									<a href="#">注册</a>
-								</li>
-								<li>
-									<a href="#">登录</a>
-								</li>
-								<li>
-									<a href="#">商家入驻</a>
-								</li>
-							</ul>
 						</div>
 					</div>
 				</div>
-			</div>
 		</header>
 
-		<section class="container">
+		<section class="container an_dn">
 			<div class="market clearfix">
 				<ul>
-					<li>
-						<b>热销产品<s></s></b>
+					<li style="width: 110px;">
+						<b>热销<s></s>产品</b>
 						<ul>
-							<li class="col-md-2">
-								<img src="http://res.wdmfw.com/upload/store/606/2016/09/02/df9bf11a-fcf7-4460-8a45-c4f59d4cb15f.jpg_middle.jpg" />
-								<p>劲力RCY2103*电吹风 酒店吹风机 吹风筒</p>
-								<p>价格:¥188.00</p>
+							<li class="col-md-2 col-xs-2 col-sm-2 col-lg-2">
+								<a href="detail.html">
+									<img src="https://asearch.alicdn.com/bao/uploaded/i1/143680346748621062/TB2GEevbCBjpuFjy1XdXXaooVXa_!!0-saturn_solar.jpg_220x220.jpg" />
+									<p>劲力RCY2103*电吹风 酒店吹风机 吹风筒</p>
+									<p>价格:¥188.00</p>
+								</a>
 							</li>
-							<li class="col-md-2">
-								<img src="http://res.wdmfw.com/upload/store/568/2016/09/07/61703447-657d-427d-a088-a839f9594592.jpg_middle.jpg" />
-								<p>【家具建材】米致*化妆品收纳盒 木质创意家居用品桌面杂物首饰盒韩国创意抽屉收纳</p>
-								<p>价格:¥280.00</p>
+							<li class="col-md-2 col-xs-2 col-sm-2 col-lg-2">
+								<a href="detail.html">
+									<img src="https://asearch.alicdn.com/bao/uploaded/i1/143680346748621062/TB2GEevbCBjpuFjy1XdXXaooVXa_!!0-saturn_solar.jpg_220x220.jpg" />
+									<p>【家具建材】米致*化妆品收纳盒 木质创意家居用品桌面杂物首饰盒韩国创意抽屉收纳</p>
+									<p>价格:¥280.00</p>
+								</a>
 							</li>
-							<li class="col-md-2">
-								<img src="https://asearch.alicdn.com/bao/uploaded/i1/143680346748621062/TB2GEevbCBjpuFjy1XdXXaooVXa_!!0-saturn_solar.jpg_220x220.jpg" />
-								<p>【家用电器】套餐 小林*冰宝贴退烧贴 降温贴 儿童用 + 世佳*电子体温计MT-403</p>
-								<p>价格:¥198.00</p>
+							<li class="col-md-2 col-xs-2 col-sm-2 col-lg-2">
+								<a href="detail.html">
+									<img src="https://asearch.alicdn.com/bao/uploaded/i1/143680346748621062/TB2GEevbCBjpuFjy1XdXXaooVXa_!!0-saturn_solar.jpg_220x220.jpg" />
+									<p>【家用电器】套餐 小林*冰宝贴退烧贴 降温贴 儿童用 + 世佳*电子体温计MT-403</p>
+									<p>价格:¥198.00</p>
+								</a>
 							</li>
-							<li class="col-md-2">
-								<img src="//img.alicdn.com/tfscom/i4/2461050731/TB2zrvOj4lmpuFjSZPfXXc9iXXa_!!2461050731.jpg_290x290.jpg_.webp" />
-								<p>新店特惠马甲女春秋中长款韩版无袖秋冬学生时尚修身格子西装翻领</p>
-								<p>价格:¥98.00</p>
+							<li class="col-md-2 col-xs-2 col-sm-2 col-lg-2">
+								<a href="detail.html">
+									<img src="//img.alicdn.com/tfscom/i4/2461050731/TB2zrvOj4lmpuFjSZPfXXc9iXXa_!!2461050731.jpg_290x290.jpg_.webp" />
+									<p>新店特惠马甲女春秋中长款韩版无袖秋冬学生时尚修身格子西装翻领</p>
+									<p>价格:¥98.00</p>
+								</a>
 							</li>
-							<li class="col-md-2">
-								<img src="//img.alicdn.com/tfscom/i2/2168748903/TB2VkCylrBnpuFjSZFGXXX51pXa_!!2168748903.jpg_290x290.jpg_.webp" />
-								<p>春夏连衣裙女宽松圆领显瘦印花短袖t恤上衣包臀半身短裙两件套装</p>
-								<p>价格:¥158.00</p>
+							<li class="col-md-2 col-xs-2 col-sm-2 col-lg-2">
+								<a href="detail.html">
+									<img src="//img.alicdn.com/tfscom/i2/2168748903/TB2VkCylrBnpuFjSZFGXXX51pXa_!!2168748903.jpg_290x290.jpg_.webp" />
+									<p>春夏连衣裙女宽松圆领显瘦印花短袖t恤上衣包臀半身短裙两件套装</p>
+									<p>价格:¥158.00</p>
+								</a>
 							</li>
-							<li class="col-md-2">
-								<img src="//img.alicdn.com/tfscom/i2/2595808149/TB25GRhiUdnpuFjSZPhXXbChpXa_!!2595808149.jpg_290x290.jpg_.webp" />
-								<p>婴幼儿软牛仔连体衣春秋薄款衣服男女宝宝卡通爬服0-3岁</p>
-								<p>价格:¥298.00</p>
+							<li class="col-md-2 col-xs-2 col-sm-2 col-lg-2">
+								<a href="detail.html">
+									<img src="//img.alicdn.com/tfscom/i2/2595808149/TB25GRhiUdnpuFjSZPhXXbChpXa_!!2595808149.jpg_290x290.jpg_.webp" />
+									<p>婴幼儿软牛仔连体衣春秋薄款衣服男女宝宝卡通爬服0-3岁</p>
+									<p>价格:¥298.00</p>
+								</a>
 							</li>
 						</ul>
 					</li>
-					<li><b>最新产品<s></s></b></li>
-					<li><b>预售产品<s></s></b></li>
+					<li style="width: 110px;"><b>最新产品<s></s></b></li>
+					<li style="width: 110px;"><b>预售产品<s></s></b></li>
 				</ul>
 			</div>
 			<!-----------商品区-------------->
@@ -462,7 +388,7 @@
 						</li>
 					</ul>
 				</div>
-				<a href="#" class="col-md-12">查看更多</a>
+				<a href="shop.html" class="col-md-12 col-xs-12 col-sm-12 col-lg-12">查看更多</a>
 			</div>
 			<!----------服务区--------->
 			<div class="service">
@@ -525,7 +451,7 @@
 					<li></li>
 					<li></li>
 				</ul><br />
-				<a href="">查看更多</a>
+				<a href="shop.html">查看更多</a>
 			</div>
 			<!----------友情链接----------->
 			<div class="secondhand">
@@ -548,7 +474,7 @@
 				</span>
 					</div>
 				</div>
-				<a href=" ">查看详情</a>
+				<a href="shop.html">查看详情</a>
 			</div>
 			<!--------友情链接--------->
 			<div class="friendly_link">
@@ -583,9 +509,178 @@
 				</ul>
 			</div>
 		</section>
-		<footer class="container-fluid">
-			<ul>
-				<li class="col-md-3">
+		<section class="an_s clearfix">
+			<div class="an_nab clearfix">
+				<ul class="clearfix">
+					<li class="col-xs-2">
+						<a href=""><i class="iconfont icon-yifu"></i>
+							<p>服装</p>
+						</a>
+					</li>
+					<li class="col-xs-2">
+						<a href=""><i class="iconfont icon-hufu"></i>
+							<p>护肤</p>
+						</a>
+					</li>
+					<li class="col-xs-2">
+						<a href=""><i class="iconfont icon-lingshi"></i>
+							<p>零食</p>
+						</a>
+					</li>
+					<li class="col-xs-2">
+						<a href=""><i class="iconfont icon-jiadian"></i></span>
+							<p>家电</p>
+						</a>
+					</li>
+					<li class="col-xs-2">
+						<a href=""><i class="iconfont icon-jiaju"></i>
+							<p>家具</p>
+						</a>
+					</li>
+				</ul>
+				<ul class="clearfix">
+					<li class="col-xs-2">
+						<a href=""><i class="iconfont icon-jiaoyin"></i>
+							<p>足浴</p>
+						</a>
+					</li>
+					<li class="col-xs-2">
+						<a href=""><i class="iconfont icon-meirong"></i>
+							<p>美容</p>
+						</a>
+					</li>
+					<li class="col-xs-2">
+						<a href=""><i class="iconfont icon-lvyou"></i>
+							<p>旅游</p>
+						</a>
+					</li>
+					<li class="col-xs-2">
+						<a href=""><i class="iconfont icon-wenquan"></i>
+							<p>温泉</p>
+						</a>
+					</li>
+					<li class="col-xs-2">
+						<a href=""><i class="iconfont icon-sauna"></i>
+							<p>桑拿</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="an_con">
+				<ul class="clearfix">
+					<li class="col-xs-6">
+						<div class="main_tu">
+							<img src="//m.360buyimg.com//mobilecms/s276x276_jfs/t5779/254/1778515401/255187/9e609cb8/59296844N2514ed14.jpg!q70.jpg" />
+						</div>
+						<div class="main_t">
+							<span class="m_tx">惠普（HP）暗影精灵III代 15.6英寸游戏笔记本电脑（i5-7300HQ 8G 128GSSD+1T GTX1050Ti 4G独显 IPS FHD）</span>
+							<span class="m_q">¥<span class="m_z">5699.</span><span class="m_x">00</span></span>
+						</div>
+					</li>
+					<li class="col-xs-6">
+						<div class="main_tu">
+							<img src="//m.360buyimg.com//mobilecms/s276x276_jfs/t5779/254/1778515401/255187/9e609cb8/59296844N2514ed14.jpg!q70.jpg" />
+						</div>
+						<div class="main_t">
+							<span class="m_tx">惠普（HP）暗影精灵III代 15.6英寸游戏笔记本电脑（i5-7300HQ 8G 128GSSD+1T GTX1050Ti 4G独显 IPS FHD）</span>
+							<span class="m_q">¥<span class="m_z">5699.</span><span class="m_x">00</span></span>
+						</div>
+					</li>
+					<li class="col-xs-6">
+						<div class="main_tu">
+							<img src="//m.360buyimg.com//mobilecms/s276x276_jfs/t5779/254/1778515401/255187/9e609cb8/59296844N2514ed14.jpg!q70.jpg" />
+						</div>
+						<div class="main_t">
+							<span class="m_tx">惠普（HP）暗影精灵III代 15.6英寸游戏笔记本电脑（i5-7300HQ 8G 128GSSD+1T GTX1050Ti 4G独显 IPS FHD）</span>
+							<span class="m_q">¥<span class="m_z">5699.</span><span class="m_x">00</span></span>
+						</div>
+					</li>
+					<li class="col-xs-6">
+						<div class="main_tu">
+							<img src="//m.360buyimg.com//mobilecms/s276x276_jfs/t5779/254/1778515401/255187/9e609cb8/59296844N2514ed14.jpg!q70.jpg" />
+						</div>
+						<div class="main_t">
+							<span class="m_tx">惠普（HP）暗影精灵III代 15.6英寸游戏笔记本电脑（i5-7300HQ 8G 128GSSD+1T GTX1050Ti 4G独显 IPS FHD）</span>
+							<span class="m_q">¥<span class="m_z">5699.</span><span class="m_x">00</span></span>
+						</div>
+					</li>
+					<li class="col-xs-6">
+						<div class="main_tu">
+							<img src="//m.360buyimg.com//mobilecms/s276x276_jfs/t5779/254/1778515401/255187/9e609cb8/59296844N2514ed14.jpg!q70.jpg" />
+						</div>
+						<div class="main_t">
+							<span class="m_tx">惠普（HP）暗影精灵III代 15.6英寸游戏笔记本电脑（i5-7300HQ 8G 128GSSD+1T GTX1050Ti 4G独显 IPS FHD）</span>
+							<span class="m_q">¥<span class="m_z">5699.</span><span class="m_x">00</span></span>
+						</div>
+					</li>
+					<li class="col-xs-6">
+						<div class="main_tu">
+							<img src="//m.360buyimg.com//mobilecms/s276x276_jfs/t5779/254/1778515401/255187/9e609cb8/59296844N2514ed14.jpg!q70.jpg" />
+						</div>
+						<div class="main_t">
+							<span class="m_tx">惠普（HP）暗影精灵III代 15.6英寸游戏笔记本电脑（i5-7300HQ 8G 128GSSD+1T GTX1050Ti 4G独显 IPS FHD）</span>
+							<span class="m_q">¥<span class="m_z">5699.</span><span class="m_x">00</span></span>
+						</div>
+					</li>
+					<li class="col-xs-6">
+						<div class="main_tu">
+							<img src="//m.360buyimg.com//mobilecms/s276x276_jfs/t5779/254/1778515401/255187/9e609cb8/59296844N2514ed14.jpg!q70.jpg" />
+						</div>
+						<div class="main_t">
+							<span class="m_tx">惠普（HP）暗影精灵III代 15.6英寸游戏笔记本电脑（i5-7300HQ 8G 128GSSD+1T GTX1050Ti 4G独显 IPS FHD）</span>
+							<span class="m_q">¥<span class="m_z">5699.</span><span class="m_x">00</span></span>
+						</div>
+					</li>
+					<li class="col-xs-6">
+						<div class="main_tu">
+							<img src="//m.360buyimg.com//mobilecms/s276x276_jfs/t5779/254/1778515401/255187/9e609cb8/59296844N2514ed14.jpg!q70.jpg" />
+						</div>
+						<div class="main_t">
+							<span class="m_tx">惠普（HP）暗影精灵III代 15.6英寸游戏笔记本电脑（i5-7300HQ 8G 128GSSD+1T GTX1050Ti 4G独显 IPS FHD）</span>
+							<span class="m_q">¥<span class="m_z">5699.</span><span class="m_x">00</span></span>
+						</div>
+					</li>
+					<li class="col-xs-6">
+						<div class="main_tu">
+							<img src="//m.360buyimg.com//mobilecms/s276x276_jfs/t5779/254/1778515401/255187/9e609cb8/59296844N2514ed14.jpg!q70.jpg" />
+						</div>
+						<div class="main_t">
+							<span class="m_tx">惠普（HP）暗影精灵III代 15.6英寸游戏笔记本电脑（i5-7300HQ 8G 128GSSD+1T GTX1050Ti 4G独显 IPS FHD）</span>
+							<span class="m_q">¥<span class="m_z">5699.</span><span class="m_x">00</span></span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<footer class="container-fluid clearfix">
+			<ul class="an_f clearfix">
+				<li class="col-xs-3">
+					<a href="#">
+						<span></span>
+						<p>首页</p>
+					</a>
+				</li>
+				<li class="col-xs-3">
+					<a href="">
+						<span></span>
+						<p>分类</p>
+					</a>
+				</li>
+				<li class="col-xs-3">
+					<a href="cart.html">
+						<span></span>
+						<p>购物车</p>
+					</a>
+				</li>
+				<li class="col-xs-3">
+					<a href="">
+						<span></span>
+						<p>我的</p>
+					</a>
+				</li>
+			</ul>
+			<ul class="pc_f">
+				<li class="col-md-3 col-xs-3 col-sm-3 col-lg-3">
 					<ul>
 						<li>客服热线</li>
 						<li>12345678</li>
@@ -593,7 +688,7 @@
 						<li>每个人的养老生活</li>
 					</ul>
 				</li>
-				<li class="col-md-2">
+				<li class="col-md-2 col-xs-2 col-sm-2 col-lg-2">
 					<ul>
 						<li>关于养老网</li>
 						<li></li>
@@ -608,7 +703,7 @@
 						</li>
 					</ul>
 				</li>
-				<li class="col-md-2">
+				<li class="col-md-2 col-xs-2 col-sm-2 col-lg-2">
 					<ul>
 						<li>新手指南</li>
 						<li>
@@ -625,7 +720,7 @@
 						</li>
 					</ul>
 				</li>
-				<li class="col-md-2">
+				<li class="col-md-2 col-xs-2 col-sm-2 col-lg-2">
 					<ul>
 						<li>购买保障</li>
 						<li>
@@ -642,7 +737,7 @@
 						</li>
 					</ul>
 				</li>
-				<li class="col-md-3">
+				<li class="col-md-3 col-xs-3 col-sm-3 col-lg-3">
 					<ul>
 						<li>养老网公众微信号</li>
 						<li></li>
@@ -651,25 +746,38 @@
 				</li>
 			</ul>
 		</footer>
-		<script type="text/javascript">
-			var speeda = 30;
-			demo2.innerHTML = demo1.innerHTML;
-
-			function Marqueea() {
-				if(demo2.offsetTop - dance.scrollTop <= 0) {
-					dance.scrollTop -= demo1.offsetHeight;
-				} else {
-					dance.scrollTop++;
-				}
-			};
-			var MyMara = setInterval(Marqueea, speeda);
-			demoa.onmouseover=function() {clearInterval(MyMara)}
-			dance.onmouseout = function() {
-				MyMara = setInterval(Marqueea, speeda);
-			};
-		</script>
 		<script src="js/lib/jquery-2.1.0.js " type="text/javascript " charset="utf-8 "></script>
 		<script src="js/lib/bootstrap.min.js " type="text/javascript " charset="utf-8 "></script>
-		<script src="js/index.js " type="text/javascript " charset="utf-8 "></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var carousel = document.querySelector('.carousel');
+			var startX = 0;
+			var moveX = 0;
+			var distance = 0;
+			//绑定触屏事件
+			carousel.addEventListener('touchstart', function(e) {
+				//记录触屏开始的数据
+				startX = e.targetTouches[0].clientX;
+			})
+			carousel.addEventListener('touchmove', function(e) {
+				//记录触屏开始的数据
+				moveX = e.targetTouches[0].clientX;
+				distance = moveX - startX;
+			})
+			//绑定触屏结束事件
+			carousel.addEventListener('touchend', function(e) {
+				if(distance > 0) {
+					$(this).carousel('prev');
+				}
+				if(distance < 0) {
+					$(this).carousel('next');
+				}
+				//数据重置
+				startX = 0;
+				moveX = 0;
+				distance = 0;
+			})
+		</script>
 	</body>
+
 </html>

@@ -1,20 +1,51 @@
 @charset "utf-8";
-body{
-    background-image: url(../img/common/bg1.jpg)!important;
+body {
+    background-image: url(../img/common/bg1.jpg);
     background-repeat: no-repeat;
 }
+
 header {
-//  height: 700px;
+    //  height: 700px;
     #assortment {
         .top_ban {
             margin-top: -25px;
             height: 400px;
-            .slide{
-                .carousel-inner{
-                    .item{
-                        img{
-                            width: 100%;
-                            height: 400px;
+            .mask_warp {
+                display: block;
+                position: relative;
+                .mask_bg {
+                    img {
+                        background-size: 100%;
+                        position: absolute;
+                        height: 428px;
+                        width: 100%;
+                        -webkit-filter: blur(5px);
+                        -ms-filter: blur(5px);
+                        filter: blur(5px);
+                        z-index: 50;
+                    }
+                }
+                .mask {
+                    background-color: #000;
+                    background-color: rgba(255, 251, 251, 0.4);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 100;
+                }
+            }
+            .slide {
+                .carousel-inner {
+                    .item {
+                        //                          width: 712px;
+                        height: 428px;
+                        //                          left: -11.5%;
+                        img {
+                            //                          width: 780px;
+                            //                          height: 400px;
                         }
                     }
                 }
@@ -28,41 +59,37 @@ section {
         ul {
             >li {
                 float: left;
-                width: 110px;
                 text-align: center;
                 vertical-align: middle;
                 margin: 0 auto;
                 ul {
-                    width: 1280px;
+                    width: 1138px;
                     height: 260px;
+                    margin-top: 20px;
                     li {
-                        margin: 0 auto;
-                        vertical-align: middle;
-                        text-align: left;
-                        width: 170px;
-                        margin-top: 20px;
-                        margin-right: 25px;
-                        padding-top: 5px;
-                        img {
-                            height: 150px;
-                            text-align: center;
-                            vertical-align: middle;
-                            border-radius: 50%;
-                            position: relative;
-                            right: 7px;
-                        }
-                        p {
-                            margin-top: 10px;
-                            text-align: left;
-                        }
-                         :nth-child(3) {
-                            color: #ff5400;
+                        padding-top: 10px;
+                        a {
+                            display: block;
+                            img {
+                                height: 150px;
+                                text-align: center;
+                                vertical-align: middle;
+                                border-radius: 50%;
+                                position: relative;
+                                right: 7px;
+                            }
+                            p {
+                                margin-top: 10px;
+                                text-align: left;
+                            }
+                             :nth-child(3) {
+                                color: #ff5400;
+                            }
                         }
                     }
                     li:hover {
                         border: 2px solid #f6b37f;
                         border-radius: 4px;
-                        
                     }
                 }
             }
@@ -71,14 +98,14 @@ section {
                 color: #f50000;
                 border-bottom: 3px solid red;
                 padding-bottom: 5px;
-                s{
+                s {
                     width: 0px;
-    border: 3px dashed #0dbff9;
-    border-bottom-style: solid;
-    border-top: 0;
-    border-left-color: transparent;
-    border-right-color: transparent;
-    height: 0px;
+                    border: 3px dashed #0dbff9;
+                    border-bottom-style: solid;
+                    border-top: 0;
+                    border-left-color: transparent;
+                    border-right-color: transparent;
+                    height: 0px;
                 }
             }
         }
@@ -131,7 +158,7 @@ section {
                         background: #84CCC9;
                         width: 185px;
                         height: 140px;
-                        float: right;
+                        float: left;
                         margin-left: 14px;
                         img {
                             width: 185px;
@@ -395,10 +422,10 @@ section {
             font-size: 20px;
         }
         .test {
-            width: 1140px;
+            overflow: hidden;
+            width: 100%;
             .lunbo_wrap {
                 width: 100%;
-                overflow: hidden;
                 position: relative;
                 .pic_box {
                     position: absolute;
@@ -499,62 +526,111 @@ footer {
     height: 150px;
     margin-top: 30px;
 }
-//
-@media screen and (max-height:832px) {
-    //判断屏幕高度小于832px
-}
 
-@media screen and (max-width:948px) {
-    //判断屏幕高度在843和948之间
-    html,
+@media screen and (max-width:481px) {
     body {
-        width: 1170px;
+        background: none;
+        //background-image: none;
     }
-    .head_top {
-        width: 1170px;
-        .top_le {
-            width: 540px;
-            display: inline-block;
-        }
-        .top_ri {
-            display: inline-block;
-            top: -53px;
-            height: 104px;
-        }
+    header #assortment .cen .top_ban .slide .carousel-inner .item img {
+        width: 100%;
+        height: 100%;
+        background-position: center center;
     }
-    #assortment {
-        width: 1170px;
+    header #assortment .cen .top_ban .slide .carousel-inner .item {
+        width: auto;
+        height: 200px;
     }
-    .commodity {
-        .com_ri {
-            width: 800px;
-        }
-        .banner {
-            >ul {
-                width: 1140px;
+    .container {
+        padding: 0;
+        margin: 0;
+        .market {
+            ul {
+                >li {
+                    ul {
+                        width: auto;
+                    }
+                }
             }
         }
-        >a {
-            display: block;
-            width: 1140px;
+        .commodity {
+            margin-top: 0;
+            .com_le {
+                p {
+                    width: 220px;
+                }
+                img {
+                    height: auto;
+                    width: auto;
+                }
+            }
+            .com_bod {
+                .com_le {
+                    width: 100%;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                    p {
+                        width: 100%;
+                    }
+                }
+                .com_ri {
+                    position: initial;
+                }
+            }
         }
     }
-    .serv_b {
-        width: 1140px;
-        margin-top: 0px;
+    .an_nab {
+        ul {
+            li {
+                width: 20%;
+                text-align: center;
+                p {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .an_con {
+        ul {
+            li {
+                .main_tu {
+                    img {
+                        width: 100%;
+                    }
+                }
+                .main_t {
+                    .m_tx {
+                        height: 33px;
+                        font-size: 13px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        word-break: break-word;
+                        color: #232326;
+                        margin-top: 5px;
+                        line-height: 17px;
+                        margin-bottom: 3px;
+                        padding: 0 4px;
+                    }
+                }
+            }
+        }
     }
 }
 
-@media screen and (min-width: 768px) {
-    //判断屏幕最大宽度768
-    .container {
-        width: 1170px!important;
+@media screen and (min-width: 482px) and (max-width: 767px) {
+    .tb_ri {
+        display: none;
     }
 }
 
-@media screen and (max-width:1024px) {
-    //最小1024
-    footer {
-        width: 1170px;
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .tb_ri {
+        display: none;
     }
 }

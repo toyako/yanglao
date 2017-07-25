@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="icon"  href="img/common/favicon.ico"/>
+		<title>养老网商品页</title>
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/lib/_bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/lib/_reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/shop.css" />
+	</head>
+
+	<body>
+
+		<header class="clearfix">
+			<!---------顶端导航栏---------->
+			<div class="head_top clearfix">
+				<div class="heads z_top b-header-blur">
+					<div class="mask_warp">
+						<div class="mask_bg" style="background-image: url(img/common/bg1.jpg);"></div>
+						<div class="mask"></div>
+					</div>
+					<div class="head_top_warp">
+						<div class="top_le col-md-6 col-xs-6 col-sm-6 col-lg-6">
+							<p>
+								<a href="#" onclick="addfav()"><i class="iconfont icon-star"></i>收藏本站</a>&nbsp;&nbsp;&nbsp;您好，欢迎来到我的养老网商城！&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="login.html">[登陆]</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="register.html">[免费注册]</a>
+							</p>
+						</div>
+						<div class="top_ri col-md-6 col-xs-6 col-sm-6 col-lg-6">
+							<ul>
+								<li>
+									<div class="st_hd">
+										<a href="personal.html">我的订单<i class="iconfont icon-down"></i></a>
+									</div>
+									<div class="st_bd">
+
+									</div>
+								</li>
+								<li>
+
+									<div class="st_hd">
+										<a href="">我的收藏<i class="iconfont icon-down"></i></a>
+									</div>
+									<div class="st_bd">
+
+									</div>
+								</li>
+								<li>
+									<div class="st_hd">
+										<a href="">微信商城<i class="iconfont icon-down"></i></a>
+									</div>
+									<div class="st_bd">
+
+									</div>
+								</li>
+								<li>
+									<div class="st_hd">
+										<a href="">手机商城<i class="iconfont icon-down"></i></a>
+									</div>
+									<div class="st_bd">
+
+									</div>
+								</li>
+								<li>
+									<div class="st_hd">
+										<a href="">帮助中心<i class="iconfont icon-down"></i></a>
+									</div>
+									<div class="st_bd">
+
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="z_set col-md-12 col-xs-12 col-sm-12 col-lg-12">
+					<div class="logo col-md-6 col-xs-6 col-sm-6 col-lg-6">
+						<img src="img/common/logo.png" />
+						<div class="logo_text">
+							<p>我的养老网</p>
+							<p>www.wdylw123.com</p>
+						</div>
+					</div>
+					<div class="search col-md-6 col-xs-6 col-sm-6 col-lg-6">
+						<div class="search_inp">
+							<input type="text" placeholder="夕阳红" />
+							<a href="">搜索</a><br />
+						</div>
+						<ul>
+							<li>
+								<a href="">热门搜索：夕阳红</a>
+							</li>
+							<li>
+								<a href="">夕阳红</a>
+							</li>
+							<li>
+								<a href="">夕阳红</a>
+							</li>
+							<li>
+								<a href="">夕阳红</a>
+							</li>
+							<li>
+								<a href="">夕阳红</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-------导航分栏-------->
+			<div id="assortment" class="container-fluid clearfix xhei">
+				<p></p>
+				<div class="cen xhei">
+					<ul class="container clearfix">
+						<li>
+							<a href="#">&nbsp;全部分类&nbsp;&nbsp;>&nbsp;&nbsp;</a>
+							<ul style="z-index: 101;">
+								<div class="shopp tdi">
+									<h4>商品区</h4>
+									<li class="active">
+										<a href=""><i class="iconfont icon-yifu"></i>服装</a>
+									</li>
+									<li>
+										<a href=""><i class="iconfont icon-hufu"></i>护肤</a>
+									</li>
+									<li>
+										<a href=""><i class="iconfont icon-lingshi"></i>零食</a>
+									</li>
+									<li>
+										<a href=""><i class="iconfont icon-jiadian"></i>家电</a>
+									</li>
+									<li>
+										<a href=""><i class="iconfont icon-jiaju"></i>家具</a>
+									</li>
+									<li>
+										<a href=""><i class="iconfont icon-shuma"></i>数码</a>
+									</li>
+								</div>
+								<div class="sevr tdi">
+									<h4>服务区</h4>
+									<li>
+										<a href=""><i class="iconfont icon-meirong"></i>美容</a>
+									</li>
+									<li>
+										<a href=""><i class="iconfont icon-yangshenghuo"></i>养生</a>
+									</li>
+									<li>
+										<a href=""><i class="iconfont icon-lvyou1"></i>旅游</a>
+									</li>
+									<li>
+										<a href=""><i class="iconfont icon-sauna"></i>桑拿</a>
+									</li>
+									<li>
+										<a href=""><i class="iconfont icon-zuyu"></i>足浴</a>
+									</li>
+									<li>
+										<a href=""><i class="iconfont icon-wenquan"></i>温泉</a>
+									</li>
+								</div>
+								<div class="xiyang tdi">
+									<h4>夕阳红</h4>
+									<li style="width: 24%;">
+										<a href="">余晖依旧</a>
+									</li>
+									<li style="width: 24%;">
+										<a href="">劳动所得</a>
+									</li>
+									<li style="width: 24%;">
+										<a href="">闲物买卖</a>
+									</li>
+								</div>
+							</ul>
+						</li>
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="booking.html">预售产品</a>
+						</li>
+						<li>
+							<a href="product.html">商品区</a>
+						</li>
+						<li>
+							<a href="server.html">服务区</a>
+						</li>
+						<li>
+							<a href="">入驻夕阳红</a>
+						</li>
+					</ul>
+
+				</div>
+		</header>
+
+		<section class="container-fluid clearfix shop_naz">
+
+			<!--商品分类-->
+			<div class="shop_rankall col-lg-12 col-md-12">
+				<div class="shop_tab clearfix">
+					<div class="shop_tit col-md-1 col-lg-1"><span class="iconfont "></span>
+						<p>品牌</p>
+					</div>
+					<div class="shop_rank  col-lg-11 col-md-11">
+						<ul class="col-lg-12 col-md-12">
+							<li>
+								<a href="">Semir/森马</a>
+							</li>
+							<li>
+								<a href="">米川</a>
+							</li>
+							<li>
+								<a href="">曼纳尔</a>
+							</li>
+							<li>
+								<a href="">拉夏贝尔</a>
+							</li>
+							<li>
+								<a href="">茵曼</a>
+							</li>
+							<li>
+								<a href="">森马</a>
+							</li>
+							<li>
+								<a href="">盈曼纳尔</a>
+							</li>
+							<li>
+								<a href="">拉夏贝尔</a>
+							</li>
+							<li>
+								<a href="">森马</a>
+							</li>
+							<li>
+								<a href="">森马</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="shop_tab clearfix">
+					<div class="shop_tit col-md-1 col-lg-1"><span class="iconfont "></span>
+						<p>品牌女装</p>
+					</div>
+					<div class="shop_rank  col-lg-11 col-md-11">
+						<ul class="col-lg-12 col-md-12">
+							<li>
+								<a href="">森马</a>
+							</li>
+							<li>
+								<a href="">米川</a>
+							</li>
+							<li>
+								<a href="">曼纳尔</a>
+							</li>
+							<li>
+								<a href="">拉夏贝尔</a>
+							</li>
+							<li>
+								<a href="">茵曼</a>
+							</li>
+							<li>
+								<a href="">森马</a>
+							</li>
+							<li>
+								<a href="">盈曼纳尔</a>
+							</li>
+							<li>
+								<a href="">拉夏贝尔</a>
+							</li>
+							<li>
+								<a href="">森马</a>
+							</li>
+							<li>
+								<a href="">森马</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="shop_tab clearfix">
+					<div class="shop_tit col-md-1 col-lg-1"><span class="iconfont "></span>
+						<p>童装/亲子装</p>
+					</div>
+					<div class="shop_rank  col-lg-11 col-md-11">
+						<ul class="col-lg-12 col-md-12">
+							<li>
+								<a href="">森马</a>
+							</li>
+							<li>
+								<a href="">米川</a>
+							</li>
+							<li>
+								<a href="">曼纳尔</a>
+							</li>
+							<li>
+								<a href="">拉夏贝尔</a>
+							</li>
+							<li>
+								<a href="">茵曼</a>
+							</li>
+							<li>
+								<a href="">森马</a>
+							</li>
+							<li>
+								<a href="">盈曼纳尔</a>
+							</li>
+							<li>
+								<a href="">拉夏贝尔</a>
+							</li>
+							<li>
+								<a href="">森马</a>
+							</li>
+							<li>
+								<a href="">森马</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="shop_tab clearfix">
+					<div class="shop_tit col-md-1 col-lg-1"><span class="iconfont "></span>
+						<p>其他分类</p>
+					</div>
+					<div class="shop_rank  col-lg-11 col-md-11">
+						<ul class="col-lg-12 col-md-12">
+							<li>
+								<a href="">森马</a>
+							</li>
+							<li>
+								<a href="">米川</a>
+							</li>
+							<li>
+								<a href="">曼纳尔</a>
+							</li>
+							<li>
+								<a href="">拉夏贝尔</a>
+							</li>
+							<li>
+								<a href="">茵曼</a>
+							</li>
+							<li>
+								<a href="">森马</a>
+							</li>
+							<li>
+								<a href="">盈曼纳尔</a>
+							</li>
+							<li>
+								<a href="">拉夏贝尔</a>
+							</li>
+							<li>
+								<a href="">森马</a>
+							</li>
+							<li>
+								<a href="">森马</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="shop_tab clearfix">
+					<div class="shop_tit col-md-1 col-lg-1"><span class="iconfont "></span>
+						<p>裙长</p>
+					</div>
+					<div class="shop_rank  col-lg-11 col-md-11">
+						<ul class="col-lg-12 col-md-12">
+							<li>
+								<a href="">森马</a>
+							</li>
+							<li>
+								<a href="">米川</a>
+							</li>
+							<li>
+								<a href="">曼纳尔</a>
+							</li>
+							<li>
+								<a href="">拉夏贝尔</a>
+							</li>
+							<li>
+								<a href="">茵曼</a>
+							</li>
+							<li>
+								<a href="">森马</a>
+							</li>
+							<li>
+								<a href="">盈曼纳尔</a>
+							</li>
+							<li>
+								<a href="">拉夏贝尔</a>
+							</li>
+							<li>
+								<a href="">森马</a>
+							</li>
+							<li>
+								<a href="">森马</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="shop_tab clearfix">
+					<div class="shop_tit col-md-1 col-lg-1">
+						<p><span class="iconfont "></span>裙型</p>
+					</div>
+					<div class="shop_rank  col-lg-11 col-md-11">
+						<ul class="col-lg-12 col-md-12">
+							<li>
+								<a href="">森马</a>
+							</li>
+							<li>
+								<a href="">米川</a>
+							</li>
+							<li>
+								<a href="">曼纳尔</a>
+							</li>
+							<li>
+								<a href="">拉夏贝尔</a>
+							</li>
+							<li>
+								<a href="">茵曼</a>
+							</li>
+							<li>
+								<a href="">森马</a>
+							</li>
+							<li>
+								<a href="">盈曼纳尔</a>
+							</li>
+							<li>
+								<a href="">拉夏贝尔</a>
+							</li>
+							<li>
+								<a href="">森马</a>
+							</li>
+							<li>
+								<a href="">森马</a>
+							</li>
+							<li>
+								<a href="">森马</a>
+							</li>
+							<li>
+								<a href="">米川</a>
+							</li>
+							<li>
+								<a href="">曼纳尔</a>
+							</li>
+							<li>
+								<a href="">拉夏贝尔</a>
+							</li>
+							<li>
+								<a href="">茵曼</a>
+							</li>
+							<li>
+								<a href="">森马</a>
+							</li>
+							<li>
+								<a href="">森马</a>
+							</li>
+							<li>
+								<a href="">米川</a>
+							</li>
+							<li>
+								<a href="">曼纳尔</a>
+							</li>
+							<li>
+								<a href="">拉夏贝尔</a>
+							</li>
+							<li>
+								<a href="">茵曼</a>
+							</li>
+							<li>
+								<a href="">森马</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+			<!--商品搜索栏-->
+
+			<div class="goods_seach col-md-12 col-lg-12">
+				<ul>
+					<li>综合<span class="iconfont "></span></li>
+					<li>人气<span class="iconfont "></span></li>
+					<li>销量<span class="iconfont "></span></li>
+					<li>价格<span class="iconfont "></span></li>
+				</ul>
+				<ul>
+					<li>收货地：</li>
+					<li style="padding: 0;">
+						<select style="width: 70px;height: 24px;border: none;">
+							<option value="cantion" style="text-align: center;">广州<span class="iconfont "></span></option>
+						</select>
+					</li>
+
+				</ul>
+				<ul>
+					<li>￥<input type="text" placeholder="请输入" /></li>
+					<li>-</li>
+					<li>￥<input type="text" placeholder="请输入" /></li>
+				</ul>
+				<ul>
+					<li><input type="checkbox">包邮</li>
+					<li><input type="checkbox">折扣</li>
+					<li><input type="checkbox">减价</li>
+					<li>
+						<a>更多</a><span class="iconfont"></span></li>
+				</ul>
+			</div>
+			<!--商品展示区-->
+			<div class="shop_showgoods col-md-12 col-lg-12 ">
+				<ul class="shop_goodsdel col-md-12 col-lg-12">
+					<!--一个商品展示-->
+					<li class="goods_one col-md-3 col-lg-3">
+						<div class="goodsdel">
+							<a href="detail.html">
+								<img src="//g-search1.alicdn.com/img/bao/uploaded/i4/imgextra/i4/1938205029162500643/TB2pSsodOC9MuFjSZFoXXbUzFXa_!!0-saturn_solar.jpg_250x250.jpg_.webp" alt="" />
+							</a>
+							<div class="goods_small">
+								<a>
+									<img src="//g-search3.alicdn.com/img/bao/uploaded/i4/i3/TB13Pr_QFXXXXX8XFXXXXXXXXXX_!!0-item_pic.jpg_250x250.jpg_.webp" />
+								</a>
+								<a>
+									<img src="//g-search3.alicdn.com/img/bao/uploaded/i4/i3/TB13Pr_QFXXXXX8XFXXXXXXXXXX_!!0-item_pic.jpg_250x250.jpg_.webp" />
+								</a>
+							</div>
+							<p><span>￥2.90</span></p>
+							<p>
+								<a href="">
+									iphone6按键贴6splus苹果7plus指纹识别i6六手机5S金属</a>
+							</p>
+							<p>
+								<a href="" class="store">
+								<span class="dsrs">
+	              					<span class="dsr morethan"></span>
+								<span class="dsr morethan"></span>
+								<span class="dsr morethan"></span>
+								</span>韩仙子旗舰店 </a>
+								<span class="sit">广东 广州</span>
+							</p>
+						</div>
+					</li>
+					<li class="goods_one col-md-3 col-lg-3">
+						<div class="goodsdel">
+							<a href="">
+								<img src="//g-search3.alicdn.com/img/bao/uploaded/i4/i3/TB13Pr_QFXXXXX8XFXXXXXXXXXX_!!0-item_pic.jpg_250x250.jpg_.webp" alt="" />
+							</a>
+							<div class="goods_small">
+								<a>
+									<img src="#" />
+								</a>
+								<a>
+									<img src="#" />
+								</a>
+							</div>
+							<p><span>￥90.00</span></p>
+							<p>
+								<a>本季度最瘦欢迎的a字牛仔裙</a>
+							</p>
+							<p>
+								<a>花儿服装店</a>
+							</p>
+						</div>
+					</li>
+					<li class="goods_one col-md-3 col-lg-3">
+						<div class="goodsdel">
+							<a href="">
+								<img src="#" alt="" />
+							</a>
+							<div class="goods_small">
+								<a>
+									<img src="#" />
+								</a>
+								<a>
+									<img src="#" />
+								</a>
+							</div>
+							<p><span>￥900.00</span></p>
+							<p>
+								<a>本季度最瘦欢迎的a字牛仔裙</a>
+							</p>
+							<p>
+								<a>花儿服装店</a>
+							</p>
+						</div>
+					</li>
+					<li class="goods_one col-md-3 col-lg-3">
+						<div class="goodsdel">
+							<a href="">
+								<img src="#" alt="" />
+							</a>
+							<div class="goods_small">
+								<a>
+									<img src="#" />
+								</a>
+								<a>
+									<img src="#" />
+								</a>
+							</div>
+							<p><span>￥90.00</span></p>
+							<p>
+								<a>本季度最瘦欢迎的a字牛仔裙</a>
+							</p>
+							<p>
+								<a>花儿服装店</a>
+							</p>
+						</div>
+					</li>
+					<li class="goods_one col-md-3 col-lg-3">
+						<div class="goodsdel">
+							<a href="">
+								<img src="#" alt="" />
+							</a>
+							<div class="goods_small">
+								<a>
+									<img src="#" />
+								</a>
+								<a>
+									<img src="#" />
+								</a>
+							</div>
+							<p><span>￥90.00</span></p>
+							<p>
+								<a>本季度最瘦欢迎的a字牛仔裙</a>
+							</p>
+							<p>
+								<a>花儿服装店</a>
+							</p>
+						</div>
+					</li>
+					<li class="goods_one col-md-3 col-lg-3">
+						<div class="goodsdel">
+							<a href="">
+								<img src="#" alt="" />
+							</a>
+							<div class="goods_small">
+								<a>
+									<img src="#" />
+								</a>
+								<a>
+									<img src="#" />
+								</a>
+							</div>
+							<p><span>￥90.00</span></p>
+							<p>
+								<a>本季度最瘦欢迎的a字牛仔裙</a>
+							</p>
+							<p>
+								<a>花儿服装店</a>
+							</p>
+						</div>
+					</li>
+					<li class="goods_one col-md-3 col-lg-3">
+						<div class="goodsdel">
+							<a href="">
+								<img src="#" alt="" />
+							</a>
+							<div class="goods_small">
+								<a>
+									<img src="#" />
+								</a>
+								<a>
+									<img src="#" />
+								</a>
+							</div>
+							<p><span>￥90.00</span></p>
+							<p>
+								<a>本季度最瘦欢迎的a字牛仔裙</a>
+							</p>
+							<p>
+								<a>花儿服装店</a>
+							</p>
+						</div>
+					</li>
+					<li class="goods_one col-md-3 col-lg-3">
+						<div class="goodsdel">
+							<a href="">
+								<img src="#" alt="" />
+							</a>
+							<div class="goods_small">
+								<a>
+									<img src="#" />
+								</a>
+								<a>
+									<img src="#" />
+								</a>
+							</div>
+							<p><span>￥90.00</span></p>
+							<p>
+								<a>本季度最瘦欢迎的a字牛仔裙</a>
+							</p>
+							<p>
+								<a>花儿服装店</a>
+							</p>
+						</div>
+					</li>
+					<li class="goods_one col-md-3 col-lg-3">
+						<div class="goodsdel">
+							<a href="">
+								<img src="#" alt="" />
+							</a>
+							<div class="goods_small">
+								<a>
+									<img src="#" />
+								</a>
+								<a>
+									<img src="#" />
+								</a>
+							</div>
+							<p><span>￥90.00</span></p>
+							<p>
+								<a>本季度最瘦欢迎的a字牛仔裙</a>
+							</p>
+							<p>
+								<a>花儿服装店</a>
+							</p>
+						</div>
+					</li>
+					<li class="goods_one col-md-3 col-lg-3">
+						<div class="goodsdel">
+							<a href="">
+								<img src="#" alt="" />
+							</a>
+							<div class="goods_small">
+								<a>
+									<img src="#" />
+								</a>
+								<a>
+									<img src="#" />
+								</a>
+							</div>
+							<p><span>￥90.00</span></p>
+							<p>
+								<a>本季度最瘦欢迎的a字牛仔裙</a>
+							</p>
+							<p>
+								<a>花儿服装店</a>
+							</p>
+						</div>
+					</li>
+					<li class="goods_one col-md-3 col-lg-3">
+						<div class="goodsdel">
+							<a href="">
+								<img src="#" alt="" />
+							</a>
+							<div class="goods_small">
+								<a>
+									<img src="#" />
+								</a>
+								<a>
+									<img src="#" />
+								</a>
+							</div>
+							<p><span>￥90.00</span></p>
+							<p>
+								<a>本季度最瘦欢迎的a字牛仔裙</a>
+							</p>
+							<p>
+								<a>花儿服装店</a>
+							</p>
+						</div>
+					</li>
+					<li class="goods_one col-md-3 col-lg-3">
+						<div class="goodsdel">
+							<a href="">
+								<img src="#" alt="" />
+							</a>
+							<div class="goods_small">
+								<a>
+									<img src="#" />
+								</a>
+								<a>
+									<img src="#" />
+								</a>
+							</div>
+							<p><span>￥90.00</span></p>
+							<p>
+								<a>本季度最瘦欢迎的a字牛仔裙</a>
+							</p>
+							<p>
+								<a>花儿服装店</a>
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<script src="js/lib/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

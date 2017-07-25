@@ -30,12 +30,11 @@ gulp.task('browser-sync', function() {
 			baseDir: "./"
 		}
 	});
-	gulp.watch("./index.html").on('change', browserSync.reload);
+	gulp.watch("./*.html").on('change', browserSync.reload);
 	gulp.watch("./css/*.css").on('change', browserSync.reload);
 	gulp.watch("./scss/*.scss").on('change', browserSync.reload);
 	//	gulp.watch("./js/**/*.js").on('change',browserSync.reload);
 	gulp.watch("./dist/**/*.*").on('change', browserSync.reload);
-
 });
 gulp.task("wp", ["mincss", "minjs", "browser-sync"], function() {
 	gulp.watch('./css/*.css', function() {

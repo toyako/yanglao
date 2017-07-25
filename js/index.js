@@ -27,8 +27,6 @@ var ig = document.querySelector(".market ul li ul li img");
 var bod = document.querySelector(".asx");
 //ig.width=bod.width;
 
-
-
 var lunbo_warp = $(".lunbo_wrap");
 var parentWidth = lunbo_warp.parent().width();
 var height = parentWidth * 200 / 520 + 48;
@@ -122,132 +120,212 @@ $(".pannel li").on("click", function() {
 	scroll();
 });
 
-
-var puc = $(".public ul li")[2];
-var pua = $(".public ul li")[0];
-var putrend = $(".pu_trends")[0];
-console.log(puc)
-var pul = $(".pu_login")[0];
-$(puc).on("mousemove",function(){
-	pul.style.display="block";
-	putrend.style.display="none";
+var pulist = $(".public li")
+var dlist = $(".tb_ri >div");
+//for(var i = 0; i < dlist.length; i++) {
+//	$(pulist[i]).on("mousemove", function() {
+//		dlist[i].Style().display = "none";
+//		pulist=dlist[i].style.display = "block"
+//	console.log(dlist[i])
+//	})
+//}
+$(pulist[2]).on("mousemove", function() {
+	dlist[0].style.display = "none";
+	dlist[1].style.display = "none";
+	dlist[2].style.display = "block";
 });
-$(pua).on("mousemove",function(){
-	pul.style.display="none";
-	putrend.style.display="block";
+$(pulist[1]).on("mousemove", function() {
+	dlist[0].style.display = "none";
+	dlist[1].style.display = "block";
+	dlist[2].style.display = "none";
+
+});
+$(pulist[0]).on("mousemove", function() {
+	dlist[0].style.display = "block";
+	dlist[1].style.display = "none";
+	dlist[2].style.display = "none";
 });
 
+var lunbo_bann = $(".lunbo_bann");
+var parentwd = lunbo_bann.parent().width();
+var het = parentwd * 200 / 520 + 48;
+lunbo_bann.css("height", het + 'px');
+var pc_box = $(".pc_box");
+var panl = $(".panl");
+var le_arrow = $(".le_arrow");
+var ri_arrow = $(".ri_arrow");
+var pc_number = $(".pc_box li").length;
+var wd = parentwd;
+c_index = 0;
+ls_index = 0;
+pos = [];
 
-//var lunbo_bann = $(".lunbo_bann");
-//var parentwd = lunbo_bann.parent().width();
-//var het = parentwd * 200 / 520 + 48;
-//lunbo_bann.css("height", het + 'px');
-//var pc_box = $(".pc_box");
-//var panl = $(".panl");
-//var le_arrow = $(".le_arrow");
-//var ri_arrow = $(".ri_arrow");
-//var pc_number = $(".pc_box li").length;
-//var wd = parentwd;
-//c_index = 0;
-//ls_index = 0;
-//pos = [];
-//
-//for(var i = 0; i < pc_number; i++) {
-//	var cssClass = "";
-//	if(i == 0) {
-//		cssClass = "active"
-//	}
-//	var li = $("<li index='" + i + "' class '" + cssClass + "'></li>");
-//	panl.append(li);
-//	pos.push(li);
-//}
-//$(".pc_box li img").css("width", wd);
-//le_arrow.on("click", function() {
-//	left();
-//})
-//ri_arrow.on("click", function() {
-//	right()
-//})
-//
-//function left() {
-//	c_index--;
-//	if(c_index < 0) {
-//		c_index = pc_number - 1;
-//	}
-//	scrol();
-//}
-//
-//function right() {
-//	c_index++;
-//	if(c_index > pc_number - 1) {
-//		c_index = 0;
-//	}
-//	scrol();
-//}
-//
-//function scrol() {
-//	if(c_index == 0 && ls_index == pc_number - 1) {
-//		var cloneDom = pc_box.find(":first").clone();
-//		cloneDom.appendTo(pc_box);
-//		pc_box.css("transform", "translateX(-" + pc_number * wd + "px)");
-//		pc_box.on("webkitTransitionEnd", function() {
-//			pc_box.css("transition", "none");
-//			pc_box.css("transform", "translateX(-" + c_index * wd + "px)");
-//			cloneDom.remove();
-//			window.getComputedStyle(pc_box[0]).width;
-//			pc_box.css("transition", "all 500ms ease-in");
-//		})
-//	} else if(c_index == pc_number - 1 && ls_index == 0) {
-//		var cloneDome = pc_box.find(">:last").clone();
-//		cloneDom.prependTo(pc_box);
-//		pc_box.css("transition", "none");
-//		pc_box.css("transform", "translateX(-" + wd + "px)");
-//		window.getComputedStyle(pc_box[0]).width;
-//		pc_box.css("transition", "all 500ms ease-in");
-//		pc_box.css("transform", "translateX(0px)");
-//		pc_box.one("webkitTransitionEnd", function() {
-//			cloneDom.remove();
-//			pc_box.css("transition", "none");
-//			pc_box.css("transition", "translateX(-" + (pc_number - 1) * wd + "px)");
-//			window.getComputedStyle(pic_box[0]).width;
-//			pc_box.css("transition", "all 500ms ease-in");
-//		})
-//	} else {
-//		pc_box.css("transform", "translateX(-" + c_index * wd + "px)");
-//
-//	}
-//	pos[ls_index].removeClass("active");
-//	pos[c_index].addClass("active");
-//	ls_index = c_index;
-//}
-//var s = setInterval(right, 3000);
-//lunbo_bann.on("mousemove", function() {
-//	clearInterval(s);
-//})
-//lunbo_bann.on("mouseout", function() {
-//	s = setInterval(right, 3000);
-//})
-//$(".panl li").on("click", function() {
-//	c_index = $(this).index();
-//	scrol();
+for(var i = 0; i < pc_number; i++) {
+	var cssClass = "";
+	if(i == 0) {
+		cssClass = "active"
+	}
+	var li = $("<li index='" + i + "' class '" + cssClass + "'></li>");
+	panl.append(li);
+	pos.push(li);
+}
+$(".pc_box li img").css("width", wd);
+le_arrow.on("click", function() {
+	left();
+})
+ri_arrow.on("click", function() {
+	right()
+})
+
+function left() {
+	c_index--;
+	if(c_index < 0) {
+		c_index = pc_number - 1;
+	}
+	scroll();
+}
+
+function right() {
+	c_index++;
+	if(c_index > pc_number - 1) {
+		c_index = 0;
+	}
+	scroll();
+}
+
+function scrol() {
+	if(c_index == 0 && ls_index == pc_number - 1) {
+		var cloneDom = pc_box.find(":first").clone();
+		cloneDom.appendTo(pc_box);
+		pc_box.css("transform", "translateX(-" + pc_number * wd + "px)");
+		pc_box.on("webkitTransitionEnd", function() {
+			pc_box.css("transition", "none");
+			pc_box.css("transform", "translateX(-" + c_index * wd + "px)");
+			cloneDom.remove();
+			window.getComputedStyle(pc_box[0]).width;
+			pc_box.css("transition", "all 500ms ease-in");
+		})
+	} else if(c_index == pc_number - 1 && ls_index == 0) {
+		var cloneDome = pc_box.find(">:last").clone();
+		cloneDom.prependTo(pc_box);
+		pc_box.css("transition", "none");
+		pc_box.css("transform", "translateX(-" + wd + "px)");
+		window.getComputedStyle(pc_box[0]).width;
+		pc_box.css("transition", "all 500ms ease-in");
+		pc_box.css("transform", "translateX(0px)");
+		pc_box.one("webkitTransitionEnd", function() {
+			cloneDom.remove();
+			pc_box.css("transition", "none");
+			pc_box.css("transition", "translateX(-" + (pc_number - 1) * wd + "px)");
+			window.getComputedStyle(pic_box[0]).width;
+			pc_box.css("transition", "all 500ms ease-in");
+		})
+	} else {
+		pc_box.css("transform", "translateX(-" + c_index * wd + "px)");
+
+	}
+	pos[ls_index].removeClass("active");
+	pos[c_index].addClass("active");
+	ls_index = c_index;
+}
+var s = setInterval(right, 3000);
+lunbo_bann.on("mousemove", function() {
+	clearInterval(s);
+})
+lunbo_bann.on("mouseout", function() {
+	s = setInterval(right, 3000);
+})
+$(".panl li").on("click", function() {
+	c_index = $(this).index();
+	scrol();
+});
+
+var data = [{
+		src: "//i0.hdslb.com/bfs/archive/3ea09590468d179baaf7d3d48d309159a75d1f4e.jpg_320x200.jpg",
+		name: "疯粤crazecanton",
+		make: "通过购物赚取养老金",
+		money: "￥10086.00元"
+	},
+	{
+		src: "//i0.hdslb.com/bfs/archive/bfaa73d0488d9841455e88bc369e0731b91c7922.jpg_320x200.jpg",
+		name: "EdisonXxu",
+		make: "通过分享赚取养老金",
+		money: "￥10086.00元"
+	},
+	{
+		src: "//i0.hdslb.com/bfs/archive/003c8c38d5f9537e2055c497be32b55225357ef0.jpg_320x200.jpg",
+		name: "柚子又抽了",
+		make: "通过购物赚取养老金",
+		money: "￥10086.00元"
+	},
+	{
+		src: "//i0.hdslb.com/bfs/archive/225a67544676c2aae788ca27a53744918562cef9.jpg_320x200.jpg",
+		name: "SoFun搜趣坊",
+		make: "通过购物赚取养老金",
+		money: "￥10086.00元"
+	},
+	{
+		src: "//i0.hdslb.com/bfs/archive/86e2d5395208c71b0f0afd1b197dae4e0eff0937.jpg_320x200.jpg",
+		name: "泠鸢yousa",
+		make: "通过购物赚取养老金",
+		money: "￥10086.00元"
+	},
+	{
+		src: "//i0.hdslb.com/bfs/archive/6801fc461b419ebd4980f8e7eadca55085f44f42.jpg_320x200.jpg",
+		name: "纳兰寻风",
+		make: "通过购物赚取养老金",
+		money: "￥10086.00元"
+	},
+	{
+		src: "//i0.hdslb.com/bfs/archive/9a65cee2ed141536fb64520d9a90c012ebcd29f5.jpg_320x200.jpg",
+		name: "MaxKim",
+		make: "通过购物赚取养老金",
+		money: "￥10086.00元"
+	},
+	{
+		src: "//i0.hdslb.com/bfs/archive/2329b566df8ce99af3d0672cf950cfd2915b3f54.jpg_320x200.jpg",
+		name: "科技微讯",
+		make: "通过购物赚取养老金",
+		money: "￥10086.00元"
+	},
+	{
+		src: "//i0.hdslb.com/bfs/archive/b279d4e862d750135702f075993f44cf0ac230ed.jpg_320x200.jpg",
+		name: "彼优传媒",
+		make: "通过购物赚取养老金",
+		money: "￥10086.00元"
+	},
+];
+
+var tu = $("#dance td img");
+var use = $("#dance td .trand_list p:nth-child(1)");
+var makes = $("#dance td .trand_list p:nth-child(2)");
+for(var i = 0; i < data.length; i++) {
+	$("#dance #demo1 tbody").append("<tr><td height='25' align='left' valign='middle' class='zi3'><img src='" + data[i].src + "'><div class='trand_list'><p>" + data[i].name + "</p>" + data[i].make + "<p></p></div></td><td align='center' valign='middle' class='zi5'>" + data[i].money + "</td></tr>");
+};
+
+var speeda = 30;
+demo2.innerHTML = demo1.innerHTML;
+
+function Marqueea() {
+	if(demo2.offsetTop - dance.scrollTop <= 0) {
+		dance.scrollTop -= demo1.offsetHeight;
+	} else {
+		dance.scrollTop++;
+	}
+};
+var MyMara = setInterval(Marqueea, speeda);
+dance.onmouseover = function() {
+	clearInterval(MyMara)
+}
+dance.onmouseout = function() {
+	MyMara = setInterval(Marqueea, speeda);
+};
+
+var mask = document.querySelector(".top_ban .mask_warp .mask_bg img");
+var sc = document.querySelectorAll(".carousel-inner .active img")[0];
+//var asd = $(".top_ban .mask_warp .mask_bg").css("background-image").split("\"")[1];
+
+mask.src = sc.src;
+//setInterval(1000, function() {
+//	var s,t;
 //});
-
-//
-//var xml=new XMLHttpRequest();
-//xml.open("GET","index.html", true);
-//xml.send();
-//xml.onreadystatechange = function() {
-//if (xml.readyState == 4 && xml.status == 200) {
-//
-//}
-//};
-//var dino = $(".pu_login");
-//var p_tren = $(".pu_trends");
-//var ind = $(".public ul li")[2];
-//console.log(ind)
-//ind[0].add("touchmove",function(){
-//	p_tren.css("display","none");
-//	dino.css("display","block");
-//	console.log(123)
-//})
-

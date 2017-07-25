@@ -1,43 +1,60 @@
 body {
-  background-image: url(../img/common/bg1.jpg) !important;
+  background-image: url(../img/common/bg1.jpg);
   background-repeat: no-repeat; }
 
 header #assortment .top_ban {
   margin-top: -25px;
   height: 400px; }
-  header #assortment .top_ban .slide .carousel-inner .item img {
-    width: 100%;
-    height: 400px; }
+  header #assortment .top_ban .mask_warp {
+    display: block;
+    position: relative; }
+    header #assortment .top_ban .mask_warp .mask_bg img {
+      background-size: 100%;
+      position: absolute;
+      height: 428px;
+      width: 100%;
+      -webkit-filter: blur(5px);
+      -ms-filter: blur(5px);
+      filter: blur(5px);
+      z-index: 50; }
+    header #assortment .top_ban .mask_warp .mask {
+      background-color: #000;
+      background-color: rgba(255, 251, 251, 0.4);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 100; }
+  header #assortment .top_ban .slide .carousel-inner .item {
+    height: 428px; }
 
 section .market ul > li {
   float: left;
-  width: 110px;
   text-align: center;
   vertical-align: middle;
   margin: 0 auto; }
   section .market ul > li ul {
-    width: 1280px;
-    height: 260px; }
+    width: 1138px;
+    height: 260px;
+    margin-top: 20px; }
     section .market ul > li ul li {
-      margin: 0 auto;
-      vertical-align: middle;
-      text-align: left;
-      width: 170px;
-      margin-top: 20px;
-      margin-right: 25px;
-      padding-top: 5px; }
-      section .market ul > li ul li img {
-        height: 150px;
-        text-align: center;
-        vertical-align: middle;
-        border-radius: 50%;
-        position: relative;
-        right: 7px; }
-      section .market ul > li ul li p {
-        margin-top: 10px;
-        text-align: left; }
-      section .market ul > li ul li :nth-child(3) {
-        color: #ff5400; }
+      padding-top: 10px; }
+      section .market ul > li ul li a {
+        display: block; }
+        section .market ul > li ul li a img {
+          height: 150px;
+          text-align: center;
+          vertical-align: middle;
+          border-radius: 50%;
+          position: relative;
+          right: 7px; }
+        section .market ul > li ul li a p {
+          margin-top: 10px;
+          text-align: left; }
+        section .market ul > li ul li a :nth-child(3) {
+          color: #ff5400; }
     section .market ul > li ul li:hover {
       border: 2px solid #f6b37f;
       border-radius: 4px; }
@@ -97,7 +114,7 @@ section .commodity {
         background: #84CCC9;
         width: 185px;
         height: 140px;
-        float: right;
+        float: left;
         margin-left: 14px; }
         section .commodity .com_bod .com_ri ul li img {
           width: 185px;
@@ -299,10 +316,10 @@ section .secondhand {
   section .secondhand p {
     font-size: 20px; }
   section .secondhand .test {
-    width: 1140px; }
+    overflow: hidden;
+    width: 100%; }
     section .secondhand .test .lunbo_wrap {
       width: 100%;
-      overflow: hidden;
       position: relative; }
       section .secondhand .test .lunbo_wrap .pic_box {
         position: absolute;
@@ -381,40 +398,69 @@ footer {
   height: 150px;
   margin-top: 30px; }
 
-@media screen and (max-width: 948px) {
-  html,
+@media screen and (max-width: 481px) {
   body {
-    width: 1170px; }
+    background: none; }
 
-  .head_top {
-    width: 1170px; }
-    .head_top .top_le {
-      width: 540px;
-      display: inline-block; }
-    .head_top .top_ri {
-      display: inline-block;
-      top: -53px;
-      height: 104px; }
+  header #assortment .cen .top_ban .slide .carousel-inner .item img {
+    width: 100%;
+    height: 100%;
+    background-position: center center; }
 
-  #assortment {
-    width: 1170px; }
+  header #assortment .cen .top_ban .slide .carousel-inner .item {
+    width: auto;
+    height: 200px; }
 
-  .commodity .com_ri {
-    width: 800px; }
-  .commodity .banner > ul {
-    width: 1140px; }
-  .commodity > a {
-    display: block;
-    width: 1140px; }
-
-  .serv_b {
-    width: 1140px;
-    margin-top: 0px; } }
-@media screen and (min-width: 768px) {
   .container {
-    width: 1170px !important; } }
-@media screen and (max-width: 1024px) {
-  footer {
-    width: 1170px; } }
+    padding: 0;
+    margin: 0; }
+    .container .market ul > li ul {
+      width: auto; }
+    .container .commodity {
+      margin-top: 0; }
+      .container .commodity .com_le p {
+        width: 220px; }
+      .container .commodity .com_le img {
+        height: auto;
+        width: auto; }
+      .container .commodity .com_bod .com_le {
+        width: 100%; }
+        .container .commodity .com_bod .com_le img {
+          width: 100%;
+          height: auto; }
+        .container .commodity .com_bod .com_le p {
+          width: 100%; }
+      .container .commodity .com_bod .com_ri {
+        position: initial; }
+
+  .an_nab ul li {
+    width: 20%;
+    text-align: center; }
+    .an_nab ul li p {
+      margin: 0;
+      padding: 0; }
+
+  .an_con ul li .main_tu img {
+    width: 100%; }
+  .an_con ul li .main_t .m_tx {
+    height: 33px;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+    color: #232326;
+    margin-top: 5px;
+    line-height: 17px;
+    margin-bottom: 3px;
+    padding: 0 4px; } }
+@media screen and (min-width: 482px) and (max-width: 767px) {
+  .tb_ri {
+    display: none; } }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .tb_ri {
+    display: none; } }
 
 /*# sourceMappingURL=index.css.map */

@@ -4,11 +4,12 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width,userscalable=no" />
+		<link rel="icon"  href="img/common/favicon.ico"/>
 		<title>我的养老网</title>
-		<link rel="stylesheet" type="text/css" href="css/common.css" />
 		<link rel="stylesheet" type="text/css" href="css/lib/_reset.css" />
 		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
 		<link rel="stylesheet" type="text/css" href="css/lib/_bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
 		<link rel="stylesheet" type="text/css" href="css/product.css" />
 	</head>
 
@@ -16,38 +17,59 @@
 		<header class="clearfix">
 			<!---------顶端导航栏---------->
 			<div class="head_top clearfix">
-				<div class="heads z_top b-header-blur" style="background: #676767;">
+				<div class="heads z_top b-header-blur">
 					<div class="mask_warp">
-						<div class="mask_bg"></div>
+						<div class="mask_bg" style="background-image: url(img/common/bg1.jpg);"></div>
 						<div class="mask"></div>
 					</div>
 					<div class="head_top_warp">
 						<div class="top_le col-md-6">
 							<p>
 								<a href="#" onclick="addfav()"><i class="iconfont icon-star"></i>收藏本站</a>&nbsp;&nbsp;&nbsp;您好，欢迎来到我的养老网商城！&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								<a href="">[登陆]</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								<a href="">[免费注册]</a>
+								<a href="login.html">[登陆]</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="register.html">[免费注册]</a>
 							</p>
 						</div>
 						<div class="top_ri col-md-6">
 							<ul>
 								<li>
-									<a href=""><i class="iconfont icon-shopping"></i>我的购物车</a>
+									<div class="st_hd">
+										<a href="personal.html">我的订单<i class="iconfont icon-down"></i></a>
+									</div>
+									<div class="st_bd">
+
+									</div>
 								</li>
 								<li>
-									<a href="">我的订单<i class="iconfont icon-down"></i></a>
+
+									<div class="st_hd">
+										<a href="">我的收藏<i class="iconfont icon-down"></i></a>
+									</div>
+									<div class="st_bd">
+
+									</div>
 								</li>
 								<li>
-									<a href="">我的收藏<i class="iconfont icon-down"></i></a>
+									<div class="st_hd">
+										<a href="">微信商城<i class="iconfont icon-down"></i></a>
+									</div>
+									<div class="st_bd">
+
+									</div>
 								</li>
 								<li>
-									<a href="">微信商城<i class="iconfont icon-down"></i></a>
+									<div class="st_hd">
+										<a href="">手机商城<i class="iconfont icon-down"></i></a>
+									</div>
+									<div class="st_bd">
+									</div>
 								</li>
 								<li>
-									<a href="">手机商城<i class="iconfont icon-down"></i></a>
-								</li>
-								<li>
-									<a href="">帮助中心<i class="iconfont icon-down"></i></a>
+									<div class="st_hd">
+										<a href="help.html">帮助中心<i class="iconfont icon-down"></i></a>
+									</div>
+									<div class="st_bd">
+									</div>
 								</li>
 							</ul>
 						</div>
@@ -61,8 +83,8 @@
 							<p>www.wdylw123.com</p>
 						</div>
 					</div>
-					<div class="search col-md-6">
-						<div class="search_inp">
+					<div class="search col-md-6 clearfix">
+						<div class="search_inp clearfix">
 							<input type="text" placeholder="夕阳红" />
 							<a href="">搜索</a><br />
 						</div>
@@ -91,71 +113,71 @@
 			<div id="assortment" class="container-fluid clearfix">
 				<p></p>
 				<div class="cen">
-					<ul class="container">
+					<ul class="container clearfix">
 						<li>
 							<a href="#">&nbsp;全部分类&nbsp;&nbsp;>&nbsp;&nbsp;</a>
-							<ul style="z-index: 99;">
-								<li>
-									<p>商品区</p>
-								</li>
-								<li class="active">
-									<a href=""><i class="iconfont icon-yifu"></i>衣服</a>
-								</li>
-								<li>
-									<a href=""><i class="iconfont icon-hufu"></i>护肤</a>
-								</li>
-								<li>
-									<a href=""><i class="iconfont icon-lingshi"></i>零食</a>
-								</li>
-								<li>
-									<a href=""><i class="iconfont icon-jiadian"></i>家电</a>
-								</li>
-								<li>
-									<a href=""><i class="iconfont icon-jiaju"></i>家具</a>
-								</li>
-								<li>
-									<a href=""><i class="iconfont icon-shuma"></i>数码</a>
-								</li>
-								<li>
-									<a href="">查看更多</a>
-								</li>
-								<li>
-									<p>服务区</p>
-								</li>
-								<li>
-									<a href=""><i class="iconfont icon-meirong"></i>美容</a>
-								</li>
-								<li>
-									<a href=""><i class="iconfont icon-yangshenghuo"></i>养生</a>
-								</li>
-								<li>
-									<a href=""><i class="iconfont icon-lvyou1"></i>旅游</a>
-								</li>
-								<li>
-									<a href=""><i class="iconfont icon-sauna"></i>桑拿</a>
-								</li>
-								<li>
-									<a href=""><i class="iconfont icon-zuyu"></i>足浴</a>
-								</li>
-								<li>
-									<a href=""><i class="iconfont icon-wenquan"></i>温泉</a>
-								</li>
-								<li>
-									<a href="">查看更多</a>
-								</li>
-								<li>
-									<p>夕阳红</p>
-								</li>
-								<li>
-									<a href=""><i class="iconfont icon-zheyang"></i>更多服务</a>
-								</li>
+							<ul style="z-index: 101;display: block;">
+								<div class="shopp tdi">
+									<h4>商品区</h4>
+									<li class="active">
+										<a href="shop.html"><i class="iconfont icon-yifu"></i>服装</a>
+									</li>
+									<li>
+										<a href="shop.html"><i class="iconfont icon-hufu"></i>护肤</a>
+									</li>
+									<li>
+										<a href="shop.html"><i class="iconfont icon-lingshi"></i>零食</a>
+									</li>
+									<li>
+										<a href="shop.html"><i class="iconfont icon-jiadian"></i>家电</a>
+									</li>
+									<li>
+										<a href="shop.html"><i class="iconfont icon-jiaju"></i>家具</a>
+									</li>
+									<li>
+										<a href="shop.html"><i class="iconfont icon-shuma"></i>数码</a>
+									</li>
+								</div>
+								<div class="sevr tdi">
+									<h4>服务区</h4>
+									<li>
+										<a href="shop.html"><i class="iconfont icon-meirong"></i>美容</a>
+									</li>
+									<li>
+										<a href="shop.html"><i class="iconfont icon-yangshenghuo"></i>养生</a>
+									</li>
+									<li>
+										<a href="shop.html"><i class="iconfont icon-lvyou1"></i>旅游</a>
+									</li>
+									<li>
+										<a href="shop.html"><i class="iconfont icon-sauna"></i>桑拿</a>
+									</li>
+									<li>
+										<a href="shop.html"><i class="iconfont icon-jiaoyin"></i>足浴</a>
+									</li>
+									<li>
+										<a href="shop.html"><i class="iconfont icon-wenquan"></i>温泉</a>
+									</li>
+								</div>
+								<div class="xiyang tdi">
+									<h4>夕阳红</h4>
+									<li style="width: 24%;">
+										<a href=""><i class="iconfont icon-zheyang" style="margin: 7px;"></i>余晖依旧</a>
+									</li>
+									<li style="width: 24%;">
+										<a href=""><i class="iconfont icon-laowujiesuan" style="margin: 7px;"></i>劳动所得</a>
+									</li>
+									<li style="width: 24%;">
+										<a href=""><i class="iconfont icon-xianzhi" style="margin: 8px;"></i>闲物买卖</a>
+									</li>
+								</div>
 							</ul>
 						</li>
 						<li>
 							<a href="index.html">首页</a>
 						</li>
 						<li>
-							<a href="">预售产品</a>
+							<a href="booking.html">预售产品</a>
 						</li>
 						<li>
 							<a href="product.html">商品区</a>
@@ -164,10 +186,16 @@
 							<a href="server.html">服务区</a>
 						</li>
 						<li>
-							<a href="booking.html">入驻夕阳红</a>
+							<a href="elderly.html">入驻夕阳红</a>
 						</li>
 					</ul>
-					<div class="top_ban">
+					<div class="top_ban clearfix">
+						<div class="mask_warp">
+							<div class="mask_bg">
+								<img src="" />
+							</div>
+							<div class="mask"></div>
+						</div>
 						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 							<!-- 轮播图的控制点 -->
 							<ol class="carousel-indicators">
@@ -179,114 +207,63 @@
 
 							<!-- 大图的容器 -->
 							<div class="carousel-inner" role="listbox">
+								<div class="item">
+									<img src="img/product/timg.jpg" alt="kv1">
+								</div>
 								<div class="item active">
-									<img src="img/product/1.jpg" alt="kv1">
+									<img src="img/product/5818ccec3ac42.jpg" alt="kv2">
 								</div>
 								<div class="item">
-									<img src="img/product/2.jpg" alt="kv2">
+									<img src="img/product/5818cde11e74f.jpg" alt="kv3">
 								</div>
 								<div class="item">
-									<img src="img/product/3.jpg" alt="kv3">
-								</div>
-								<div class="item">
-									<img src="img/product/4.jpg" alt="kv4">
+									<img src="img/product/timg (1).jpg" alt="kv4">
 								</div>
 							</div>
 
 							<!-- Controls -->
-							<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+							<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev" style="z-index: 100;">
 							</a>
-							<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+							<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next" style="z-index: 100;">
 							</a>
-						</div>
-						<div class="tb_ri">
-							<div class="public">
-								<ul>
-									<li>养老网动态</li>
-									<li>公告</li>
-									<li>登录</li>
+							<div class="tb_ri" style="z-index: 101;">
+								<div class="public">
+									<ul>
+										<li>养老网动态</li>
+										<li>公告</li>
+										<li>登录</li>
+									</ul>
+								</div>
+								<div class="pu_trends">
+									<div id="dance" style="overflow: hidden;height:388px;width:260px;">
+										<div id="demo1">
+											<table border="0" cellspacing="0" cellpadding="0" align="center" width="98%" style="margin: 4px 0px;">
+												<tbody></tbody>
+											</table>
+										</div>
+										<div id="demo2"></div>
+									</div>
+								</div>
+								<ul class="pu_bulletin">
+									<li>
+										<a href="#"></a>
+									</li>
 								</ul>
-							</div>
-							<div class="pu_trends">
-								<ul class="pu_dt">
+								<ul class="pu_login" style="z-index: 99;">
 									<li>
-										<img src="img/index/my.jpg" />
-										<div class="trand_list">
-											<p>****</p>
-											<p>通过 购物赚取养老金</p>
-											<p>￥10086.00元</p>
-										</div>
+										<a href="#">注册</a>
 									</li>
 									<li>
-										<img src="img/index/my.jpg" />
-										<div class="trand_list">
-											<p>****</p>
-											<p>通过 购物赚取养老金</p>
-											<p>￥10086.00元</p>
-										</div>
+										<a href="#">登录</a>
 									</li>
 									<li>
-										<img src="img/index/my.jpg" />
-										<div class="trand_list">
-											<p>****</p>
-											<p>通过 购物赚取养老金</p>
-											<p>￥10086.00元</p>
-										</div>
-									</li>
-									<li>
-										<img src="img/index/my.jpg" />
-										<div class="trand_list">
-											<p>****</p>
-											<p>通过 购物赚取养老金</p>
-											<p>￥10086.00元</p>
-										</div>
-									</li>
-									<li>
-										<img src="img/index/my.jpg" />
-										<div class="trand_list">
-											<p>****</p>
-											<p>通过 购物赚取养老金</p>
-											<p>￥10086.00元</p>
-										</div>
-									</li>
-									<li>
-										<img src="img/index/my.jpg" />
-										<div class="trand_list">
-											<p>****</p>
-											<p>通过 购物赚取养老金</p>
-											<p>￥10086.00元</p>
-										</div>
-									</li>
-									<li>
-										<img src="img/index/my.jpg" />
-										<div class="trand_list">
-											<p>****</p>
-											<p>通过 购物赚取养老金</p>
-											<p>￥10086.00元</p>
-										</div>
+										<a href="#">商家入驻</a>
 									</li>
 								</ul>
 							</div>
-							<ul class="pu_bulletin">
-								<li>
-									<a href="#"></a>
-								</li>
-							</ul>
-							<ul class="pu_login" style="z-index: 99;">
-								<li>
-									<a href="#">注册</a>
-								</li>
-								<li>
-									<a href="#">登录</a>
-								</li>
-								<li>
-									<a href="#">商家入驻</a>
-								</li>
-							</ul>
 						</div>
 					</div>
 				</div>
-			</div>
 		</header>
 
 		<section class="container">
@@ -805,6 +782,7 @@
 		</footer>
 		<script src="js/lib/jquery-2.1.0.js " type="text/javascript " charset="utf-8 "></script>
 		<script src="js/lib/bootstrap.min.js " type="text/javascript " charset="utf-8 "></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 
 </html>

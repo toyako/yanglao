@@ -112,5 +112,28 @@ section .s_nav_index .psion .pssi {
       font-size: 14px; }
   section .s_nav_index .psion .pssi p {
     color: #99a2aa; }
+  section .s_nav_index .psion .pssi p:nth-child(4) {
+    color: #222;
+    font-weight: bold;
+    margin: 24px 0 0 0;
+    font-size: 12px; }
+  section .s_nav_index .psion .pssi table tbody tr {
+    line-height: 200%;
+    text-align: center;
+    font-size: 12px;
+    border-collapse: collapse;
+    border: 1px solid #eaeaea;
+    table-layout: fixed;
+    word-break: break-all;
+    word-wrap: break-word;
+    zoom: 1; }
+    section .s_nav_index .psion .pssi table tbody tr th {
+      text-align: center;
+      padding: 5px 10px;
+      border-right: 1px solid #eaeaea; }
+    section .s_nav_index .psion .pssi table tbody tr td {
+      border-right: 1px solid #eaeaea; }
+  section .s_nav_index .psion .pssi table tbody tr:nth-child(1) {
+    background: #f7f7f7; }
 
 /*# sourceMappingURL=pension.css.map */
